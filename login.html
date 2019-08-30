@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+
+  <html>
+    <head>
+      <title>Auxilium </title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="is-preload">
+
+    <!-- Header -->
+      <header id="header" class="alt">
+        <a class="current" href="index.html"><img src="./images/logo.png" style="width: 350px; padding-top: 50px;"></a>
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- <li>
+              <a href="#" >Products</a>
+              <ul>
+                <li><a href="#">Option One</a></li>
+                <li><a href="#">Option Two</a></li>
+                <li><a href="#">Option Three</a></li>
+                <li>
+                  <a href="#">Submenu</a>
+                  <ul>
+                    <li><a href="#">Option One</a></li>
+                    <li><a href="#">Option Two</a></li>
+                    <li><a href="#">Option Three</a></li>
+                    <li><a href="#">Option Four</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li> -->
+            <li><a href="generic.html">Products</a></li>
+            <li class="current"><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-auth.js"></script>
+    <script type="text/javascript">
+      //  Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAwrcbALg-Ow4O3pyJMY-7vxNF_X6hZ-GM",
+        authDomain: "auxilium-f6620.firebaseapp.com",
+        databaseURL: "https://auxilium-f6620.firebaseio.com",
+        projectId: "auxilium-f6620",
+        storageBucket: "",
+        messagingSenderId: "1031183506590",
+        appId: "1:1031183506590:web:0a2eea869b3f7442"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <body>
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+          <div id="banner" class="wrapper">
+            <div class="inner">
+              <div class="content">
+                    <h2 class="mdl-card__title-text">Login or Sign up</h2>
+                    <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                      <p>Enter an email and password below and either sign in to an existing account or sign up</p>
+                      <input class="mdl-textfield__input" style="display:inline;width:auto;" type="text" id="email" name="email" placeholder="Email"/>
+                      &nbsp;&nbsp;&nbsp;
+                      <input class="mdl-textfield__input" style="display:inline;width:auto;" type="password" id="password" name="password" placeholder="Password"/>
+                      <br/><br/>
+                      <button disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin">Sign In</button>
+                      &nbsp;&nbsp;&nbsp;
+                      <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup">Sign Up</button>
+                      &nbsp;&nbsp;&nbsp;
+                      <!-- <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button> -->
+                      &nbsp;&nbsp;&nbsp;
+                      <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-password-reset" name="verify-email">Reset Email</button>
+
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+
+          <section id ="contact" class="main style2">
+            <div class="inner special medium">
+              <h3 align="center" style=" padding-bottom: 20px;"></h3>
+               <div class="jumbotron-social">
+                    <ul class="ul-social" style="margin-bottom: 30px;">
+                      <li class="li-social-links">
+                        <a class="social" href="" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                      </li>
+                      <li class="li-social-links">
+                        <a class="social" href="" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      </li>
+                      <li class="li-social-links">
+                        <a class="social" href="" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      </li>
+                      <li class="li-social-links">
+                        <a class="social" href="" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                      </li>
+                       <li class="li-social-links">
+                        <a class="social" href="" target="_blank"><i class="fa fa-snapchat" aria-hidden="true"></i></a>
+                      </li>
+                    </ul>
+                </div>
+            <p align="center">Copyright &copy; Auxilium 2020. All rights reserved.</p>
+          </section>
+        <!-- Scripts -->
+          <script src="assets/js/jquery.min.js"></script>
+          <script src="assets/js/jquery.dropotron.min.js"></script>
+          <script src="assets/js/browser.min.js"></script>
+          <script src="assets/js/breakpoints.min.js"></script>
+          <script src="assets/js/util.js"></script>
+          <script src="assets/js/main.js"></script>
+    </body>
+</html>
