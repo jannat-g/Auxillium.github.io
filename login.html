@@ -19,23 +19,6 @@
         <nav id="nav">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <!-- <li>
-              <a href="#" >Products</a>
-              <ul>
-                <li><a href="#">Option One</a></li>
-                <li><a href="#">Option Two</a></li>
-                <li><a href="#">Option Three</a></li>
-                <li>
-                  <a href="#">Submenu</a>
-                  <ul>
-                    <li><a href="#">Option One</a></li>
-                    <li><a href="#">Option Two</a></li>
-                    <li><a href="#">Option Three</a></li>
-                    <li><a href="#">Option Four</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li> -->
             <li><a href="generic.html">Products</a></li>
             <li class="current"><a href="login.html">Login</a></li>
           </ul>
@@ -79,12 +62,19 @@
                       <!-- <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button> -->
                       &nbsp;&nbsp;&nbsp;
                       <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-password-reset" name="verify-email">Reset Email</button>
-
                   </div>
                 </div>
               </div>
             </main>
           </div>
+
+           <!-- Container where we'll display the user details -->
+          <div class="quickstart-user-details-container">
+            Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
+            <div>Firebase auth <code>currentUser</code> object value:</div>
+            <pre><code id="quickstart-account-details">null</code></pre>
+          </div>
+
 
           <section id ="contact" class="main style2">
             <div class="inner special medium">
