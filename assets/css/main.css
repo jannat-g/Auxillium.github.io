@@ -3279,8 +3279,8 @@ input, select, textarea {
 	}
 
 		#header > .logo {
-			width: 200px;
-			padding: 20px;
+			padding-top: 20px;
+				width: 320px;
 		}
 
 			#header > .logo:active {
@@ -3290,8 +3290,7 @@ input, select, textarea {
 
 			#header > .logo span {
 				
-				width: 200px;
-			padding: 20px;
+		
 			}
 
 		#header .label {
@@ -3473,7 +3472,9 @@ input, select, textarea {
 		}
 
 			#header.alt > .logo {
-				font-size: 1.5rem;
+				padding-top: 10px;
+				width: 320px;
+				
 			}
 
 	@media screen and (max-width: 980px) {
