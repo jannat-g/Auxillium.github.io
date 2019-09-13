@@ -4088,6 +4088,7 @@ input, select, textarea {
 		  height: 40px;
 		  font-family: inherit;
 		  font-size: inherit;
+
 		}
 
 		.btn.color-3 {
@@ -4098,6 +4099,12 @@ input, select, textarea {
 		  background-color: transparent;
 		  border: 2px solid orange;
 		  color: white;
+		}
+
+		.btn-border.color-2 {
+		  background-color: transparent;
+		  color: white;
+		  background-image: linear-gradient(to top left, #FFBB32, #FF9432);
 		}
 
 		.btn-round {
@@ -4123,6 +4130,8 @@ input, select, textarea {
 			height: auto;
 			line-height: 1;
 			margin: 0;
+
+
 		}
 
 			#foot > nav > ul {
@@ -4193,5 +4202,11 @@ hr {
     width: 500px;
 }
 
+.discover p {
+	color: white
+	text-align: center;
+	justify-content: center;
+
+}
 		
 				

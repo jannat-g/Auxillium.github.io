@@ -3,7 +3,7 @@
 .snipcart-overwrite #snipcart-footer,
 .snipcart-overwrite #snipcart-overlay,
 .snipcart-overwrite #snipcart-overlay  {
-    background: #000;
+    background: black;
 }
 
 /* Remove the padding from the container to expend the cart */
@@ -39,10 +39,66 @@
     display: none;
 }
 
-#snipcart-header {
+#snipcart-header .snipcart-header {
     margin-top: : 200px;
 }
 
 #snipcart-modal {
     padding-top: 200px;
+}
+
+.snip-layout .snip-layout__main-container {
+    background: #363535;
+    margin-top: 5%;
+    background-color: b
+}
+
+.snip-layout .snip-footer {
+    display: none;
+}
+
+.snip-layout {
+    background-color: black;
+}
+
+.snip-layout .snip-btn--highlight {
+    background: orange;
+    color: white;
+    border-radius: 10em;
+}
+
+.snip-layout .snip-btn--highlight {
+    background: orange;
+    color: white;
+    border-radius: 10em;
+}
+
+#snipcart-global-notices {
+    display: none;
+}
+
+.snip-layout .snip-active .snip-form__error {
+    background-color: orange;
+    display: none;
+
+}
+
+.snip-layout .snip-steps {
+    display: none !important;
+
+}
+
+.snip-layout .snip-active button {
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+}
+.snip-layout .snip-active a:hover {
+    background-color: #FFD456;
+    color: white;
+    border-radius: 10px;
+}
+
+.snip-layout .snip-active table{
+    color: white;
 }
