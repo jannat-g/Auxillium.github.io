@@ -1,12 +1,13 @@
 /* Bordered form */ 
 
 form { 
-   border: 10px none #eeb82a; 
+   border: 10px none #525151; 
    display: inline-block; /* reduces the width of the form to only what is necessary */ 
    width: 50%; 
    margin-left: 25%; 
    margin-right:25%; 
    border-radius: 100px;
+   background-color: none;
    
 
 } 
@@ -20,12 +21,14 @@ input[type=text], input[type=password] {
   margin: 8px 0; 
   display: inline-block; 
   border: 1px solid #525151; 
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  border-color: none;
   margin-left: 25%; 
   margin-right:25%; 
-  background-color: #525151; 
+  background-color: none; 
   color: White; 
   border-radius: 25px;
+ 
 
 } 
 
