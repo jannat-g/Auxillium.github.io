@@ -4088,6 +4088,7 @@ input, select, textarea {
 		  height: 40px;
 		  font-family: inherit;
 		  font-size: inherit;
+		  outline:none;
 
 		}
 
@@ -4123,6 +4124,13 @@ input, select, textarea {
 
 		.nav a {
 			font-size: 19px;
+		}
+
+		#foot {
+			position: absolute;
+
+  width: 100%;
+
 		}
 
 		#foot > nav {
@@ -4208,5 +4216,7 @@ hr {
 	justify-content: center;
 
 }
+
+
 		
 				

@@ -233,4 +233,8 @@
       initApp();
     };
 
+
+    document.getElementById('snip-product__empty').className.innerText("Cart is Empty");
+          
+
     
