@@ -50,7 +50,6 @@
 .snip-layout .snip-layout__main-container {
     background: #363535;
     margin-top: 5%;
-    background-color: b
 }
 
 .snip-layout .snip-footer {
@@ -71,7 +70,21 @@
     background: orange;
     color: white;
     border-radius: 10em;
+   
 }
+
+.snip-layout .snip-btn--highlight:hover{
+    background: orange !important;
+    color: white;
+    border-radius: 10em;
+}
+
+
+
+.snip-layout .snip-actions::after {
+    background-color: orange !important;
+     pointer-events: none !important;
+    }
 
 #snipcart-global-notices {
     display: none;
@@ -92,10 +105,11 @@
     color: white;
     border-radius: 10px;
 }
-.snip-layout .snip-active a.button:hover {
-    background-color: orange !important;
+.snip-layout .snip-active button:hover {
+    /*background: orange !important;*/
     color: white;
     border-radius: 10px;
+     pointer-events: none !important;
 }
 
 .snip-layout .snip-active table {
@@ -108,3 +122,52 @@
      text-align: left; 
     text-transform: none; 
 }
+
+#snipcart-sub-content h2, td, tr, tbody, span, table{
+    color: white !important;
+}
+
+#snipcart-sub-content button:hover {
+
+     pointer-events: none !important;
+}
+
+#snipcart-discounts-list {
+    display: none;
+}
+
+.snip-table__cell--right .snip-table__cell--highlight {
+    color: white !important;
+}
+
+.snipcart-step {
+    color: white;
+}
+
+#snipcart-items {
+    color: white !important;
+}
+
+.snip-table__cell--right .snip-table__cell--highlight .snip-table__small-col {
+    color: white;
+}
+
+.snip-quantity-trigger__text {
+    color: white;
+}
+#snipcart-fees{ 
+    display: none;
+}
+
+#snipcart-cart-content table{
+    color: white !important;
+}
+
+#snipcart-total {
+    color: white !important;
+}
+
+#snipcart-flash-messages {
+    display: none;
+}
+
