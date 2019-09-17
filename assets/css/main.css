@@ -3441,6 +3441,7 @@ input, select, textarea {
 				font-weight: 900;
 			}
 
+
 			#header > .navPanelToggle:hover {
 				color: #ffffff;
 			}
@@ -3511,6 +3512,212 @@ input, select, textarea {
 
 	}
 
+	#head {
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		background: #2e2e35;
+		box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
+		color: rgba(255, 255, 255, 0.5);
+		cursor: default;
+		height: 5rem;
+		left: 0;
+		line-height: 4rem;
+		padding: 0 2rem;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 10001;
+	}
+
+		#head > .logo {
+			padding-top: 20px;
+				width: 320px;
+		}
+
+			#head > .logo:active {
+				background: none;
+
+			}
+
+			#head > .logo span {
+				
+		
+			}
+
+		#head .label {
+			display: none;
+		}
+
+		#head > nav {
+			font-size: 1rem;
+			height: auto;
+			line-height: 1;
+			margin: 0;
+		}
+
+			#head > nav > ul {
+				list-style: none;
+				margin-top: 30px;
+				padding: 0;
+			}
+
+				#head > nav > ul > li {
+					display: inline-block;
+					margin: 0 1rem;
+					padding: 0.65rem 0 0.5rem 0;
+					position: relative;
+					text-align: center;
+				}
+
+					#head > nav > ul > li.current {
+						border-bottom: 3px solid #eb8634;
+					}
+
+						#head > nav > ul > li.current a {
+							color: #ffffff;
+							font-weight: 700;
+						}
+
+					#head > nav > ul > li > a {
+						color: rgba(255, 255, 255, 0.5);
+						overflow: hidden;
+						padding: 0.25rem 0.5rem;
+						position: relative;
+						text-decoration: none;
+					}
+
+					#head > nav > ul > li > button {
+						border-radius: 40%;
+						color: white;
+						border-color: orange;
+					}
+
+						#head > nav > ul > li > a:hover, #header > nav > ul > li > a:active {
+							border-radius: 7px;
+							color: #ffffff;
+						}
+
+						#head > nav > ul > li > a:before {
+							margin-right: 0.5rem;
+						}
+
+					#head > nav > ul > li > ul {
+						display: none;
+					}
+
+					#header > nav > ul > li.active > a {
+						color: #ffffff;
+					}
+
+		
+		#head > .navPanelToggle {
+			-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, top 0.2s ease-in-out, right 0.2s ease-in-out;
+			-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, top 0.2s ease-in-out, right 0.2s ease-in-out;
+			-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, top 0.2s ease-in-out, right 0.2s ease-in-out;
+			transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, top 0.2s ease-in-out, right 0.2s ease-in-out;
+			text-decoration: none;
+			color: rgba(255, 255, 255, 0.5);
+			display: none;
+			height: inherit;
+			line-height: inherit;
+			outline: 0;
+			padding: 0 1.5rem;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+			#head > .navPanelToggle:before {
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				display: inline-block;
+				font-style: normal;
+				font-variant: normal;
+				text-rendering: auto;
+				line-height: 1;
+				text-transform: none !important;
+				font-family: 'Font Awesome 5 Free';
+				font-weight: 900;
+			}
+
+
+			#head > .navPanelToggle:hover {
+				color: #ffffff;
+			}
+
+			#head > .navPanelToggle:before {
+				content: '\f0c9';
+				float: right;
+				line-height: inherit;
+				margin: 0 0 0 0.625rem;
+			}
+
+		#head.reveal {
+			-moz-animation: reveal-header 0.5s ease;
+			-webkit-animation: reveal-header 0.5s ease;
+			-ms-animation: reveal-header 0.5s ease;
+			animation: reveal-header 0.5s ease;
+		}
+
+		#head.alt {
+			-moz-animation: none;
+			-webkit-animation: none;
+			-ms-animation: none;
+			animation: none;
+			background: none;
+			box-shadow: none;
+			height: 6rem;
+			line-height: 6rem;
+			position: absolute;
+		}
+
+			#head.alt > .logo {
+				padding-top: 10px;
+				width: 320px;
+				
+			}
+
+	@media screen and (max-width: 980px) {
+
+		#head {
+			height: 60px;
+			line-height: 55px;
+			padding: 0 1.25rem;
+		}
+
+			#head > .logo {
+				font-size: 1rem;
+			}
+
+			#head > nav {
+				display: none;
+			}
+
+			#head > .navPanelToggle {
+				display: block;
+			}
+
+				#head > .navPanelToggle span {
+					display: none;
+				}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		#head {
+			min-width: 320px;
+		}
+
+	}
+
+
 /* Nav Panel */
 
 	#wrapper {
@@ -3530,7 +3737,7 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		-webkit-overflow-scrolling: touch;
-		background-color: #5EA2C5;
+		background-color: orange;
 		box-shadow: none;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
@@ -4038,7 +4245,7 @@ input, select, textarea {
 
 		.ul-social {
 		  text-align: center;
-		  padding-left: 0;
+		
 		  margin-bottom: 10px;
 		}
 
@@ -4050,7 +4257,7 @@ input, select, textarea {
 		.social {
 		  font-size: 2em;
 		  color: white;
-		  padding: 10px;
+		  
 		}
 
 		i:hover, a:hover { 
