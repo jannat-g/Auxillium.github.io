@@ -4425,5 +4425,205 @@ hr {
 }
 
 
+
+
+
+
+
+
+/*///////////////////////////////////////////////////////// RECCOMENDATION SECTION PT 1//////////////////////////////////////////////////*/
+
+<html>
+<style>
+
+body {
+  padding: 20px;
+  font-family: sans-serif;
+
+}
+img {
+  width: 100%; /* need to overwrite inline dimensions */
+  height: auto;
+
+}
+
+h2 {
+  margin-bottom: .5em;
+}
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10em;
+  border: 10px solid #eb8634; /* inner border color */
+  border-radius: 2.1em;
+  padding: 40px;
+  background-color: #25252a;
+  box-shadow: 0 0 0 .6em #25252a;
+}
+
+
+/* hover styles */
+.location-listing {
+  position: relative;
+}
+
+.location-image {
+  line-height: 0; /* space between top and bottom of grey space  */
+  overflow: hidden;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(235,154,52,0.4);
+  color: white; /* color of text after hover */
+  border-radius: 15px; /* curve of the hover box */
+  
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center; /* text alignment */
+}
+
+.item-text {
+	font-weight: bold;
+	font-size: 2.5em;
+	display: flex;
+  	align-items: center;
+	justify-content: center; /* text alignment */
+	color: white;
+}
+
+.cent{
+
+	display: flex;
+  	align-items: center;
+	justify-content: center; /* text alignment */
+	color: white;
+	font-weight: bold;
+	border-radius: 10em;
+	border: 2px solid orange;
+
+	
+
+}
+
+.location-listing:hover .location-title {
+  opacity: 1;
+  color: white;
+}
+
+.location-listing:hover .cent {
+  opacity: 0;
+  transition: opacity .5s;
+  color: white;
+}
+
+
+.location-listing:hover .location-image img {
+  filter: blur(5px); /* control the blur of the background image */
+}
+
+/* for touch screen devices */
+@media (hover: none) { 
+  .location-title {
+    opacity: 1;
+  }
+  .location-image img {
+    filter: blur(2px);
+  }
+}
+
+</style>
+<body>
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+/*///////////////////////////////////////////////////////// RECCOMENDATION SECTION PT 2//////////////////////////////////////////////////*/
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: #2e2e36;
+
+
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 30%;
+  max-width: 39%;
+  padding: 0 100px;
+  box-shadow: 0 0 0 .2em #eb8634;
+
+
+}
+
+.column img {
+  margin-top: 8px; /* amoi */ 
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
 		
 				
