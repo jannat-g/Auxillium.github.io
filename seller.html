@@ -1,83 +1,72 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <title>Auxilium </title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <meta name="description" content=""/>
-    <meta name="keywords" content=""/>
-    <link rel="shortcut icon" href="./images/logo copy.png"/>
-    <link rel="stylesheet" href="assets/css/main.css"/>
-    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-auth.js"></script>
-    <script type="text/javascript">
-      //  Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyAwrcbALg-Ow4O3pyJMY-7vxNF_X6hZ-GM",
-        authDomain: "auxilium-f6620.firebaseapp.com",
-        databaseURL: "https://auxilium-f6620.firebaseio.com",
-        projectId: "auxilium-f6620",
-        storageBucket: "",
-        messagingSenderId: "1031183506590",
-        appId: "1:1031183506590:web:0a2eea869b3f7442"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
-
-  <body class="is-preload">
-
-    <!-- Header -->
-    <header id="header" class="alt" >
-      <img class="logo" src="./images/logo.png"></img>
-    
-    <header id="header" class="alt" style="justify-content: space-between;">
-      <nav id="nav"> 
-        <ul style="margin-left: 250px;">
-          <li ><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-      <nav id="nav">
-        <ul>
-          <li class="current"><a style="color: orange;" href="login.html">LOGIN</a></li>
-          <a href="Signup.html" ><button class="btn btn-border btn-round color-3 material-design" data-color="#f6774f">SIGN UP</button></a>
-        </ul>
-      </nav>
-    </header>
-    </header>
-    <!-- Banner -->
-		<div id="banner" style="padding: 4%;"class="wrapper"></div>
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-
-				<!-- One -->
-					<section id="one" class="wrapper style1">
-						<div class="inner" align="center">
-							<h3>Seller stuff</h3>
-							<button align="center"  onclick="signout();"  value="signout">Sign out</button>
-
-
-	
-						</div>
-					</section>
-					<script>
-					
-	
-	function signout(){
-	    firebase.auth().signOut();
-	    alert('Seller successfully signed out');
-	    window.location='index.html';
-	   };
+<head>
+	<title>Auxilium </title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<link rel="shortcut icon" href="./images/logo copy.png"/>
+	<link rel="stylesheet" href="assets/css/main.css"/>
+	<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-auth.js"></script>
+<script type="text/javascript">
+//  Firebase configuration
+var firebaseConfig = {
+	apiKey: "AIzaSyAwrcbALg-Ow4O3pyJMY-7vxNF_X6hZ-GM",
+	authDomain: "auxilium-f6620.firebaseapp.com",
+	databaseURL: "https://auxilium-f6620.firebaseio.com",
+	projectId: "auxilium-f6620",
+	storageBucket: "",
+	messagingSenderId: "1031183506590",
+	appId: "1:1031183506590:web:0a2eea869b3f7442"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 </script>
-}
+
+<body class="is-preload">
+	<!-- Header -->
+	<header id="header" class="alt" >
+		<img class="logo" src="./images/logo.png"></img>
+
+		<header id="header" class="alt" style="justify-content: space-between;">
+			<nav id="nav"> 
+				<ul style="margin-left: 250px;">
+					<li ><a href="index.html">Home</a></li>
+					<li><a href="shop.html">Shop</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			<nav id="nav">
+				<ul>
+					<li class="current"><a style="color: orange;" href="login.html">LOGIN</a></li>
+					<a href="Signup.html" ><button class="btn btn-border btn-round color-3 material-design" data-color="#f6774f">SIGN UP</button></a>
+				</ul>
+			</nav>
+		</header>
+	</header>
+	<!-- Banner -->
+	<div id="banner" style="padding: 4%;"class="wrapper"></div>
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<section id="one" class="wrapper style1">
+			<div class="inner" align="center">
+				<h3>Seller stuff</h3>
+				<button align="center"  onclick="signout();"  value="signout">Sign out</button>
 			</div>
+		</section>
+		<script>
+			function signout(){
+				firebase.auth().signOut();
+				alert('Seller successfully signed out');
+				window.location='index.html';
+			};
+		</script>
+</div>
 
