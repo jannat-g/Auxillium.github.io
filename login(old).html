@@ -11,31 +11,7 @@
     <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body class="is-preload">
-
-    <!-- Header -->
-    <header id="header" class="alt" >
-      <img class="logo" src="./images/logo.png"></img>
-    
-    <header id="header" class="alt" style="justify-content: space-between;">
-      <nav id="nav"> 
-        <ul style="margin-left: 250px;">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
-      <nav id="nav">
-        <ul>
-          <li class="current"><a style="color: orange;" href="login.html">LOGIN</a></li>
-          <a href="login.html" ><button class="btn btn-border btn-round color-3 material-design" data-color="#f6774f">SIGN UP</button></a>
-          <li><a href="index.html">CART</a><img style=" width:15px;"src="./images/shopping-cart.png"></li>
-        </ul>
-      </nav>
-    </header>
-    </header>
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-auth.js"></script>
     <script type="text/javascript">
@@ -53,76 +29,248 @@
       firebase.initializeApp(firebaseConfig);
     </script>
 
-    <body>
-    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
-          <div id="banner" class="wrapper">
-            <div class="inner">
-              <div class="content">
-                    <h2 class="mdl-card__title-text">Login or Sign up</h2>
-                    <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-                      <p>Enter an email and password below and either sign in to an existing account or sign up</p>
-                      <input class="mdl-textfield__input" style="display:inline;width:auto;" type="text" id="email" name="email" placeholder="Email"/>
-                      &nbsp;&nbsp;&nbsp;
-                      <input class="mdl-textfield__input" style="display:inline;width:auto;" type="password" id="password" name="password" placeholder="Password"/>
-                      <br/><br/>
-                      <button disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin">Sign In</button>
-                      &nbsp;&nbsp;&nbsp;
-                      <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup">Sign Up</button>
-                      &nbsp;&nbsp;&nbsp;
-                      <!-- <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button> -->
-                      &nbsp;&nbsp;&nbsp;
-                      <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-password-reset" name="verify-email">Reset Email</button>
-                  </div>
-                </div>
-              </div>
-            </main>
-          </div>
+  <body class="is-preload">
 
-           <!-- Container where we'll display the user details -->
-          <div class="quickstart-user-details-container">
-            Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
-            <div>Firebase auth <code>currentUser</code> object value:</div>
-            <pre><code id="quickstart-account-details">null</code></pre>
-          </div>
+    <!-- Header -->
+    <header id="header" class="alt" >
+      <img class="logo" src="./images/logo.png"></img>
+    
+    <header id="header" class="alt" style="justify-content: space-between;">
+      <nav id="nav"> 
+        <ul style="margin-left: 250px;">
+          <li ><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <nav id="nav">
+        <ul>
+          <li class="current"><a style="color: orange;" href="login.html">LOGIN</a></li>
+          <a href="Signup.html" ><button class="btn btn-border btn-round color-3 material-design" data-color="#f6774f">SIGN UP</button></a>
+        </ul>
+      </nav>
+    </header>
+    </header>
+    <div id="banner" style="padding: 4%;"class="wrapper"></div>
+</head>
 
-          <section id ="contact" class="main style2">
+<body>
+  <section id="one" class="wrapper style1">
+    <div class="inner" align="center">
+      <h2 class="mdl-card__title-text"> Seller Login</h2>
+      <p>Enter an email and password below and sign in to an existing account</p>
+
+      <input class="mdl-textfield__input" align="center" style=" width: 300px;" type="text" id="email" name="email" placeholder="Email"/>
+      &nbsp;&nbsp;&nbsp;
+      <input class="mdl-textfield__input" align="center" style=" width: 300px;" type="password" id="password" name="password" placeholder="Password"/>
+      <br/><br/>
+      <button align="center" disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin">Sign In</button>
+      &nbsp;&nbsp;&nbsp;
+      <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup" style="display: none;">Sign Up</button>
+      <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email" style="display: none;">Send Email Verification</button><br><br>
+      <a style="color: orange; text-decoration: none; cursor: pointer;" href="admin.html">Admin?</a><br>
+
+      <a style="color: orange; text-decoration: none; cursor: pointer;"class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-password-reset" name="verify-email">Reset password?</a>
+      <div class="quickstart-user-details-container"><br>
+        <span id="quickstart-sign-in-status"></span>
+        <div style="display: none;">Firebase auth <code>currentUser</code> object value:</div>
+        <pre><code id="quickstart-account-details" style="display: none;">null</code></pre>
+      </div>
+    </div>
+  </section>
+
+  </main>
+  <!-- Footer -->
+    <section id ="contact" class="main style2" align="center">
+        <div id="foot">
+        <nav id="nav"> 
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="">CONTACT US</a></li>
+            <li><a href="">HELP</a></li><hr>
+          </ul>
             <div class="inner special medium">
-              <h3 align="center" style=" padding-bottom: 20px;"></h3>
                <div class="jumbotron-social">
-                    <ul class="ul-social" style="margin-bottom: 30px;">
+                    <ul class="ul-social" >
                       <li class="li-social-links">
-                        <a class="social" href="" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a class="social" href="" target="_blank"><img src="images/facebook.png" style="width: 50px; margin-right: 5px;"class="fa fa-facebook" aria-hidden="true"></img></a>
                       </li>
                       <li class="li-social-links">
-                        <a class="social" href="" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a class="social" href="" target="_blank"><img src="images/twitter.png" style="width: 50px; margin-right: 5px;"class="fa fa-twitter" aria-hidden="true"></img></a>
                       </li>
                       <li class="li-social-links">
-                        <a class="social" href="" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a class="social" href="" target="_blank"><img src="images/email.png" style="width: 50px; margin-right: 4px;" class="fa fa-envelope-o" aria-hidden="true"></i></a>
                       </li>
                       <li class="li-social-links">
-                        <a class="social" href="" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                      </li>
-                       <li class="li-social-links">
-                        <a class="social" href="" target="_blank"><i class="fa fa-snapchat" aria-hidden="true"></i></a>
+                        <a class="social" href="" target="_blank"><img src="images/insta.png" style="width: 53px;"class="fa fa-instagram" aria-hidden="true"></img></a>
                       </li>
                     </ul>
                 </div>
-            <p align="center">Copyright &copy; Auxilium 2020. All rights reserved.</p>
+                </div>
+                </nav>
+            <p align="center" style="padding-top: 10px;">ALL RIGHTS RESERVED | AUXILIUM 2019</p>
           </section>
-        <!-- Scripts -->
-          <script src="assets/js/jquery.min.js"></script>
-          <script src="assets/js/jquery.dropotron.min.js"></script>
-          <script src="assets/js/browser.min.js"></script>
-          <script src="assets/js/breakpoints.min.js"></script>
-          <script src="assets/js/util.js"></script>
-          <script src="assets/js/main.js"></script>
-            <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
 
-  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+  <script type="text/javascript">
+    //sign in
+    function toggleSignIn() {
+      if (firebase.auth().currentUser) {
+        firebase.auth().signOut();
+      } else {
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        if (email.length < 4) {
+          alert('Please enter an email address.');
+          return;
+        }
+        if (password.length < 4) {
+          alert('Please enter a password.');
+          return;
+        }
+        // Sign in with email and pass.
+        // [START authwithemail]
+        firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          // [START_EXCLUDE]
+          if (errorCode === 'auth/wrong-password') {
+            alert('Wrong password.');
+          } else {
+            alert(errorMessage);
+          }
+          console.log(error);
+          document.getElementById('quickstart-sign-in').disabled = false;
+          // [END_EXCLUDE]
+        });
+        // [END authwithemail]
+      }
+      document.getElementById('quickstart-sign-in').disabled = true;
+    }
+    /**
+     * Handles the sign up button press.
+     */
+    function handleSignUp() {
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+      if (email.length < 4) {
+        alert('Please enter an email address.');
+        return;
+      }
+      if (password.length < 4) {
+        alert('Please enter a password.');
+        return;
+      }
+      // Sign in with email and pass.
+      // [START createwithemail]
+      firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // [START_EXCLUDE]
+        if (errorCode == 'auth/weak-password') {
+          alert('The password is too weak.');
+        } else {
+          alert(errorMessage);
+        }
+        console.log(error);
+        // [END_EXCLUDE]
+      });
+      // [END createwithemail]
+    }
+    /**
+     * Sends an email verification to the user.
+     */
+    function sendEmailVerification() {
+      // [START sendemailverification]
+      firebase.auth().currentUser.sendEmailVerification().then(function() {
+        // Email Verification sent!
+        // [START_EXCLUDE]
+        alert('Email Verification Sent!');
+        // [END_EXCLUDE]
+      });
+      // [END sendemailverification]
+    }
+    function sendPasswordReset() {
+      var email = document.getElementById('email').value;
+      // [START sendpasswordemail]
+      firebase.auth().sendPasswordResetEmail(email).then(function() {
+        // Password Reset Email Sent!
+        // [START_EXCLUDE]
+        alert('Password Reset Email Sent!');
+        // [END_EXCLUDE]
+      }).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // [START_EXCLUDE]
+        if (errorCode == 'auth/invalid-email') {
+          alert(errorMessage);
+        } else if (errorCode == 'auth/user-not-found') {
+          alert(errorMessage);
+        }
+        console.log(error);
+        // [END_EXCLUDE]
+      });
+      // [END sendpasswordemail];
+    }
 
-  <!-- Add Firebase products that you want to use -->
-  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
-    </body>
+    function initApp() {
+      // Listening for auth state changes.
+      // [START authstatelistener]
+      firebase.auth().onAuthStateChanged(function(user) {
+        // [START_EXCLUDE silent]
+        document.getElementById('quickstart-verify-email').disabled = true;
+
+
+        // [END_EXCLUDE]
+        if (user) {
+          alert('successfully signed in');
+          // User is signed in.
+          var displayName = user.displayName;
+          var email = user.email;
+          var emailVerified = user.emailVerified;
+          var photoURL = user.photoURL;
+          var isAnonymous = user.isAnonymous;
+          var uid = user.uid;
+          var providerData = user.providerData;
+          window.location = 'seller.html';
+
+
+          // [START_EXCLUDE]
+          // document.getElementById('email').hide();
+          // document.getElementById('quickstart-sign-in-status').textContent = 'Log in';
+          // document.getElementById('quickstart-sign-in').textContent = 'Log out';
+          // document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
+          if (!emailVerified) {
+            document.getElementById('quickstart-verify-email').disabled = false;
+          }
+          
+          // [END_EXCLUDE]
+        } else {
+          // User is signed out.
+          // document.getElementById('quickstart-sign-in-status').textContent = 'Logged out';
+          // // document.getElementById('quickstart-sign-in').textContent = 'Sign in';
+          // document.getElementById('quickstart-account-details').textContent = 'null';
+        }
+
+      
+        // [START_EXCLUDE silent]
+        document.getElementById('quickstart-sign-in').disabled = false;
+        // [END_EXCLUDE]
+      });
+
+      // [END authstatelistener]
+      document.getElementById('quickstart-sign-in').addEventListener('click', toggleSignIn, false);
+      document.getElementById('quickstart-sign-up').addEventListener('click', handleSignUp, false);
+      document.getElementById('quickstart-verify-email').addEventListener('click', sendEmailVerification, false);
+      document.getElementById('quickstart-password-reset').addEventListener('click', sendPasswordReset, false);
+    }
+    window.onload = function() {
+      initApp();
+    };
+  </script>
+</body>
 </html>

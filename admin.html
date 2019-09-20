@@ -46,7 +46,7 @@
       </nav>
       <nav id="nav">
         <ul>
-          <li ><a style="color: orange;" href="login.html">LOGIN</a></li>
+          <li class="current"><a style="color: orange;" href="login.html">LOGIN</a></li>
           <a href="Signup.html" ><button class="btn btn-border btn-round color-3 material-design" data-color="#f6774f">SIGN UP</button></a>
         </ul>
       </nav>
@@ -58,17 +58,19 @@
 <body>
   <section id="one" class="wrapper style1">
     <div class="inner" align="center">
-      <h2 class="mdl-card__title-text"> Sign up</h2><br>
-
+      <h2 class="mdl-card__title-text"> Admin Login</h2>
+      <p>Enter an email and password below and sign in to an existing account</p>
 
       <input class="mdl-textfield__input" align="center" style=" width: 300px;" type="text" id="email" name="email" placeholder="Email"/>
       &nbsp;&nbsp;&nbsp;
       <input class="mdl-textfield__input" align="center" style=" width: 300px;" type="password" id="password" name="password" placeholder="Password"/>
       <br/><br/>
-      <button align="center" disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin" style="display: none;">Sign In</button>
+      <button align="center" disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin">Sign In</button>
       &nbsp;&nbsp;&nbsp;
-      <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup" >Sign Up</button>
+      <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup" style="display: none;">Sign Up</button>
       <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email" style="display: none;">Send Email Verification</button><br><br>
+
+      <a style="color: orange; text-decoration: none; cursor: pointer;"class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-password-reset" name="verify-email">Reset password?</a>
       <div class="quickstart-user-details-container"><br>
         <span id="quickstart-sign-in-status"></span>
         <div style="display: none;">Firebase auth <code>currentUser</code> object value:</div>
@@ -233,7 +235,7 @@
           var isAnonymous = user.isAnonymous;
           var uid = user.uid;
           var providerData = user.providerData;
-          window.location = 'index.html';
+          window.location = 'adminhome.html';
 
 
           // [START_EXCLUDE]

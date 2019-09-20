@@ -74,6 +74,8 @@
 					side: 'right'
 				});
 
+
+//firebase
 })(jQuery);
 
     /**
@@ -232,9 +234,3 @@
     window.onload = function() {
       initApp();
     };
-
-
-    document.getElementById('snip-product__empty').className.innerText("Cart is Empty");
-          
-
-    
