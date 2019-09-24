@@ -1,9 +1,6 @@
 //sign in
 function toggleSignIn() {
 
-
-
-
   if (firebase.auth().currentUser) {
     firebase.auth().signOut();
   } else {
@@ -32,12 +29,6 @@ function toggleSignIn() {
   document.getElementById('quickstart-sign-in').disabled = true;
 }
 
-// function sendEmailVerification() {
-
-//   firebase.auth().currentUser.sendEmailVerification().then(function() {
-//     alert('Email Verification Sent!');
-//   });
-// }
 function sendPasswordReset() {
     var email = document.getElementById('email').value;
 
@@ -61,25 +52,25 @@ function initApp() {
 // Listening for auth state changes.
 firebase.auth().onAuthStateChanged(function(user) {
 
-  document.getElementById('quickstart-verify-email').disabled = true;
+    document.getElementById('quickstart-verify-email').disabled = true;
 
-  if (user && firebase.auth().currentUser.uid == "ppgydGSuzEOJkLJzN0BfXNhgrAj2") {
-    window.location = 'seller.html';
-  } else if (user && firebase.auth().currentUser.uid == "m5Po2BMPEzLehFvX7Pa9pS1USjW2") {
-    window.location = 'adminhome.html';
-  } else {
-    console.log('You are not an admin or a seller');
-  }
-  document.getElementById('quickstart-sign-in').disabled = false;
+    if (user && firebase.auth().currentUser.uid == "ppgydGSuzEOJkLJzN0BfXNhgrAj2") {
+      window.location = 'seller.html';
+    } else if (user && firebase.auth().currentUser.uid == "m5Po2BMPEzLehFvX7Pa9pS1USjW2") {
+      window.location = 'adminhome.html';
+    } else {
+      console.log('You are not an admin or a seller');
+    }
+    document.getElementById('quickstart-sign-in').disabled = false;
 
-});
+  });
 
-document.getElementById('quickstart-sign-in').addEventListener('click', toggleSignIn, false);
-document.getElementById('quickstart-sign-up').addEventListener('click', handleSignUp, false);
-document.getElementById('quickstart-verify-email').addEventListener('click', sendEmailVerification, false);
-document.getElementById('quickstart-password-reset').addEventListener('click', sendPasswordReset, false);
+  document.getElementById('quickstart-sign-in').addEventListener('click', toggleSignIn, false);
+  document.getElementById('quickstart-sign-up').addEventListener('click', handleSignUp, false);
+  document.getElementById('quickstart-verify-email').addEventListener('click', sendEmailVerification, false);
+  document.getElementById('quickstart-password-reset').addEventListener('click', sendPasswordReset, false);
 }
 
 window.onload = function() {
-  initApp();
+   initApp();
 };
