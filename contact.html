@@ -40,22 +40,7 @@
 
 		<!-- Main -->
     <div class="container" style="padding: 100px;" align="center">
-      <h2 align="center">Get in touch!</h2>
-      <div class="container" style="width:60%;" >
-      <form>
-        <input type="text" id="fname" name="firstname" placeholder="Your name.."><br><br><br>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br><br><br>
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select><br><br><br>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-        <br><br><br><button type="submit" value="Submit">Submit</button>
-
-      </form>
-    </div>
+      <h2 align="center">Get in touch!</h2><br><br>
 
     <div id="divmap" style=" display: inline-flex;"></div>
     </div>
@@ -115,6 +100,13 @@
       var branch1 = L.marker([-33.8832, 151.2005], {icon: orangeIcon}).addTo(map);
       var popup = branch1.bindPopup('<h5 style="color:black; padding:0;">Branch 1<h6 style="color:grey;">Address: 15 Broadway, Ultimo NSW 2007<br>Phone: 9968 6431</h6>');
        popup.openPopup();
+       var branch2 = L.marker([-33.8861, 151.2111], {icon: orangeIcon}).addTo(map);
+       var popup2 = branch2.bindPopup('<h5 style="color:black; padding:0;">Branch 2<h6 style="color:grey;">Address: 15 Broadway, Ultimo NSW 2007<br>Phone: 9968 6431</h6>');
+       var branch3 = L.marker([-33.8841, 151.1911], {icon: orangeIcon}).addTo(map);
+       var popup3 = branch3.bindPopup('<h5 style="color:black; padding:0;">Branch 3<h6 style="color:grey;">Address: 15 Broadway, Ultimo NSW 2007<br>Phone: 9968 6431</h6>');
+
+
+
       </script>
           
 		<!-- Scripts -->
