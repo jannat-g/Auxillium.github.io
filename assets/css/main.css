@@ -4451,9 +4451,7 @@ input[type=text], input[type=password] {
 
 } 
 
-placeholder{ 
-    color: Black; 
-} 
+#divmap { height: 400px; width: 600px; }
 
 
 
