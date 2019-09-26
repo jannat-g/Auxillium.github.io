@@ -77,7 +77,9 @@ firebase.auth().onAuthStateChanged(function(user) {
     if (user && firebase.auth().currentUser.uid == "ppgydGSuzEOJkLJzN0BfXNhgrAj2") {
       window.location = 'seller.html';
     } else if (user && firebase.auth().currentUser.uid == "m5Po2BMPEzLehFvX7Pa9pS1USjW2") {
-      window.location = 'adminhome.html';
+      window.location = 'adminhome.html'; 
+      document.getElementById('test123').disabled = true;
+
     } else {
       console.log('You are not an admin or a seller');
     }
