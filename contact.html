@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="assets/css/main.css"/>
     <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600,700&display=swap');
+      </style>
   </head>
   <body class="is-preload" style=" background: #1f1f24;">
 
@@ -39,17 +39,11 @@
     </header>
 
 		<!-- Main -->
-    <div class="container" style="padding: 100px;" align="center">
-      <h2 align="center">Get in touch!</h2><br><br>
-
-    <div id="divmap" style=" display: inline-flex;"></div>
-    </div>
-    </div>
-
+    
     
     <!-- Footer -->
       <section id ="contact" class="main style2" align="center">
-        <div id="foot">
+        <div id="foot" style="bottom:0;">
         <nav id="nav"> 
           <ul>
             <li><a href="index.html">HOME</a></li>
@@ -78,36 +72,6 @@
                 </nav>
             <p align="center" style="padding-top: 10px;">ALL RIGHTS RESERVED | AUXILIUM 2019</p>
           </section>
-
-    <style>
-      #divmap { height: 400px; width: 90%; }
-    </style>
-      <script type="text/javascript">
-      var map = L.map('divmap').setView([-33.8832, 151.2005], 15);
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-      subdomains: 'abcd',
-      maxZoom: 18
-      }).addTo(map);
-      var orangeIcon = new L.Icon({
-        iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png',
-        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-        iconSize: [25, 41],
-        iconAnchor: [12, 41],
-        popupAnchor: [1, -34],
-        shadowSize: [41, 41]
-      });  
-      var branch1 = L.marker([-33.8832, 151.2005], {icon: orangeIcon}).addTo(map);
-      var popup = branch1.bindPopup('<h5 style="color:black; padding:0;">Branch 1<h6 style="color:grey;">Address: 15 Broadway, Ultimo NSW 2007<br>Phone: 9968 6431</h6>');
-       popup.openPopup();
-       var branch2 = L.marker([-33.8861, 151.2111], {icon: orangeIcon}).addTo(map);
-       var popup2 = branch2.bindPopup('<h5 style="color:black; padding:0;">Branch 2<h6 style="color:grey;">Address: 15 Broadway, Ultimo NSW 2007<br>Phone: 9968 6431</h6>');
-       var branch3 = L.marker([-33.8841, 151.1911], {icon: orangeIcon}).addTo(map);
-       var popup3 = branch3.bindPopup('<h5 style="color:black; padding:0;">Branch 3<h6 style="color:grey;">Address: 15 Broadway, Ultimo NSW 2007<br>Phone: 9968 6431</h6>');
-
-
-
-      </script>
           
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

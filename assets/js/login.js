@@ -29,6 +29,26 @@ function toggleSignIn() {
   document.getElementById('quickstart-sign-in').disabled = true;
 }
 
+function handleSignUp() {
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+      if (email.length < 4) {
+        alert('Please enter an email address.');
+        return;
+      }
+      if (password.length < 4) {
+        alert('Please enter a password.');
+        return;
+      }
+}
+
+function sendEmailVerification() {
+     
+      firebase.auth().currentUser.sendEmailVerification().then(function() {
+        alert('Email Verification Sent!');
+      });
+    }
+
 function sendPasswordReset() {
     var email = document.getElementById('email').value;
 
