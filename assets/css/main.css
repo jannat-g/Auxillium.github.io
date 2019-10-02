@@ -4418,11 +4418,12 @@ hr {
 }
 
 .discover p {
-	color: white
+	color: white;
 	text-align: center;
 	justify-content: center;
 
 }
+
 button { 
   background-color: #e9b428; 
   color: white; 
@@ -4437,6 +4438,25 @@ button {
   border-radius: 25px;
 
 } 
+
+.button-2 { 
+	background: linear-gradient(to left,#FFBB32, #FF9432);
+	color: white; 
+	font-family:'Fira Sans', sans-serif;
+	font-size: 12px; 
+	font-weight: 500; 
+	letter-spacing: 0.3px;
+	padding: 14px 20px; 
+	margin: 8px 0; 
+	border: none; 
+	cursor: pointer; 
+	width: 10%; 
+	text-decoration: none;
+	outline: none;
+	box-shadow: none;
+	border-radius: 25px;
+  
+  } 
 
 input[type=text], input[type=password] { 
 
@@ -4466,8 +4486,8 @@ placeholder{
 body {
   padding: 20px;
   font-family: 'Fira Sans', sans-serif;	
-
 }
+
 img {
   width: 100%; /* need to overwrite inline dimensions */
   height: auto;
@@ -4717,7 +4737,7 @@ body {
 
   .collection-sort {
 	display: flex;
-	margin-top: 140px;
+	margin-top: 20px;
 	padding-right: 40px;
 	flex-direction: column;
   }
@@ -4737,9 +4757,17 @@ body {
   }
 
   .shop-icons {
-	top: 40px;
-	margin-left: 100px;
-	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	margin-left: 150px;
+	width: 30px;
+	display: inline-flex;
+  }
+
+  .title {
+	color: white;
+	font-size: 16px;
+	
   }
 
   /*--- product cards ---*/
