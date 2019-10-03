@@ -30,6 +30,26 @@ function toggleSignIn() {
   document.getElementById('quickstart-sign-in').disabled = true;
 }
 
+function handleSignUp() {
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+      if (email.length < 4) {
+        alert('Please enter an email address.');
+        return;
+      }
+      if (password.length < 4) {
+        alert('Please enter a password.');
+        return;
+      }
+}
+
+function sendEmailVerification() {
+     
+      firebase.auth().currentUser.sendEmailVerification().then(function() {
+        alert('Email Verification Sent!');
+      });
+    }
+
 function sendPasswordReset() {
     var email = document.getElementById('email').value;
 
@@ -63,8 +83,9 @@ firebase.auth().onAuthStateChanged(function(user) {
       window.location = 'seller.html';
       
     } else if (user && firebase.auth().currentUser.uid == "m5Po2BMPEzLehFvX7Pa9pS1USjW2") {
-     
-      window.location = 'adminhome.html';
+      window.location = 'adminhome.html'; 
+      document.getElementById('test123').disabled = true;
+
     } else {
       console.log('You are not an admin or a seller');
     }
@@ -80,5 +101,4 @@ firebase.auth().onAuthStateChanged(function(user) {
 
 window.onload = function() {
    initApp();
-
 };

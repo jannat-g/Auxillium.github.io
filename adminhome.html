@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="assets/css/main.css"/>
   <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600,700&display=swap');
+    </style>
 </head>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-app.js"></script>
@@ -38,7 +41,7 @@
       <header id="header" class="alt" style="justify-content: space-between;">
         <nav id="nav"> 
           <ul style="margin-left: 250px;">
-            <li ><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="shop.html">Shop</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="contact.html">Contact Us</a></li>
@@ -46,8 +49,8 @@
         </nav>
         <nav id="nav">
           <ul>
-            <li class="current"><a style="color: orange;" href="login.html">LOGIN</a></li>
-            <a href="Signup.html" ><button class="btn btn-border btn-round color-3 material-design" data-color="#f6774f">SIGN UP</button></a>
+            <a href="Signup.html" ><button class="btn btn-border btn-round color-3 material-design" data-color="#f6774f" onclick="change();">SIGN UP</button></a>
+        <button class="btn btn-border" align="center"  onclick="signout();" value="signout">Sign out</button>
           </ul>
         </nav>
       </header>
@@ -58,17 +61,17 @@
     <!-- Wrapper -->
     <div id="wrapper">
      <section id="one" class="wrapper style1">
-       <div class="inner" align="center">
-        <h3>admin stuff</h3>
-        <button align="center"  onclick="signout();"  value="signout">Sign out</button>
+       <div class="inner" align="center" id="test1234">
+        <h3> admin stuff</h3>
       </div>
     </section>
     <script>
      function signout(){
-       firebase.auth().signOut();
+       firebase.auth().signOut().then(function()
        alert('admin successfully signed out');
        window.location='index.html';
      };
+    </script>
    </script>
 
    <!-- Footer -->
@@ -103,3 +106,16 @@
       <p align="center" style="padding-top: 10px; font-size: 15px; margin-left: 15px;">ALL RIGHTS RESERVED | AUXILIUM 2019</p>
     </section>
  </div>
+
+<!--
+   <script>
+      function change() // no ';' here
+      {
+      var li = document.getElementById("test123");
+      var header = document.getElementById("test1234");
+      header.innerHTML = 'Four';
+      li.innerHTML = 'Log';
+    };
+    </script>
+  -->
+
