@@ -4471,7 +4471,7 @@ input[type=text], input[type=password] {
 
 } 
 
-placeholder{ 
+.placeholder{ 
     color: Black; 
 } 
 
@@ -4706,12 +4706,12 @@ body {
    .search-txt {
     float: left;
     padding: 0;
-    color: #E6E6E6;
+    color: rgb(143, 143, 143);
     font-size: 16px;
     transition: 0.4s;
     line-height: 40px;
     width: 0px;
-    font-weight: bold;
+    font-weight: 300;
    }  
 
    ::-webkit-input-placeholder {
@@ -4742,7 +4742,7 @@ body {
 	flex-direction: column;
   }
   
-  i {
+  .arrow {
 	border: solid #FFB332;
 	border-width: 0 3px 3px 0;
 	margin-left: 10px;
@@ -4759,9 +4759,10 @@ body {
   .shop-icons {
 	margin-top: 10px;
 	margin-bottom: 0px;
-	margin-left: 150px;
+	margin-left: 160px;
 	width: 30px;
 	display: inline-flex;
+	cursor: pointer;
   }
 
   .title {
