@@ -10,7 +10,12 @@
     <link rel="stylesheet" href="assets/css/main.css"/>
     <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    
+
     <style>
+
       @import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600,700&display=swap');
       </style>
   </head>
@@ -70,46 +75,73 @@
  
 
 		<!-- Main -->
-<<<<<<< HEAD
-    
-=======
-    <div class="container" style="padding: 100px;" align="center">
-    <div id="divmap" style=" display: inline-flex;"></div>
-    </div>
 
->>>>>>> Recommendation
-    
-    <!-- Footer -->
-      <section id ="contact" class="main style2" align="center">
-        <div id="foot" style="bottom:0;">
-        <nav id="nav"> 
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="">CONTACT US</a></li>
-            <li><a href="">HELP</a></li><hr>
-          </ul>
-            <div class="inner special medium">
-               <div class="jumbotron-social">
-                    <ul class="ul-social" >
-                      <li class="li-social-links">
-                        <a class="social" href="" target="_blank"><img src="images/facebook.png" style="width: 50px; margin-right: 5px;"class="fa fa-facebook" aria-hidden="true"></img></a>
-                      </li>
-                      <li class="li-social-links">
-                        <a class="social" href="" target="_blank"><img src="images/twitter.png" style="width: 50px; margin-right: 5px;"class="fa fa-twitter" aria-hidden="true"></img></a>
-                      </li>
-                      <li class="li-social-links">
-                        <a class="social" href="" target="_blank"><img src="images/email.png" style="width: 50px; margin-right: 4px;" class="fa fa-envelope-o" aria-hidden="true"></i></a>
-                      </li>
-                      <li class="li-social-links">
-                        <a class="social" href="" target="_blank"><img src="images/insta.png" style="width: 53px;"class="fa fa-instagram" aria-hidden="true"></img></a>
-                      </li>
-                    </ul>
-                </div>
-                </div>
-                </nav>
-            <p align="center" style="padding-top: 10px;">ALL RIGHTS RESERVED | AUXILIUM 2019</p>
-          </section>
+    <div class="container" style="padding: 100px;" align="center">
+      <h2 align="center">Get in touch!</h2><br>
+      <p> Click on a branch to view details</p>
+
+    <div id="divmap" style=" display: inline-flex;"></div>
+ 
+
+
+    <style>
+      #divmap { height: 400px; width: 90%; }
+    </style>
+    <script type="text/javascript">
+      var map = L.map('divmap').setView([-33.8832, 151.2005], 13);
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 18
+      }).addTo(map);
+      var orangeIcon = new L.Icon({
+        iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41]
+      });  
+      var branch1 = L.marker([-33.8832, 151.2005], {icon: orangeIcon}).addTo(map);
+      var popup = branch1.bindPopup('<h5 style="color:black; padding:0;">Branch 1<h6 style="color:grey;">Address: 15 Broadway, Ultimo NSW 2007<br>Phone: 9968 6431</h6>');
+
+      var branch2 = L.marker([-33.8861, 151.2111], {icon: orangeIcon}).addTo(map);
+      var popup2 = branch2.bindPopup('<h5 style="color:black; padding:0;">Branch 2<h6 style="color:grey;">Address: 15 Broadway, Ultimo NSW 2007<br>Phone: 9968 6431</h6>');
+      var branch3 = L.marker([-33.8841, 151.1911], {icon: orangeIcon}).addTo(map);
+      var popup3 = branch3.bindPopup('<h5 style="color:black; padding:0;">Branch 3<h6 style="color:grey;">Address: 15 Broadway, Ultimo NSW 2007<br>Phone: 9968 6431</h6>');
+    </script>
+
+      <!-- Footer -->
+  <section id ="contact" class="main style2" align="center">
+    <div id="foot">
+      <nav id="nav"> 
+        <ul>
+          <li><a style="font-size: 15px;" href="index.html">HOME</a></li>
+          <li><a style="font-size: 15px;" href="about.html">ABOUT US</a></li>
+          <li><a style="font-size: 15px;" href="">CONTACT US</a></li>
+          <li><a style="font-size: 15px;" href="">HELP</a></li><hr>
+        </ul>
+        <div class="inner special medium">
+          <div class="jumbotron-social">
+            <ul class="ul-social" >
+              <li class="li-social-links">
+                <a class="social" href="" target="_blank"><img src="images/facebook.png" style="width: 40px; "class="fa fa-facebook" aria-hidden="true"></img></a>
+              </li>
+              <li class="li-social-links">
+                <a class="social" href="" target="_blank"><img src="images/twitter.png" style="width: 40px; "class="fa fa-twitter" aria-hidden="true"></img></a>
+              </li>
+              <li class="li-social-links">
+                <a class="social" href="" target="_blank"><img src="images/email.png" style="width: 40px;" class="fa fa-envelope-o" aria-hidden="true"></i></a>
+              </li>
+              <li class="li-social-links">
+                <a class="social" href="" target="_blank"><img src="images/insta.png" style="width: 43px;"class="fa fa-instagram" aria-hidden="true"></img></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <p align="center" style="padding-top: 10px; font-size: 15px; margin-left: 15px;">ALL RIGHTS RESERVED | AUXILIUM 2019</p>
+    </section>
           
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -121,7 +153,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="MDRjZmFkYTYtOGYxYy00YmFkLTliMDUtOTdiY2QyZjZlYjY4NjM3MDA5MjM0NzMwMjczNjc0"></script>
-		    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+		  <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
 	</body>
 </html>
 

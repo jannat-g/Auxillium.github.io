@@ -2,6 +2,7 @@
 function toggleSignIn() {
 
   if (firebase.auth().currentUser) {
+ 
     firebase.auth().signOut();
   } else {
     var email = document.getElementById('email').value;
@@ -69,17 +70,20 @@ function sendPasswordReset() {
 }
 
 function initApp() {
+
 // Listening for auth state changes.
 firebase.auth().onAuthStateChanged(function(user) {
-
+  // document.getElementById('test123').style.display = "none";
+ 
     document.getElementById('quickstart-verify-email').disabled = true;
 
     if (user && firebase.auth().currentUser.uid == "ppgydGSuzEOJkLJzN0BfXNhgrAj2") {
-      window.location = 'seller.html';
-    } else if (user && firebase.auth().currentUser.uid == "m5Po2BMPEzLehFvX7Pa9pS1USjW2") {
-      window.location = 'adminhome.html'; 
-      document.getElementById('test123').disabled = true;
+      
 
+      window.location = 'seller.html';
+      
+    } else if (user && firebase.auth().currentUser.uid == "m5Po2BMPEzLehFvX7Pa9pS1USjW2") {
+      window.location = 'adminhome.html';
     } else {
       console.log('You are not an admin or a seller');
     }

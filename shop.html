@@ -16,7 +16,7 @@
         @import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600,700&display=swap');
         </style>
   </head>
-  <body class="is-preload" style=" background: #1f1f24;">
+  <body class="is-preload" style=" background: #1f1f24; ">
 
     <!-- Header -->
     <header id="head" class="alt" >
@@ -28,15 +28,17 @@
           <li><a href="index.html">Home</a></li>
           <li class="current"><a href="shop.html">Shop</a></li>
           <li><a href="about.html">About Us</a></li>
-          <li><a href="about.html">Contact Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
       <nav id="nav">
-        <ul>
+        <ul style="margin-right: -290px; margin-top: 30px">
           <li><a style="color: orange;" href="login.html">LOGIN</a></li>
           <a href="login.html" ><button class="btn btn-border btn-round color-3 material-design" data-color="#f6774f">SIGN UP</button></a>
+          <a href="#" class="snipcart-checkout" style="text-decoration: none; color: white; font-weight: 500; padding-left: 20px">Cart</a>
         </ul>
       </nav>
+        <img src= "images/cart.png" style="width: 36px; margin-top: -18px; margin-right: 50px"> 
     </header>
     </header>
 
@@ -106,9 +108,9 @@
       <!-- Products -->
 
       <!-- PHONES -->
-    <section class="phones">
+    <section class="phones" id="phone_link">
       <p style="padding-top: 60px; margin-left: 290px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">PHONES</p>
-      <p style="top: -70px; margin-left: 1060px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 16px; color: white; letter-spacing: 0px">SHOP ALL<i class="arrow right"></i></p>
+      <p style="top: -70px; margin-left: 1060px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 16px; color: white; letter-spacing: 0px">SHOP ALL<arrow class="arrow right"></arrow></p>
       <div class="background-box"></div>
       <div class="product-card">
         <div class="product-image">
@@ -120,21 +122,23 @@
           <br><h8 style="color: white; font-weight: 500; font-size: 16px">Apple iPhone 11 Pro</h8>
           <br><h9 style="color: white; font-weight: 400; font-size: 15px;">256GB (Gold)</h9>
         </div>
-          <button class="btn btn-border btn-round color-3 material-design" style="font-size: 12px; font-weight: 400; letter-spacing: 0.3px; top: 0px; margin-left: 600px;">VIEW PRODUCT</button>
+          <button class="btn btn-border btn-round color-3 material-design" data-toggle="modal" data-target="#open-modal" style="font-size: 12px; font-weight: 400; letter-spacing: 0.3px; top: 0px; margin-left: 600px;">VIEW PRODUCT</button>
       
+            
+
       <!-- add data-item-image="" -->
-      <button class= "button-2" 
+      <button id= "button-2" 
       onclick="alert('added to cart')" 
       style="display: inline-block; margin-top: 40px; margin-left: 10px;" 
       align="center"
       class="snipcart-add-item"
 
-      data-item-id="2"
-      data-item-name="hello"
-      data-item-price="3.00"
+      data-item-id="1"
+      data-item-name="Apple iPhone 11 Pro 256GB"
+      data-item-price="1900.00"
       data-item-weight="20"
       data-item-url="http://kaela.com.au/shop.html"
-      data-item-description="TEST">ADD TO CART
+      data-item-description="256GB (Gold)">ADD TO CART
     </button>
 
         </div>
@@ -151,24 +155,24 @@
         </div> 
           <button class="btn btn-border btn-round color-3 material-design" style="font-size: 12px; font-weight: 500; letter-spacing: 0.3px; top: 0px; margin-left: 600px;">VIEW PRODUCT</button>
          
-          <button class= "button-2" 
+          <button id= "button-2" 
           onclick="alert('added to cart')" 
           style="display: inline-block; margin-top: 40px; margin-left: 10px;" 
           align="center"
           class="snipcart-add-item"
     
           data-item-id="2"
-          data-item-name="hello"
-          data-item-price="3.00"
+          data-item-name="Apple iPhone 11 64GB"
+          data-item-price="1199.99"
           data-item-weight="20"
           data-item-url="http://kaela.com.au/shop.html"
-          data-item-description="TEST">ADD TO CART
+          data-item-description="64GB (White)">ADD TO CART
         </button>
       </div>
     </section>
 
     <!-- LAPTOPS -->
-    <section class="laptops" style="margin-top: -200px">
+    <section class="laptops" style="margin-top: -200px" id="laptop_link">
         <p style="padding-top: -150px; margin-left: 285px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">LAPTOPS</p>
         <p style="top: -70px; margin-left: 1060px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 16px; color: white; letter-spacing: 0px">SHOP ALL<i class="arrow right"></i></p>
         <div class="background-box"></div>
@@ -185,18 +189,18 @@
           <button class="btn btn-border btn-round color-3 material-design" style="font-size: 12px; font-weight: 400; letter-spacing: 0.3px; top: 0px; margin-left: 600px;">VIEW PRODUCT</button>
       
           <!-- add data-item-image="" -->
-          <button class= "button-2" 
+          <button id= "button-2" 
           onclick="alert('added to cart')" 
           style="display: inline-block; margin-top: 40px; margin-left: 10px;" 
           align="center"
           class="snipcart-add-item"
     
-          data-item-id="2"
-          data-item-name="hello"
-          data-item-price="3.00"
+          data-item-id="3"
+          data-item-name="Apple MacBook Pro 13-inch"
+          data-item-price="2100.00"
           data-item-weight="20"
           data-item-url="http://kaela.com.au/shop.html"
-          data-item-description="TEST">ADD TO CART
+          data-item-description="13-inch with Touch Bar 256GB (Space Grey)">ADD TO CART
         </button>        
         </div>
         <div class="line-break" style="margin-top: -410px"></div>
@@ -206,31 +210,31 @@
           </div>
           <div class="product-box" style="top: 20px"></div>
           <div class="product-info">
-            <br><h7 style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 1199.99</h7>
-            <br><h8 style="color: white; font-weight: 500; font-size: 16px ">Apple iPhone 11 </h8>
-            <br><h9 style="color: white; font-weight: 400; font-size: 15px;">64GB (White)</h9>
+            <br><h7 style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 2500.99</h7>
+            <br><h8 style="color: white; font-weight: 500; font-size: 16px ">Apple Macbook Pro </h8>
+            <br><h9 style="color: white; font-weight: 400; font-size: 15px;">15-inch with Touch Bar 256GB (Space Grey)</h9>
           </div>
           <button class="btn btn-border btn-round color-3 material-design" style="font-size: 12px; font-weight: 400; letter-spacing: 0.3px; top: 0px; margin-left: 600px;">VIEW PRODUCT</button>
       
           <!-- add data-item-image="" -->
-          <button class= "button-2" 
+          <button id= "button-2" 
           onclick="alert('added to cart')" 
           style="display: inline-block; margin-top: 40px; margin-left: 10px;" 
           align="center"
           class="snipcart-add-item"
     
-          data-item-id="2"
-          data-item-name="hello"
-          data-item-price="3.00"
+          data-item-id="4"
+          data-item-name="Apple Macbook Pro 15-inch"
+          data-item-price="2500.99"
           data-item-weight="20"
           data-item-url="http://kaela.com.au/shop.html"
-          data-item-description="TEST">ADD TO CART
+          data-item-description="15-inch with Touch Bar 256GB (Space Grey)">ADD TO CART
         </button>        
       </div>
       </section>
 
       <!-- DESKTOPS -->
-      <section class="desktops" style="margin-top: -200px">
+      <section class="desktops" style="margin-top: -200px" id="desktop_link">
           <p style="padding-top: -150px; margin-left: 285px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">DESKTOPS</p>
           <p style="top: -70px; margin-left: 1060px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 16px; color: white; letter-spacing: 0px">SHOP ALL<i class="arrow right"></i></p>
           <div class="background-box"></div>
@@ -248,18 +252,18 @@
             <button class="btn btn-border btn-round color-3 material-design" style="font-size: 12px; font-weight: 400; letter-spacing: 0.3px; top: 0px; margin-left: 600px;">VIEW PRODUCT</button>
       
             <!-- add data-item-image="" -->
-            <button class= "button-2" 
+            <button id= "button-2" 
             onclick="alert('added to cart')" 
             style="display: inline-block; margin-top: 40px; margin-left: 10px;" 
             align="center"
             class="snipcart-add-item"
       
-            data-item-id="2"
-            data-item-name="hello"
-            data-item-price="3.00"
+            data-item-id="5"
+            data-item-name="Apple iMac Pro"
+            data-item-price="7299.00"
             data-item-weight="20"
             data-item-url="http://kaela.com.au/shop.html"
-            data-item-description="TEST">ADD TO CART
+            data-item-description="27-inch Retina 5K display, 3.2GHz 8-core Intel Xeon W, 32GB RAM, 1TB SSD (Space Gray)">ADD TO CART
           </button>          
         </div>
           <div class="line-break" style="margin-top: -410px"></div>
@@ -277,24 +281,24 @@
             <button class="btn btn-border btn-round color-3 material-design" style="font-size: 12px; font-weight: 400; letter-spacing: 0.3px; top: 0px; margin-left: 600px;">VIEW PRODUCT</button>
       
             <!-- add data-item-image="" -->
-            <button class= "button-2" 
+            <button id= "button-2" 
             onclick="alert('added to cart')" 
             style="display: inline-block; margin-top: 40px; margin-left: 10px;" 
             align="center"
             class="snipcart-add-item"
       
-            data-item-id="2"
-            data-item-name="hello"
-            data-item-price="3.00"
+            data-item-id="6"
+            data-item-name="Apple iMac 25-Inch"
+            data-item-price="1199.99"
             data-item-weight="20"
             data-item-url="http://kaela.com.au/shop.html"
-            data-item-description="TEST">ADD TO CART
+            data-item-description="25-inch Retine 4K display, 3.0GHz 6-core processor Turbo Boost up to 4.1GHz ">ADD TO CART
           </button>          
         </div>
         </section>
         
       <!-- TABLETS -->
-      <section class="tablets" style="margin-top: -210px">
+      <section class="tablets" style="margin-top: -210px" id="tablet_link">
           <p style="padding-top: -150px; margin-left: 285px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">TABLETS</p>
           <p style="top: -70px; margin-left: 1060px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 16px; color: white; letter-spacing: 0px">SHOP ALL<i class="arrow right"></i></p>
           <div class="background-box"></div>
@@ -311,18 +315,18 @@
             <button class="btn btn-border btn-round color-3 material-design" style="font-size: 12px; font-weight: 400; letter-spacing: 0.3px; top: 0px; margin-left: 600px;">VIEW PRODUCT</button>
       
             <!-- add data-item-image="" -->
-            <button class= "button-2" 
+            <button id= "button-2" 
             onclick="alert('added to cart')" 
             style="display: inline-block; margin-top: 40px; margin-left: 10px;" 
             align="center"
             class="snipcart-add-item"
       
-            data-item-id="2"
-            data-item-name="hello"
-            data-item-price="3.00"
+            data-item-id="7"
+            data-item-name="Apple iPad Pro"
+            data-item-price="2100.00"
             data-item-weight="20"
             data-item-url="http://kaela.com.au/shop.html"
-            data-item-description="TEST">ADD TO CART
+            data-item-description="11-inch display 256GB (Space Grey)">ADD TO CART
           </button>          
         </div>
           <div class="line-break" style="margin-top: -410px"></div>
@@ -339,24 +343,23 @@
             <button class="btn btn-border btn-round color-3 material-design" style="font-size: 12px; font-weight: 400; letter-spacing: 0.3px; top: 0px; margin-left: 600px;">VIEW PRODUCT</button>
       
             <!-- add data-item-image="" -->
-            <button class= "button-2" 
-            onclick="alert('added to cart')" 
+
             style="display: inline-block; margin-top: 40px; margin-left: 10px;" 
             align="center"
             class="snipcart-add-item"
       
-            data-item-id="2"
-            data-item-name="hello"
-            data-item-price="3.00"
+            data-item-id="8"
+            data-item-name="Apple iPad"
+            data-item-price="729.00"
             data-item-weight="20"
             data-item-url="http://kaela.com.au/shop.html"
-            data-item-description="TEST">ADD TO CART
+            data-item-description="10.2-inch display 32GB WiFi + Cellular (Gold)">ADD TO CART
           </button>          
         </div>
         </section>
 
       <!-- WATCHES -->
-      <section class="watches" style="margin-top: -200px">
+      <section class="watches" style="margin-top: -200px" id="watch_link">
           <p style="padding-top: -150px; margin-left: 285px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">WATCHES</p>
           <p style="top: -70px; margin-left: 1060px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 16px; color: white; letter-spacing: 0px">SHOP ALL<i class="arrow right"></i></p>
           <div class="background-box"></div>
@@ -373,18 +376,18 @@
             <button class="btn btn-border btn-round color-3 material-design" style="font-size: 12px; font-weight: 400; letter-spacing: 0.3px; top: 0px; margin-left: 600px;">VIEW PRODUCT</button>
       
             <!-- add data-item-image="" -->
-            <button class= "button-2" 
+            <button id= "button-2" 
             onclick="alert('added to cart')" 
             style="display: inline-block; margin-top: 40px; margin-left: 10px;" 
             align="center"
             class="snipcart-add-item"
       
-            data-item-id="2"
-            data-item-name="hello"
-            data-item-price="3.00"
+            data-item-id="8"
+            data-item-name="Apple Watch Series 4"
+            data-item-price="1049.00"
             data-item-weight="20"
             data-item-url="http://kaela.com.au/shop.html"
-            data-item-description="TEST">ADD TO CART
+            data-item-description="Gold Stainless Steel Case (Stone Sport Band)">ADD TO CART
           </button>          
         </div>
           <div class="line-break" style="margin-top: -410px"></div>
@@ -401,24 +404,24 @@
             <button class="btn btn-border btn-round color-3 material-design" style="font-size: 12px; font-weight: 400; letter-spacing: 0.3px; top: 0px; margin-left: 600px;">VIEW PRODUCT</button>
       
             <!-- add data-item-image="" -->
-            <button class= "button-2" 
+            <button id= "button-2" 
             onclick="alert('added to cart')" 
             style="display: inline-block; margin-top: 40px; margin-left: 10px;" 
             align="center"
             class="snipcart-add-item"
       
-            data-item-id="2"
-            data-item-name="hello"
-            data-item-price="3.00"
+            data-item-id="9"
+            data-item-name="Apple Watch Series 5"
+            data-item-price="1179.00"
             data-item-weight="20"
             data-item-url="http://kaela.com.au/shop.html"
-            data-item-description="TEST">ADD TO CART
+            data-item-description="Stainless Steel Case with Milanese Loop (Silver)">ADD TO CART
           </button>          
         </div>
         </section>
 
       <!-- ACCESSORIES -->
-      <section class="accessories" style="margin-top: -200px">
+      <section class="accessories" style="margin-top: -200px" id="accessories_link">
           <p style="padding-top: -150px; margin-left: 285px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">ACCESSORIES</p>
           <p style="top: -70px; margin-left: 1060px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 16px; color: white; letter-spacing: 0px">SHOP ALL<i class="arrow right"></i></p>
           <div class="background-box"></div>
@@ -428,53 +431,53 @@
             </div>
             <div class="product-box"></div>
             <div class="product-info">
-              <h7 style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 2100.00</h7>
-              <br><h8 style="color: white; font-weight: 500; font-size: 16px">Apple Airpods 1 </h8>
+              <h7 style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 159.00</h7>
+              <br><h8 style="color: white; font-weight: 500; font-size: 16px">Apple Airpods </h8>
               <br><h9 style="color: white; font-weight: 400; font-size: 15px;">with Charging Case</h9>
             </div>
             <button class="btn btn-border btn-round color-3 material-design" style="font-size: 12px; font-weight: 400; letter-spacing: 0.3px; top: 0px; margin-left: 600px;">VIEW PRODUCT</button>
       
             <!-- add data-item-image="" -->
-            <button class= "button-2" 
+            <button id= "button-2" 
             onclick="alert('added to cart')" 
             style="display: inline-block; margin-top: 40px; margin-left: 10px;" 
             align="center"
             class="snipcart-add-item"
       
-            data-item-id="2"
-            data-item-name="hello"
-            data-item-price="3.00"
+            data-item-id="10"
+            data-item-name="Apple Airpods "
+            data-item-price="2100.00"
             data-item-weight="20"
             data-item-url="http://kaela.com.au/shop.html"
-            data-item-description="TEST">ADD TO CART
+            data-item-description="with Charging Case">ADD TO CART
           </button>          
         </div>
           <div class="line-break" style="margin-top: -410px"></div>
           <div class="product-card">
             <div class="product-image">
-              <img src="images/macbook-pro.png" style="width: 180px; margin-top: 40px; top: -125px; margin-left: 342px"> 
+              <img src="images/mouse.png" style="width: 200px; margin-top: 30px; top: -105px; margin-left: 334px"> 
             </div>
             <div class="product-box" style="top: 20px"></div>
             <div class="product-info">
-              <br><h7 style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 1199.99</h7>
-              <br><h8 style="color: white; font-weight: 500; font-size: 16px ">Apple iPhone 11 64GB (White)</h8>
-              <br><h9 style="color: white; font-weight: 400; font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor.</h9>
+              <br><h7 style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 99.00</h7>
+              <br><h8 style="color: white; font-weight: 500; font-size: 16px ">Magic Mouse 2</h8>
+              <br><h9 style="color: white; font-weight: 400; font-size: 15px;">(Space Grey)</h9>
             </div>
             <button class="btn btn-border btn-round color-3 material-design" style="font-size: 12px; font-weight: 400; letter-spacing: 0.3px; top: 0px; margin-left: 600px;">VIEW PRODUCT</button>
       
             <!-- add data-item-image="" -->
-            <button class= "button-2" 
+            <button id= "button-2" 
             onclick="alert('added to cart')" 
             style="display: inline-block; margin-top: 40px; margin-left: 10px;" 
             align="center"
             class="snipcart-add-item"
       
-            data-item-id="2"
-            data-item-name="hello"
-            data-item-price="3.00"
+            data-item-id="11"
+            data-item-name="Apple iPhone 11 64GB (White)"
+            data-item-price="1199.99"
             data-item-weight="20"
             data-item-url="http://kaela.com.au/shop.html"
-            data-item-description="TEST">ADD TO CART
+            data-item-description="">ADD TO CART
           </button>          
         </div>
         </section>
@@ -490,36 +493,36 @@
 		</div>
 	
     <!-- Footer -->
-      <section id ="contact" class="main style2" align="center">
-        <div id="foot" style="margin-bottom:10px">
-        <nav id="nav"> 
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="">CONTACT US</a></li>
-            <li><a href="">HELP</a></li><hr>
-          </ul>
-            <div class="inner special medium">
-               <div class="jumbotron-social">
-                    <ul class="ul-social" >
-                      <li class="li-social-links">
-                        <a class="social" href="" target="_blank"><img src="images/facebook.png" style="width: 50px; margin-right: 5px;"class="fa fa-facebook" aria-hidden="true"></img></a>
-                      </li>
-                      <li class="li-social-links">
-                        <a class="social" href="" target="_blank"><img src="images/twitter.png" style="width: 50px; margin-right: 5px;"class="fa fa-twitter" aria-hidden="true"></img></a>
-                      </li>
-                      <li class="li-social-links">
-                        <a class="social" href="" target="_blank"><img src="images/email.png" style="width: 50px; margin-right: 4px;" class="fa fa-envelope-o" aria-hidden="true"></i></a>
-                      </li>
-                      <li class="li-social-links">
-                        <a class="social" href="" target="_blank"><img src="images/insta.png" style="width: 53px;"class="fa fa-instagram" aria-hidden="true"></img></a>
-                      </li>
-                    </ul> 
-                </div>
-                </div>
-                </nav>
-            <p align="center" style="padding-top: 10px;">ALL RIGHTS RESERVED | AUXILIUM 2019</p>
-          </section>
+  <section id ="contact" class="main style2" align="center">
+    <div id="foot">
+      <nav id="nav"> 
+        <ul>
+          <li><a style="font-size: 15px;" href="index.html">HOME</a></li>
+          <li><a style="font-size: 15px;" href="about.html">ABOUT US</a></li>
+          <li><a style="font-size: 15px;" href="">CONTACT US</a></li>
+          <li><a style="font-size: 15px;" href="">HELP</a></li><hr>
+        </ul>
+        <div class="inner special medium">
+          <div class="jumbotron-social">
+            <ul class="ul-social" >
+              <li class="li-social-links">
+                <a class="social" href="" target="_blank"><img src="images/facebook.png" style="width: 40px; "class="fa fa-facebook" aria-hidden="true"></img></a>
+              </li>
+              <li class="li-social-links">
+                <a class="social" href="" target="_blank"><img src="images/twitter.png" style="width: 40px; "class="fa fa-twitter" aria-hidden="true"></img></a>
+              </li>
+              <li class="li-social-links">
+                <a class="social" href="" target="_blank"><img src="images/email.png" style="width: 40px;" class="fa fa-envelope-o" aria-hidden="true"></i></a>
+              </li>
+              <li class="li-social-links">
+                <a class="social" href="" target="_blank"><img src="images/insta.png" style="width: 43px;"class="fa fa-instagram" aria-hidden="true"></img></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <p align="center" style="padding-top: 10px; font-size: 15px; margin-left: 15px;">ALL RIGHTS RESERVED | AUXILIUM 2019</p>
+    </section>
 
           <!-- Scripts -->
       <script src="assets/js/jquery.min.js"></script>
