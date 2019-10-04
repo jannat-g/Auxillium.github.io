@@ -10,8 +10,166 @@
 	<link rel="stylesheet" href="assets/css/main.css"/>
 	<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
 	<style>
-        @import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600,700&display=swap');
+		@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600,700&display=swap');
+		
+		
+		.productbackground {
+
+			background-color: #34343C;
+			box-shadow: 0px 2px 6px 4px rgba(0, 0, 0, 0.2);
+			margin-left: 250px;
+			margin-right: 250px;
+			padding-top: 60px;
+
+			position: relative;
+			width: 475px;
+			height: 570px;
+			z-index: 1;
+
+		}
+
+		.itembackground {
+
+			background-color: #DEDEDE;
+			box-shadow: 0px 2px 6px 4px rgba(0, 0, 0, 0.2);
+			border-radius: 1px; 
+			margin-left: 50px;
+			padding-top: 60px;
+			position: relative;
+			width: 375px;
+			height: 100px;
+		}
+				
+		.itembackground:hover {background-color: #BEBEBE;}
+
+
+		inventoryform { 
+		border: 10px none #525151; 
+		display: inline-block; /* reduces the width of the form to only what is necessary */ 
+		width: 100px; 
+		margin-left: 25%; 
+		margin-right:25%; 
+		border-radius: 5px;
+		background-color: #DEDEDE;
+		} 
+
+		input[type=text], input[type=password] { 
+			width: 50px; 
+			padding: 12px 20px; 
+			margin: 8px 0; 
+			display: inline-block; 
+			border: 1px solid #525151; 
+			box-sizing: border-box;
+			border-color: none;
+			margin-left: 25%; 
+			margin-right:25%; 
+			background-color: none; 
+			color: White; 
+			border-radius: 5px;
+		} 
+
+		placeholder{ 
+			color: Black; 
+		} 
+
+
+
+
+
+		.insightbackground {
+
+			background-color: #34343C;
+			box-shadow: 0px 2px 6px 4px rgba(0, 0, 0, 0.2);
+			  margin-left: 250px;
+			  margin-right: 250px;
+			padding-top: 60px;
+			
+			position: relative;
+			width: 475px;
+			height: 570px;
+			z-index: 1;
+			
+		}
+		
+		.orderbackground {
+			background-color: #34343C;
+			box-shadow: 0px 2px 6px 4px rgba(0, 0, 0, 0.2);
+			  margin-left: 250px;
+			  margin-right: 250px;
+			padding-top: 60px;
+			
+			position: relative;
+			width: 980px;
+			height: 475px;
+			z-index: 1;
+  		}
+
+		.tablebackground {
+			background-color: #F1F1F1;
+			box-shadow: 0px 2px 6px 4px rgba(0, 0, 0, 0.2);
+			border-radius: 8px; 
+			margin-left: 49px;
+			padding-top: 60px;
+			position: relative;
+			width: 882px;
+			height: 290px;
+		}
+
+		
+		table {
+			
+			margin-left: auto;
+			margin-right: auto;
+			width: 90%;		  	
+			border-collapse: collapse;
+			
+			color: black;
+		}
+
+		th {
+			color:#1f1f24;
+		}
+
+		td {
+		text-align: center;
+		padding: 2px;
+		}
+
+		tr:nth-child(even) {
+  		background-color: #dddddd;
+		}
+
+
+
+		#orders {
+		position: relative;
+		border-collapse: collapse;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #DEDEDE;
+		}
+
+		#orders td, #orders th {
+		text-align: center;
+		border-bottom: 3px solid #F1F1F1;
+		padding: 8px;
+		}
+
+		#orders tr:hover {background-color: #BEBEBE;}
+
+		#orders th {
+		padding-top: 12px;
+		padding-bottom: 12px;
+		text-align: center;
+		background-color: #F1F1F1;
+		color: black;
+}
+
+
         </style>
 </head>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -32,7 +190,9 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 </script>
 
-<body class="is-preload">
+
+<body class="is-preload" style=" background: #1f1f24;">
+
 	<!-- Header -->
 	<header id="header" class="alt" >
 		<img class="logo" src="./images/logo.png"></img>
@@ -57,10 +217,13 @@ firebase.initializeApp(firebaseConfig);
 	<!-- Banner -->
 	<div id="banner" style="padding: 4%;"class="wrapper"></div>
 	<!-- Wrapper -->
-	<div id="wrapper">
-		<section id="one" class="wrapper style1">
+
+	<!-- COME BACK TO BELOW
+		
+<div id="wrapper">
+		<section id="one" class="wrapper style1" >
 			<div class="inner" align="center">
-				<h3>Seller stuff</h3>
+				<h3>Welcome Seller</h3>
 				<button align="center"  onclick="signout();"  value="signout">Sign out</button>
 			</div>
 		</section>
@@ -71,5 +234,199 @@ firebase.initializeApp(firebaseConfig);
 				window.location='index.html';
 			};
 		</script>
-</div>
+</div> -->
 
+	<!--------------- Main -------------->
+
+	<p style="margin-top: 75px; margin-left: 250px; margin-bottom: 0px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">WELCOME TO YOUR SELLER DASHBOARD </p>
+
+	<div class="productbackground" style="margin-top: 20px">
+					<p style="margin-top: -30px; margin-left: 50px; margin-bottom: 0px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">PRODUCTS</p>
+					<p style="margin-top: 0px; margin-left: 50px; margin-bottom: 10px; position: relative; z-index: 4; font-family: 'Fira Sans', sans-serif; font-weight: 200; font-size: 15px; color: #F1F1F1; letter-spacing: 0px">Manage Your Products</p>
+
+					
+		<div class="itembackground">
+
+				<img src="images/iphone-xs.png" style="width: auto; height: 80px; margin-left:30px; margin-top: -50px;"> 
+				<p style="margin-top: -80px; margin-left: 120px; margin-bottom: 10px; position: relative; z-index: 4; font-family: 'Fira Sans', sans-serif; font-weight: 400; font-size: 15px; color: #343434; letter-spacing: 0px">Apple iPhone X Max 64 GB (Gold)</p>
+
+				<!--
+
+				<inventoryform style="margin-left: 120px; margin-top: -80px;">
+					First name:<br>
+					<input type="text" name="firstname" value="Mickey">
+				</inventoryform>
+				  
+				-->
+
+		</div>
+
+		<div class="itembackground" style="margin-top: 10px" >
+
+				<img src="images/ipad.png" style="width: auto; height: 80px; margin-left:20px; margin-top: -50px;"> 
+				<p style="margin-top: -80px; margin-left: 120px; margin-bottom: 10px; position: relative; z-index: 4; font-family: 'Fira Sans', sans-serif; font-weight: 400; font-size: 15px; color: #343434; letter-spacing: 0px">Apple iPad Pro 256 GB 11-inch (…</p>
+
+		</div>
+
+		<div class="itembackground" style="margin-top: 10px">
+
+				<img src="images/imac.png" style="width: auto; height: 80px; margin-left:0px; margin-top: -50px;"> 
+				<p style="margin-top: -80px; margin-left: 120px; margin-bottom: 10px; position: relative; z-index: 4; font-family: 'Fira Sans', sans-serif; font-weight: 400; font-size: 15px; color: #343434; letter-spacing: 0px">Apple iMac 21.5-inch (2.3GHz…</p>
+
+		</div>
+
+		<div class="itembackground" style="margin-top: 10px">
+
+				<img src="images/watch2.png" style="width: auto; height: 80px; margin-left:20px; margin-top: -50px;">
+				<p style="margin-top: -80px; margin-left: 120px; margin-bottom: 10px; position: relative; z-index: 4; font-family: 'Fira Sans', sans-serif; font-weight: 400; font-size: 15px; color: #343434; letter-spacing: 0px">Apple Watch Series 5 (Space Grey)</p>
+ 
+
+		</div>
+	</div>
+
+	<div class="insightbackground" style="margin-left: 755px; margin-top: -570px;">
+			<p style="margin-top: -30px; margin-left: 50px; margin-bottom: 0px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">INSIGHTS</p>
+			<p style="margin-top: 0px; margin-left: 50px; margin-bottom: 10px; position: relative; z-index: 4; font-family: 'Fira Sans', sans-serif; font-weight: 200; font-size: 15px; color: #F1F1F1; letter-spacing: 0px">Branch Performance</p>
+	
+			<img src="images/insights.png" style="width: 375px; margin-left:50px;">
+	
+		</div>
+	
+	<div class="orderbackground" style="margin-top: 30px">
+
+			<section class="orders">
+					<p style="margin-top: -20px; margin-left: 50px; margin-bottom: 0px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">ORDER HISTORY</p>
+					<p style="margin-top: 0px; margin-left: 50px; margin-bottom: 10px; position: relative; z-index: 4; font-family: 'Fira Sans', sans-serif; font-weight: 200; font-size: 15px; color: #F1F1F1; letter-spacing: 0px">Recent Transactions</p>
+
+<!-- DELETE
+	
+	<table style="background: #F1F1F1;">
+
+			<tr>
+			  <td style="color: black";><b>ORDER ID</b></td>
+			  <td style="text-align: left"><b>PRODUCT</b></td> 
+			  <td>DATE</td> 
+			  <td><b>EARNINGS</b></td> 
+			  <td><b>ORDER STATUS</b></td> 
+			</tr>
+
+			<tr>
+			  <td>1000334</td>
+			  <td style="text-align: left">Apple iPhone X Max 64 GB (Gold)</td> 
+			  <td>11/09/19</td>
+			  <td>$1900.00</td> 
+			  <td style="color: #FC5A43">Pending</td>
+			</tr>
+
+			<tr>
+			  <td>1000333</td>
+			  <td style="text-align: left">Apple MacBook Pro 13-inch 256GB (Space Grey) </td> 
+			  <td>07/09/19</td>
+			  <td>$2100.00</td> 
+			  <td style="color: #FC5A43">Pending</td>
+			</tr>
+
+			<tr>
+			  <td>1000332</td>
+			  <td style="text-align: left">Apple MacBook Pro 13-inch 256GB (Silver) </td> 
+			  <td>02/09/19</td>
+			  <td>$2100.00</td> 
+			  <td style="color: #1AB22C">Shipped</td>
+			</tr>
+
+			<tr>
+			  <td>1000331</td>
+			  <td style="text-align: left">Apple Magic Mouse 2 (Silver)</td> 
+			  <td>02/09/19</td>
+			  <td>$119.00</td> 
+			  <td style="color: #1AB22C">Shipped</td>
+			</tr>
+
+		  </table>
+
+		-->
+		
+		  <div class="tablebackground" style="margin-top: 0px">
+		  <table id="orders" style="margin-top: -60px">
+
+				<!-- <tr>
+						<th style="color: black";><b>ORDER ID</b></th>
+						<th style="text-align: left"><b>PRODUCT</b></th> 
+						<th><b>DATE</b></th> 
+						<th><b>EARNINGS</b></th> 
+						<th><b>ORDER STATUS</b></th> 
+					  </tr>
+					-->
+		  
+							<tr>
+							<td style="padding-top: 20px; color: #34343C; background-color: #F1F1F1; font-weight:500;">ORDER ID</td>
+							<td style="color: #34343C; text-align: left; background-color: #F1F1F1; font-weight:500;"> PRODUCTS</td> 
+							<td style="color: #34343C; background-color: #F1F1F1; font-weight:500;">DATE</td>
+							<td style="color: #34343C; background-color: #F1F1F1; font-weight:500;">EARNINGS</td> 
+							<td style="color: #34343C; background-color: #F1F1F1; font-weight:500;">ORDER STATUS </td>
+						  	</tr>
+						  
+						 
+					 <tr>
+						<td>1000334</td>
+						<td style="text-align: left">Apple iPhone X Max 64 GB (Gold)</td> 
+						<td>11/09/19</td>
+						<td>$1900.00</td> 
+						<td style="color: #FC5A43; background-color: #F4E7E6">Pending</td>
+					  </tr>
+		  
+					  <tr>
+						<td>1000333</td>
+						<td style="text-align: left">Apple MacBook Pro 13-inch 256GB (Space Grey) </td> 
+						<td>07/09/19</td>
+						<td>$2100.00</td> 
+						<td style="color: #FC5A43">Pending</td>
+					  </tr>
+		  
+					  <tr>
+						<td>1000332</td>
+						<td style="text-align: left">Apple MacBook Pro 13-inch 256GB (Silver) </td> 
+						<td>02/09/19</td>
+						<td>$2100.00</td> 
+						<td style="color: #1AB22C; background-color: #ECF4DF">Shipped</td>
+					  </tr>
+		  
+					  <tr>
+						<td>1000331</td>
+						<td style="text-align: left">Apple Magic Mouse 2 (Silver)</td> 
+						<td>02/09/19</td>
+						<td>$119.00</td> 
+						<td style="color: #1AB22C"> Shipped</td>
+					  </tr>
+		  
+<!-- OnClick - change order status from pending to shipped-->
+
+					</table>
+
+					<p style="bottom: 30px; margin-left: 685px; margin-bottom: 0px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 450; font-size: 14px; color: #34343C; letter-spacing: 0px">VIEW ALL TRANSACTIONS<i class="arrow right"></i></p>
+
+				</div>
+				</div>
+
+
+		<p></p>
+
+
+		<div class="orderbackground" style="height: 250px">	
+			
+				<p style="margin-top: -40px; margin-left: 50px; font-size: 16px; color: whitesmoke">User Stories yet to do:</p>
+				<ul style="margin-top: -40px; margin-left: 50px; font-size: 12px; color: whitesmoke";>
+						<li>uodate inventory</li>
+						<li>add new product</li>
+						<li>delete products</li>
+						<br>
+						<li>total revenue</li>
+						<li>update order status</li>
+						<br>
+						<li>> consider multiple seller logins</li>
+				</ul>  
+					  
+		
+		</div>
+
+<p></p>
