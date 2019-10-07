@@ -17,11 +17,26 @@
         </style>
   </head>
   <body class="is-preload" style=" background: #1f1f24; ">
+    <style type="text/css">
+      hr.new5 {
+        border: 0.5px solid white;
+        border-radius: 5px;
+        width: 90%;
+      }
+      .flex-container-icon {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1f1f24;
+  justify-content: center;
+}
+
+
+    </style>
 
     <!-- Header -->
-    <header id="head" class="alt" >
-      <img class="logo" src="./images/logo.png"></img>
-    
+  <header id="header" class="alt" >
+    <img class="logo" src="./images/logo.png"></img>
+
     <header id="header" class="alt" style="justify-content: space-between;">
       <nav id="nav"> 
         <ul style="margin-left: 250px;">
@@ -32,28 +47,22 @@
         </ul>
       </nav>
       <nav id="nav">
-        <ul style="margin-right: -290px; margin-top: 30px">
+        <ul>
           <li><a style="color: orange;" href="login.html">LOGIN</a></li>
-          <a href="login.html" ><button class="btn btn-border btn-round color-3 material-design" data-color="#f6774f">SIGN UP</button></a>
-          <a href="#" class="snipcart-checkout" style="text-decoration: none; color: white; font-weight: 500; padding-left: 20px">Cart</a>
+          <a  href="Signup.html" ><button id="test123" class="btn btn-border btn-round color-3 material-design" data-color="#f6774f">SIGN UP</button></a>
         </ul>
       </nav>
-        <img src= "images/cart.png" style="width: 36px; margin-top: -18px; margin-right: 50px"> 
     </header>
-    </header>
+  </header>
 
-    <!--------------- Main -------------->
+   <div id="wrapper">
+      <div class="inner" align="center">
     
-
      <!-- Product Header -->
-    
-     <nav lass="product-filter" style="width: 400px; margin-left: 230px; margin-top: 80px">
-
+     <nav lass="product-filter" style=" margin-top: 80px" align="center">
         <h1 style="font-size: 40px; padding-bottom: 20px">Shop Products</h1>
-      
-        <div class="line-break" style="width: 980px; margin-top: -20px; margin-left: 0px; border-bottom: 1px solid #868686;
-        "></div>
-        <div class="shop-icons">
+        <hr align="right" class="new5">
+        <div class="flex-container-icon" style="padding-top: 30px;">
             <img src="images/icon-phone.png" style="width: 30px; 	height: 53px;">
             <h5 style="margin-top: 70px; margin-left: -38px;font-size: 12px; font-weight: 400">PHONES</h5>
             <img src="images/icon-laptop.png" style="width: 60px; height: 42px;  margin-top: 12px; margin-left: 70px"> 
@@ -67,7 +76,7 @@
             <img src="images/icon-accessories.png" style="width: 35px; height: 38px; margin-top: 18px; margin-left: 80px"> 
             <h5 style="margin-top: 70px; margin-left: -54px;font-size: 12px; font-weight: 400">ACCESSORIES</h5>
         </div>
-        <div class="line-break" style="width: 980px; margin-top: -15px; margin-left: 0px; border-bottom: 1px solid #868686"></div>
+        <hr align="right" class="new5">
 
       
         <div class="sort">
@@ -95,6 +104,7 @@
         </div>
       
       </nav>
+    </div>
 
       <!-- Search Bar -->
       <div class="search-bar">
@@ -654,8 +664,8 @@
       <link rel="stylesheet" href="assets/css/snipcart-fullscreen.css"/>
    
 
-
-
+</div>
+</div>
 	</body>
 </html>
 
