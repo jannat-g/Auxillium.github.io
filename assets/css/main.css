@@ -4445,6 +4445,8 @@ button {
 	font-size: 12px; 
 	font-weight: 500; 
 	letter-spacing: 0.3px;
+	height: 40px;
+	width: 80px;
 	padding: 14px 20px; 
 	margin: 8px 0; 
 	border: none; 
@@ -4465,6 +4467,8 @@ button {
 	font-size: 12px; 
 	font-weight: 500; 
 	letter-spacing: 0.3px;
+	height: 40px;
+	width: 80px;
 	padding: 14px 20px; 
 	margin: 8px 0; 
 	border: none; 
@@ -4841,7 +4845,7 @@ body {
 	margin-left: 600px;
 	font-family: 'Fira Sans', sans-serif;
 	font-size: 15px;
-	margin-top: -210px;
+	margin-top: -230px;
   }
 
   .line-break {
@@ -4854,6 +4858,71 @@ body {
 	z-index: 2;
   }
 
+  /* Quanity btn */
+
+  form {
+	width: 300px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 50px;
+  }
+  
+  .value-button {
+	display: inline-block;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	margin-top: 9px;
+	width: 24px;
+	height: 2px;
+	text-align: center;
+	font-size: 16px;
+	vertical-align: middle;
+	padding: 0px 0px 24px 0px;
+	color: black;
+	background: #E6E6E6;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  
+  .value-button:hover {
+	cursor: pointer;
+	background: #FFD456;
+  }
+  
+  form #decrease {
+	margin-right: 4px;
+	border-radius: 50%;
+  }
+  
+  form #increase {
+	margin-left: 4px;
+	border-radius: 50%;
+  }
+  
+  form #input-wrap {
+	margin: 0px;
+	padding: 0px;
+  }
+  
+  input#qty {
+	text-align: center;
+	font-weight: 500;
+	color: white;
+	background: transparent;
+	border: none;
+	margin: 0px;
+	width: 40px;
+	height: 40px;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+	  -webkit-appearance: none;
+	  margin: 0;
+  }
   
   
 
