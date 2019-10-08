@@ -4421,6 +4421,7 @@ hr {
 	color: white;
 	text-align: center;
 	justify-content: center;
+	
 
 }
 
@@ -4494,9 +4495,7 @@ input[type=text], input[type=password] {
 
 } 
 
-.placeholder{ 
-    color: Black; 
-} 
+
 
 
 
