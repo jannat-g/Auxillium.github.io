@@ -1,0 +1,389 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Auxilium </title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<link rel="shortcut icon" href="./images/logo copy.png"/>
+	<link rel="stylesheet" href="assets/css/main.css"/>
+	<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="assets/js/login.js"></script>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600,700&display=swap');
+
+
+		.productbackground {
+
+			background-color: #34343C;
+			box-shadow: 0px 2px 6px 4px rgba(0, 0, 0, 0.2);
+			margin-left: 250px;
+			margin-right: 250px;
+			padding-top: 60px;
+
+			position: relative;
+			width: 475px;
+			height: 570px;
+			z-index: 1;
+
+		}
+
+		.itembackground {
+
+			background-color: #DEDEDE;
+			box-shadow: 0px 2px 6px 4px rgba(0, 0, 0, 0.2);
+			border-radius: 1px; 
+			margin-left: 50px;
+			padding-top: 60px;
+			position: relative;
+			width: 375px;
+			height: 100px;
+		}
+
+		.itembackground:hover {background-color: #BEBEBE;}
+
+
+		inventoryform { 
+			border: 10px none #525151; 
+			display: inline-block; /* reduces the width of the form to only what is necessary */ 
+			width: 100px; 
+			margin-left: 25%; 
+			margin-right:25%; 
+			border-radius: 5px;
+			background-color: #DEDEDE;
+		} 
+
+		input[type=text], input[type=password] { 
+			width: 50px; 
+			padding: 12px 20px; 
+			margin: 8px 0; 
+			display: inline-block; 
+			border: 1px solid #525151; 
+			box-sizing: border-box;
+			border-color: none;
+			margin-left: 25%; 
+			margin-right:25%; 
+			background-color: none; 
+			color: White; 
+			border-radius: 5px;
+		} 
+
+		placeholder{ 
+			color: Black; 
+		} 
+
+
+
+
+
+		.insightbackground {
+
+			background-color: #34343C;
+			box-shadow: 0px 2px 6px 4px rgba(0, 0, 0, 0.2);
+			margin-left: 250px;
+			margin-right: 250px;
+			padding-top: 60px;
+
+			position: relative;
+			width: 475px;
+			height: 570px;
+			z-index: 1;
+
+		}
+
+		.orderbackground {
+			background-color: #34343C;
+			box-shadow: 0px 2px 6px 4px rgba(0, 0, 0, 0.2);
+			margin-left: 250px;
+			margin-right: 250px;
+			padding-top: 60px;
+
+			position: relative;
+			width: 980px;
+			height: 475px;
+			z-index: 1;
+		}
+
+		.tablebackground {
+			background-color: #F1F1F1;
+			box-shadow: 0px 2px 6px 4px rgba(0, 0, 0, 0.2);
+			border-radius: 8px; 
+			margin-left: 49px;
+			padding-top: 60px;
+			position: relative;
+			width: 882px;
+			height: 290px;
+		}
+
+
+		table {
+
+			margin-left: auto;
+			margin-right: auto;
+			width: 90%;		  	
+			border-collapse: collapse;
+
+			color: black;
+		}
+
+		th {
+			color:#1f1f24;
+		}
+
+		td {
+			text-align: center;
+			padding: 2px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #dddddd;
+		}
+
+
+
+		#orders {
+			position: relative;
+			border-collapse: collapse;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: #DEDEDE;
+		}
+
+		#orders td, #orders th {
+			text-align: center;
+			border-bottom: 3px solid #F1F1F1;
+			padding: 8px;
+		}
+
+		#orders tr:hover {background-color: #BEBEBE;}
+
+		#orders th {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: center;
+			background-color: #F1F1F1;
+			color: black;
+		}
+
+
+	</style>
+</head>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-auth.js"></script>
+<script type="text/javascript">
+//  Firebase configuration
+var firebaseConfig = {
+	apiKey: "AIzaSyAwrcbALg-Ow4O3pyJMY-7vxNF_X6hZ-GM",
+	authDomain: "auxilium-f6620.firebaseapp.com",
+	databaseURL: "https://auxilium-f6620.firebaseio.com",
+	projectId: "auxilium-f6620",
+	storageBucket: "",
+	messagingSenderId: "1031183506590",
+	appId: "1:1031183506590:web:0a2eea869b3f7442"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+</script>
+
+
+<body class="is-preload" style=" background: #1f1f24;">
+
+	<!-- Header -->
+	<header id="header" class="alt" >
+		<img class="logo" src="./images/logo.png"></img>
+
+		<header id="header" class="alt" style="justify-content: space-between;">
+			<nav id="nav"> 
+				<ul style="margin-left: 250px;">
+					<li ><a href="index.html">Home</a></li>
+					<li><a href="shop.html">Shop</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			<nav id="nav">
+				<ul>
+					<li class="current"><a style="color: orange;" href="login.html">LOGIN</a></li>
+					<a href="Signup.html" ><button id="test123"class="btn btn-border btn-round color-3 material-design" data-color="#f6774f">SIGN UP</button></a>
+				</ul>
+			</nav>
+		</header>
+	</header>
+	<!-- Banner -->
+	<div id="banner" style="padding: 4%;"class="wrapper"></div>
+
+	<!--------------- Main -------------->
+
+
+	<div class="inner" align="center">
+		<button align="center"  onclick="signout();"  value="signout">Sign out</button>
+	</div>
+</section>
+<script>
+	function signout(){
+		firebase.auth().signOut();
+		alert('Seller successfully signed out');
+		window.location='index.html';
+	};
+</script>
+
+
+
+</script>
+<p style="margin-top: 75px; margin-left: 250px; margin-bottom: 0px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">WELCOME TO YOUR SELLER DASHBOARD </p>
+
+<div class="productbackground" style="margin-top: 20px">
+	<p style="margin-top: -30px; margin-left: 50px; margin-bottom: 0px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">PRODUCTS</p>
+	<p style="margin-top: 0px; margin-left: 50px; margin-bottom: 10px; position: relative; z-index: 4; font-family: 'Fira Sans', sans-serif; font-weight: 200; font-size: 15px; color: #F1F1F1; letter-spacing: 0px">Manage Your Products</p>
+
+
+	<div class="itembackground">
+
+		<img src="images/iphone-xs.png" style="width: auto; height: 80px; margin-left:30px; margin-top: -50px;"> 
+		<p style="margin-top: -80px; margin-left: 120px; margin-bottom: 10px; position: relative; z-index: 4; font-family: 'Fira Sans', sans-serif; font-weight: 400; font-size: 15px; color: #343434; letter-spacing: 0px">Apple iPhone X Max 64 GB (Gold)</p>
+
+
+	</div>
+
+	<div class="itembackground" style="margin-top: 10px">
+		<img src="images/ipad.png" style="width: auto; height: 80px; margin-left:20px; margin-top: -50px;"> 
+		<p style="margin-top: -80px; margin-left: 120px; margin-bottom: 10px; position: relative; z-index: 4; font-family: 'Fira Sans', sans-serif; font-weight: 400; font-size: 15px; color: #343434; letter-spacing: 0px">Apple iPad Pro 256 GB 11-inch (…</p>
+	</div>
+
+	<div class="itembackground" style="margin-top: 10px">
+		<img src="images/imac.png" style="width: auto; height: 80px; margin-left:0px; margin-top: -50px;"> 
+		<p style="margin-top: -80px; margin-left: 120px; margin-bottom: 10px; position: relative; z-index: 4; font-family: 'Fira Sans', sans-serif; font-weight: 400; font-size: 15px; color: #343434; letter-spacing: 0px">Apple iMac 21.5-inch (2.3GHz…</p>
+	</div>
+
+	<div class="itembackground" style="margin-top: 10px">
+		<img src="images/watch2.png" style="width: auto; height: 80px; margin-left:20px; margin-top: -50px;">
+		<p style="margin-top: -80px; margin-left: 120px; margin-bottom: 10px; position: relative; z-index: 4; font-family: 'Fira Sans', sans-serif; font-weight: 400; font-size: 15px; color: #343434; letter-spacing: 0px">Apple Watch Series 5 (Space Grey)</p>
+	</div>
+</div>
+
+<div class="insightbackground" style="margin-left: 755px; margin-top: -570px;">
+	<p style="margin-top: -30px; margin-left: 50px; margin-bottom: 0px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">INSIGHTS</p>
+	<p style="margin-top: 0px; margin-left: 50px; margin-bottom: 10px; position: relative; z-index: 4; font-family: 'Fira Sans', sans-serif; font-weight: 200; font-size: 15px; color: #F1F1F1; letter-spacing: 0px">Branch Performance</p>
+	<img src="images/insights.png" style="width: 375px; margin-left:50px;">
+
+</div>
+
+<div class="orderbackground" style="margin-top: 30px">
+	<section class="orders">
+		<p style="margin-top: -20px; margin-left: 50px; margin-bottom: 0px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">ORDER HISTORY</p>
+		<p style="margin-top: 0px; margin-left: 50px; margin-bottom: 10px; position: relative; z-index: 4; font-family: 'Fira Sans', sans-serif; font-weight: 200; font-size: 15px; color: #F1F1F1; letter-spacing: 0px">Recent Transactions</p>
+
+		<div class="tablebackground" style="margin-top: 0px">
+			<table id="orders" style="margin-top: -60px">
+
+				<tr>
+					<td style="padding-top: 20px; color: #34343C; background-color: #F1F1F1; font-weight:500;">ORDER ID</td>
+					<td style="color: #34343C; text-align: left; background-color: #F1F1F1; font-weight:500;"> PRODUCTS</td> 
+					<td style="color: #34343C; background-color: #F1F1F1; font-weight:500;">DATE</td>
+					<td style="color: #34343C; background-color: #F1F1F1; font-weight:500;">EARNINGS</td> 
+					<td style="color: #34343C; background-color: #F1F1F1; font-weight:500;">ORDER STATUS </td>
+				</tr>
+
+
+				<tr>
+					<td>1000334</td>
+					<td style="text-align: left">Apple iPhone X Max 64 GB (Gold)</td> 
+					<td>11/09/19</td>
+					<td>$1900.00</td> 
+					<td style="color: #FC5A43; background-color: #F4E7E6">Pending</td>
+				</tr>
+
+				<tr>
+					<td>1000333</td>
+					<td style="text-align: left">Apple MacBook Pro 13-inch 256GB (Space Grey) </td> 
+					<td>07/09/19</td>
+					<td>$2100.00</td> 
+					<td style="color: #FC5A43">Pending</td>
+				</tr>
+
+				<tr>
+					<td>1000332</td>
+					<td style="text-align: left">Apple MacBook Pro 13-inch 256GB (Silver) </td> 
+					<td>02/09/19</td>
+					<td>$2100.00</td> 
+					<td style="color: #1AB22C; background-color: #ECF4DF">Shipped</td>
+				</tr>
+
+				<tr>
+					<td>1000331</td>
+					<td style="text-align: left">Apple Magic Mouse 2 (Silver)</td> 
+					<td>02/09/19</td>
+					<td>$119.00</td> 
+					<td style="color: #1AB22C"> Shipped</td>
+				</tr>
+
+				<!-- OnClick - change order status from pending to shipped-->
+
+			</table>
+
+			<p style="bottom: 30px; margin-left: 685px; margin-bottom: 0px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 450; font-size: 14px; color: #34343C; letter-spacing: 0px">VIEW ALL TRANSACTIONS<i class="arrow right"></i></p>
+
+		</div>
+	</div>
+
+
+	<p></p>
+
+
+	<div class="orderbackground" style="height: 250px">	
+
+		<p style="margin-top: -40px; margin-left: 50px; font-size: 16px; color: whitesmoke">User Stories yet to do:</p>
+		<ul style="margin-top: -40px; margin-left: 50px; font-size: 12px; color: whitesmoke";>
+			<li>uodate inventory</li>
+			<li>add new product</li>
+			<li>delete products</li>
+			<br>
+			<li>total revenue</li>
+			<li>update order status</li>
+			<br>
+			<li>> consider multiple seller logins</li>
+		</ul>  
+
+
+	</div>
+	<div class="inner" align="center">
+		<button align="center"  onclick="signout();"  value="signout">Sign out</button>
+	</div>
+	<!-- Footer -->
+	<section id ="contact" class="main style2" align="center">
+		<div id="foot">
+			<nav id="nav"> 
+				<ul>
+					<li><a style="font-size: 15px;" href="index.html">HOME</a></li>
+					<li><a style="font-size: 15px;" href="about.html">ABOUT US</a></li>
+					<li><a style="font-size: 15px;" href="">CONTACT US</a></li>
+					<li><a style="font-size: 15px;" href="">HELP</a></li><hr>
+				</ul>
+				<div class="inner special medium">
+					<div class="jumbotron-social">
+						<ul class="ul-social" >
+							<li class="li-social-links">
+								<a class="social" href="" target="_blank"><img src="images/facebook.png" style="width: 40px; "class="fa fa-facebook" aria-hidden="true"></img></a>
+							</li>
+							<li class="li-social-links">
+								<a class="social" href="" target="_blank"><img src="images/twitter.png" style="width: 40px; "class="fa fa-twitter" aria-hidden="true"></img></a>
+							</li>
+							<li class="li-social-links">
+								<a class="social" href="" target="_blank"><img src="images/email.png" style="width: 40px;" class="fa fa-envelope-o" aria-hidden="true"></i></a>
+							</li>
+							<li class="li-social-links">
+								<a class="social" href="" target="_blank"><img src="images/insta.png" style="width: 43px;"class="fa fa-instagram" aria-hidden="true"></img></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<p align="center" style="padding-top: 10px; font-size: 15px; margin-left: 15px;">ALL RIGHTS RESERVED | AUXILIUM 2019</p>
+		</section>
+	</div>
+
+	<p></p>

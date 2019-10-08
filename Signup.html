@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="assets/css/main.css"/>
   <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600,700&display=swap');
+    </style>
 </head>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-app.js"></script>
@@ -28,7 +31,7 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 </script>
-<script src="assets/js/login.js"></script>
+<script src="assets/js/signup.js"></script>
 
 <body class="is-preload">
 
@@ -47,8 +50,8 @@ firebase.initializeApp(firebaseConfig);
       </nav>
       <nav id="nav">
         <ul>
-          <li class="current"><a style="color: orange;" href="login.html">LOGIN</a></li>
-          <a href="Signup.html"><button class="btn btn-border btn-round color-3 material-design" data-color="#f6774f">SIGN UP</button></a>
+          <li ><a style="color: orange;" href="login.html">LOGIN</a></li>
+          <a href="Signup.html" ><button class="btn btn-border btn-round color-3 material-design" data-color="#f6774f">SIGN UP</button></a>
         </ul>
       </nav>
     </header>
@@ -56,21 +59,18 @@ firebase.initializeApp(firebaseConfig);
   <div id="banner" style="padding: 3.5%;"class="wrapper"></div>
 </head>
 
-<body  style=" background: #1f1f24;">
-  <section id="one" class="wrapper style1" >
-    <div class="inner" align="center">
-      <h2 class="mdl-card__title-text">Login</h2>
-      <p>Enter an email and password below and sign in to an existing account</p>
-
-      <input class="mdl-textfield__input" style=" width: 400px;" type="text" id="email" name="email" placeholder="Email"/>
+<body class="container" style=" background: #1f1f24;">
+  <section id="one" class="wrapper style1">
+    <div class="inner" align="center" style="margin-top: 50px;">
+      <h2 class="mdl-card__title-text"> Sign up</h2><br>
+      <input class="mdl-textfield__input" align="center" style=" width: 300px;" type="text" id="email" name="email" placeholder="Email"/>
       &nbsp;&nbsp;&nbsp;
-      <input class="mdl-textfield__input" style=" width: 400px;" type="password" id="password" name="password" placeholder="Password"/>
+      <input class="mdl-textfield__input" align="center" style=" width: 300px;" type="password" id="password" name="password" placeholder="Password"/>
       <br/><br/>
-      <button align="center" disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin">Sign In</button>
+      <button align="center" disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin" style="display: none;">Sign In</button>
       &nbsp;&nbsp;&nbsp;
-      <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup" style="display: none;">Sign Up</button>
+      <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup" >Sign Up</button>
       <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email" style="display: none;">Send Email Verification</button><br><br>
-      <a style="color: orange; text-decoration: none; cursor: pointer;"class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-password-reset" name="verify-email">Reset password?</a>
       <div class="quickstart-user-details-container"><br>
         <span id="quickstart-sign-in-status"></span>
         <div style="display: none;">Firebase auth <code>currentUser</code> object value:</div>
@@ -113,18 +113,3 @@ firebase.initializeApp(firebaseConfig);
     </section>
 </body>
 </html>
-
-<!-- 
-
-  <script>
-      function change2() // no ';' here
-      {
-      var li = document.getElementById("test123");
-      li.innerHTML = 'OGIN';
-      li.style.color = "orange";
-      li.class = "current";
-      li.href = "shop.html";
-    };
-    </script>
-
--->

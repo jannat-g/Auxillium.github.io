@@ -74,6 +74,8 @@
 					side: 'right'
 				});
 
+
+//firebase
 })(jQuery);
 
     /**
