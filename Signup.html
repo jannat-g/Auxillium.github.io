@@ -30,8 +30,9 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
 </script>
-<script src="assets/js/signup.js"></script>
+<script src="assets/js/signup.js" ></script>
 
 <body class="is-preload">
 
@@ -69,12 +70,14 @@ firebase.initializeApp(firebaseConfig);
       <br/><br/>
       <button align="center" disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin" style="display: none;">Sign In</button>
       &nbsp;&nbsp;&nbsp;
-      <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup" >Sign Up</button>
+       <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup" onclick="handleSignUp();">Sign Up</button>
+          &nbsp;&nbsp;&nbsp;
       <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email" style="display: none;">Send Email Verification</button><br><br>
       <div class="quickstart-user-details-container"><br>
         <span id="quickstart-sign-in-status"></span>
-        <div style="display: none;">Firebase auth <code>currentUser</code> object value:</div>
-        <pre><code id="quickstart-account-details" style="display: none;">null</code></pre>
+        <div>Firebase auth <code>currentUser</code> object value:</div>
+        <pre><code id="quickstart-account-details" >null</code></pre>
+
       </div>
     </div>
   </section>

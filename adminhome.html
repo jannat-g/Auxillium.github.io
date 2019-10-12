@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="assets/css/main.css"/>
   <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <style>
     @import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600,700&display=swap');
     </style>
@@ -31,6 +32,8 @@
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
   </script>
+<!--    <script src="assets/js/main.js"></script> -->
+   <script src="assets/js/signup.js"></script>
 
   <body class="is-preload">
 
@@ -58,21 +61,42 @@
     <!-- Banner -->
     <div id="banner" style="padding: 4%;"class="wrapper"></div>
 
-    <!-- Wrapper -->
-    <div id="wrapper">
-     <section id="one" class="wrapper style1">
-       <div class="inner" align="center" id="test1234">
-        <h3> admin stuff</h3>
-      </div>
-    </section>
+  
     <script>
      function signout(){
-       firebase.auth().signOut().then(function()
-       alert('admin successfully signed out');
-       window.location='index.html';
-     };
+    firebase.auth().signOut();
+    alert('Successfully signed out');
+    window.location='index.html';
+  };
+
+  var user = firebase.auth().currentUser;
+
     </script>
-   </script>
+   
+
+     <section id="one" class="wrapper style1">
+      <div class="inner" align="center" style="margin-top: 50px;">
+      <h2 class="mdl-card__title-text">Create a Seller Account</h2><br>
+      <input class="mdl-textfield__input" align="center" style=" width: 300px;" type="text" id="email" name="email" placeholder="Email"/>
+      &nbsp;&nbsp;&nbsp;
+      <input class="mdl-textfield__input" align="center" style=" width: 300px;" type="password" id="password" name="password" placeholder="Password"/>
+      <br/><br/>
+      <button align="center" disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin" style="display: none;">Sign In</button>
+      &nbsp;&nbsp;&nbsp;
+       <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup" onclick="handleSignUp();">Create</button>
+          &nbsp;&nbsp;&nbsp;
+      <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email" style="display: none;">Send Email Verification</button><br><br>
+      <div class="quickstart-user-details-container"><br>
+        <span id="quickstart-sign-in-status"></span>
+        <div style="display: none;">Firebase auth <code>currentUser</code> object value:</div>
+        <pre><code style="display:none"id="quickstart-account-details" >null</code></pre>
+
+      </div>
+    </div>
+
+  <p> Display Seller accounts: maybe make a table and hardcode deleting users</p>
+
+  </section>
 
    <!-- Footer -->
   <section id ="contact" class="main style2" align="center">
@@ -106,16 +130,4 @@
       <p align="center" style="padding-top: 10px; font-size: 15px; margin-left: 15px;">ALL RIGHTS RESERVED | AUXILIUM 2019</p>
     </section>
  </div>
-
-<!--
-   <script>
-      function change() // no ';' here
-      {
-      var li = document.getElementById("test123");
-      var header = document.getElementById("test1234");
-      header.innerHTML = 'Four';
-      li.innerHTML = 'Log';
-    };
-    </script>
-  -->
 
