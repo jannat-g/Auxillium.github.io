@@ -26,6 +26,7 @@
         <ul style="margin-left: 250px;">
           <li class="current"><a href="index.html">Home</a></li>
           <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
@@ -39,16 +40,23 @@
   </header>
 
   <!-- Banner -->
-  <div id="banner" class="wrapper">
+  <div id="banner" class="wrapper" style="position: relative; z-index: 1">
     <div class="content" id="background">
-      <h2 style="color: grey; padding: 50px;">test</h2>
+      <h2 style = "color: grey; padding: 100px;">Welcome</h2>
+	  <image src="images/banner.png" alt="Girl in a jacket" align = "right" style = "position: absolute; left: 700px; bottom: 0px; width: 700px; height: 500px;"> 
+	  <div style="width: 40%; border-color: white; padding-left: 8%; padding-bottom: 60px;" >
+        <input type="text" placeholder="Search Products" style="background-color: white; color: rgb(138, 138, 138)">
+        <button class="search-btn">
+            <i style = "font-size: 15px;" class="fas fa-search"></i>
+        </button>
+		
+
+      </div>
     </div>
-  </div>
-</div>
-</div>
+	</div>
 
 <!-- Wrapper -->
-<div id="wrapper">
+<div id="wrapper" >
   <div class="inner" align="center">
     <button class="btn btn-border btn-round color-2 material-design"><a href="#click" style="color: white;text-decoration: none;">Discover</a></button><br>
     <i class="fas fa-chevron-down"></i><br><br>
@@ -112,16 +120,12 @@
   <head>
     <style>
       @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
       * { box-sizing: border-box; }
-
       body { 
         font-family: 'Open Sans', sans-serif;
         color: #666;
       }
-
       /* STRUCTURE */
-
       .wrapper2 {
         padding: 50px;
         max-width: 1200px;
@@ -129,13 +133,10 @@
         margin: 10px auto;
         background-color: #3b3b44; 
         box-shadow: 0.5px 2px 10px black;
-
       }
       header {
         padding: 0 15px;
-
       }
-
       .columns2 {
         display: flex;
         padding-left: 20px;
@@ -144,7 +145,6 @@
         justify-content: center;
         margin: 5px 0;
       }
-
       .column2 {
         flex: 1;
         margin: 10px;
@@ -154,10 +154,8 @@
         box-shadow: 3px 1px 15px black;
         &:first-child { margin-left: 0; }
         &:last-child { margin-right: 0; }
-
       }
       .column2:hover {background-color: #BEBEBE;}
-
       .reccomendation_btn {
         box-shadow: 1px 3px 5px grey;
         padding : 15px 30px 14px 30px;
@@ -167,7 +165,6 @@
         font-size: 17px;
         color: black;
       }
-
       .reccomendation_img {
         width: 60%;
         height: auto;
@@ -175,8 +172,6 @@
         text-align: center;
         margin: auto;
       }
-
-
     </style>
 
     <!-- Footer -->
@@ -253,29 +248,22 @@ firebase.initializeApp(firebaseConfig);
   * {
     box-sizing: border-box;
   }
-
   body {
     margin: 0;
     font-family: Arial;
     background-color: #2e2e36;
-
-
   }
-
   .header {
     text-align: center;
     padding: 32px;
   }
-
   .row {
     display: -ms-flexbox; /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
     padding: 0 4px;
-
   }
-
   /* Create four equal columns that sits next to each other */
   .column {
     -ms-flex: 25%; /* IE10 */
@@ -283,16 +271,12 @@ firebase.initializeApp(firebaseConfig);
     max-width: 39%;
     padding: 0 100px;
     box-shadow: 0 0 0 .2em #eb8634;
-
-
   }
-
   .column img {
     margin-top: 8px; /* amoi */ 
     vertical-align: middle;
     width: 100%;
   }
-
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
     .column {
@@ -301,7 +285,6 @@ firebase.initializeApp(firebaseConfig);
       max-width: 50%;
     }
   }
-
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .column {
@@ -326,9 +309,7 @@ firebase.initializeApp(firebaseConfig);
         background-color: #1f1f24;
         justify-content: center;
       }
-
       .flex-container-icon > div {
-
         width: 100px;
         height: 100px;
         margin: 40px;
@@ -337,9 +318,6 @@ firebase.initializeApp(firebaseConfig);
         font-size: 30px;
         color: black;
       }
-
-
-
       .flex-container-icon-2 {
         display: flex ; 
         flex-wrap: wrap;
@@ -347,9 +325,7 @@ firebase.initializeApp(firebaseConfig);
         justify-content: center;
         height: 740px;
         border: 70px solid #1f1f24;
-
       }
-
       .flex-container-icon-2 > div {
         background-color: white;
         width: 100px;
@@ -361,10 +337,6 @@ firebase.initializeApp(firebaseConfig);
         color: black;
         flex-basis: 320px;
       }
-
-
-
-
       hr.new5 {
         border: 0.5px solid white;
         border-radius: 5px;
@@ -373,7 +345,105 @@ firebase.initializeApp(firebaseConfig);
     </style>
 
 
+<!-- MODAL -->
+<div id="modal">
+  <div id="popup">
+    <img src="images/gadgets.jpeg" 
+    style=
+    "margin-right: 100%;
+    max-height: 100%;
+    max-width: 50%;
+    border-radius: 20px 0px 0px 20px;">
+        <div class="container3">
+          <center>
+              <h3>WANT 15% OFF?</h3>
+              <p style="padding-top: 10px">Register to our mailing list and we'll give you</p>
+              <p style="margin-top: -45px; color:#eb8634">15% off your first purchase!</p>              
+              <form style="padding: 0px 8px 8px 8px">
+                <p style= "font-size: 12px; margin-left: -15px; color: #868686; ">Enter your email address</p>
+                <input type="text" id="input" name="text" value="" placeholder="Enter your email address" style="color: rgb(65, 65, 65); height: 40px; font-size: 14px; margin-top: -35px; border-color: #808080;">
+              </form>
+              <input onclick="changeText()" type="submit" id="button-2" value="REGISTER" style="width: 140px; font-size: 15px; padding: 5px"></input>
+                <div class="codeDisplay" id="showCode" style="display: none;">APPLY AT CHECKOUT
+                  <p style="font-size: 26px; padding-top: 25px; color: #ff971f;">aux15</p>
+                </div>
+              
+          </center>
+        </div>
+  </div>
+</div>
 
+<script type="text/javascript">
+  function PopUp(){
+          document.getElementById('modal').style.display="none"; 
+  }
+</script>
 
+<script>
+function changeText()
+{
+    var elem = document.getElementById("button-2");
+    if (elem.value=="ENJOY 15% OFF!") elem.value = "REGISTER";
+    else elem.value = "ENJOY 15% OFF!";
+    var elem = document.getElementById("showCode");
+    if (elem.style.display=="block") elem.style.display="none";
+    else elem.style.display = "block";
+}
+var elem = document.getElementById('modal')
+window.onclick = function(event) {
+  if (event.target == elem) {
+    elem.style.display = "none";
+  }
+}
+</script>
 
-
+<style>
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.911);
+  z-index: 2;
+  }
+  #popup{
+  width: 800px;
+  height: 500px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  position: relative;
+  top: 140px; left: 324px;
+  }
+  
+.container3 {
+  margin-top: -450px;
+  margin-left: 400px;
+}
+h3 {
+  font-family: 'Fira sans', sans-serif;
+  font-size: 32px;
+  color: black;
+  font-weight: 400;
+  padding-top: 30px;
+}
+p {
+  font-family: 'Fira sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: -25px;
+  color: #696969;
+  padding: 0px 30px 0px 30px;
+}
+.codeDisplay {
+  font-family: 'Fira sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #696969;
+  letter-spacing: 0.5px;
+  /* border: 2px solid rgb(184, 184, 184); */
+  padding: 5px;
+  /* width: 140px; */
+  margin-top: 0px;
+}
+</style>
