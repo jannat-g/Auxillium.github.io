@@ -40,23 +40,22 @@
 
     </style>
 
-    <!-- Header -->
+  <!-- Header -->
   <header id="header" class="alt" >
     <img class="logo" src="./images/logo.png"></img>
 
     <header id="header" class="alt" style="justify-content: space-between;">
       <nav id="nav"> 
         <ul style="margin-left: 250px;">
-          <li><a href="index.html">Home</a></li>
-          <li class="current"><a href="shop.html">Shop</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a style="font-size: 16px;" href="seller.html">Dashboard</a></li>
+          <li class="current"><a style="font-size: 16px;" href="adminProducts.html">Inventory</a></li>
+          <li><a style="font-size: 16px;" href="AdminShopView.html">Shop View</a></li>
         </ul>
       </nav>
       <nav id="nav">
         <ul>
-          <li><a style="color: orange;" href="login.html">LOGIN</a></li>
-          <a  href="Signup.html" ><button id="test123" class="btn btn-border btn-round color-3 material-design" data-color="#f6774f">SIGN UP</button></a>
+          <li class="current"><a style="color: orange; font-size: 16px;" href="">LOGGED IN AS: Sydney Store 1</a></li>
+          <a href="Signup.html" ><button onclick="signout();" id="test123"class="btn btn-border btn-round color-2 material-design" data-color="#f6774f">SIGN OUT</button></a>
         </ul>
       </nav>
     </header>
@@ -81,7 +80,7 @@
 <body>
 
 
-<h1 style="text-align: center; margin-top: 40px; margin-bottom: 10px; ">Product Inventory</h1>
+<h1 style="text-align: center; margin-top: 80px; margin-bottom: 10px; font-size: 40px; ">Product Inventory</h1>
     <div>
       <form id="add-cafe-list" style="display: inline-block;">
         <input type="text" name="name" placeholder="Insert Product Name" align="center" 
