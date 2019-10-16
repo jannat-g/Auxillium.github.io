@@ -29,9 +29,14 @@
   background-color: #1f1f24;
   justify-content: center;
 }
-
-
     </style>
+
+
+
+
+
+
+
 
     <!-- Header -->
   <header id="header" class="alt" >
@@ -48,12 +53,25 @@
       <nav id="nav">
         <ul>
           <li><a style="color: orange;" href="login.html">LOGIN</a></li>
-          <a  href="Signup.html" ><button id="test123" class="btn btn-border btn-round color-3 material-design" data-color="#f6774f">SIGN UP</button></a>
+          <a href="Signup.html" style="text-decoration: none;" >
+            <button id="test123" class="btn btn-border btn-round color-3 material-design" data-color="#f6774f"style="text-decoration: none;" >SIGN UP</button>
+          </a>
+          <a href="#" class="snipcart-checkout" >
+          <button class="btn btn-border btn-round color-2 material-design" style="text-decoration: none;">Checkout</button>
+          </a>
         </ul>
       </nav>
     </header>
   </header>
 
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+
+<div id="users">
    <div id="wrapper">
       <div class="inner" align="center">
     
@@ -62,7 +80,7 @@
         <h1 style="font-size: 40px; padding-bottom: 20px">Shop Products</h1>
         <hr align="right" class="new5">
         <div class="flex-container-icon" style="padding-top: 30px;">
-            <img src="images/icon-phone.png" style="width: 30px; 	height: 53px;">
+            <img src="images/icon-phone.png" style="width: 30px;  height: 53px;">
             <h5 style="margin-top: 70px; margin-left: -38px;font-size: 12px; font-weight: 400">PHONES</h5>
             <img src="images/icon-laptop.png" style="width: 60px; height: 42px;  margin-top: 12px; margin-left: 70px"> 
             <h5 style="margin-top: 70px; margin-left: -55px;font-size: 12px; font-weight: 400">LAPTOPS</h5>
@@ -76,56 +94,58 @@
             <h5 style="margin-top: 70px; margin-left: -54px;font-size: 12px; font-weight: 400">ACCESSORIES</h5>
         </div>
         <hr align="right" class="new5">
-         <!-- Search Bar -->
-      <div class="search-bar" style="padding-top: 100px;">
-        <input type="text" id="search" onkeyup="filter()" placeholder="Search Products" style="background-color: white; color: rgb(138, 138, 138)">
-        <button class="search-btn">
+      </nav>
+    </div>
+
+        <!-- Search Bar -->
+      <div class="search-bar">
+        <!-- class="search" automagically makes an input a search field. -->
+        <input class="search" placeholder="Search" type="text" style="margin-bottom: -20px; margin-top: 80px; background-color: white; color: rgb(138, 138, 138)">
+        <button class="search-btn" style="margin-top: 27.5px; margin-bottom: 0px; ">
             <i class="fas fa-search"></i>
+  
         </button>
       </div>
-    </nav>
-    </div>
 
-    <SECTION>
-      <div class="cart-container" align="center">
-      <a href="#" class="snipcart-checkout" ><button class="btn btn-border btn-round color-2 material-design" style="margin-right: -1500px; top: 200px">Checkout</button></a>
-    </div>
-    </SECTION> 
 
-     <style>
 
-      .cart-container {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        overflow: visible;
-      }
-      .snipcart-checkout{
-        position: -webkit-sticky; /* Safari */;
-      position: sticky;
-      bottom: 4rem;
-      z-index: 1;
-      }
-    </style>
-     
+<div>
+<!-- class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by. -->
+  <button class="sort" data-sort="price" style=" position: relative; left: 400px; top: 49px; font-style: bold;">
+    Sort by price
+  </button>
 
-      <!-- Products -->
+    <button class="sort" data-sort="name" style="position: relative; left: 240px; top: 0px;">
+    Sort by name
+  </button>
+</div>
+  
 
-      <!-- PHONES -->
-    <section class="phones" style="margin-top: -20px" id="phone_link" >
-      <p style="padding-top: 60px; margin-left: 23%; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">PHONES</p>
-      <p style="top: -70px; margin-left: 1060px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 16px; color: white; letter-spacing: 0px; cursor: pointer">SHOP ALL<arrow class="arrow right"></arrow></p>
-      <div class="background-box" align="center"></div>
+
+<!-- Child elements of container with class="list" becomes list items -->
+  <div class="list">    
+
+
+        <!-- PHONES -->
+    <section class="phones" id="phone_link" >
+      <p class="name" style="padding-top: 60px; margin-left: 290px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">PHONES</p>
+      <p style="top: -70px; margin-left: 1060px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 16px; color: white; letter-spacing: 0px; cursor: pointer">SHOP ALL
+        <arrow class="arrow right"></arrow>
+      </p>
+      <div class="background-box"></div>
       <div class="product-card">
         <div class="product-image">
           <img src="images/iphone-pro.png" style="width: 160px; top: -150px"> 
         </div>
+
         <div class="product-box"></div>
+
         <div class="product-info">
-          <h7 id="product-price" style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 1900.00</h7>
-          <br><h8 id="product-name" style="color: white; font-weight: 500; font-size: 16px">Apple iPhone 11 Pro</h8>
-          <br><h9 id="product-detail" style="color: white; font-weight: 400; font-size: 15px;">256GB (Gold)</h9>
+            <h7 class="price" id="product-price" style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 1900.00</h7>
+            <br><h8 id="product-name" style="color: white; font-weight: 500; font-size: 16px">Apple iPhone 11 Pro</h8>
+            <br><h9 id="product-detail" style="color: white; font-weight: 400; font-size: 15px;">256GB (Gold)</h9>
         </div>
+
 
         <!-- Quantity btn -->
 
@@ -139,7 +159,7 @@
           }
         </script>
 
-        <form style="margin-right: 480px; margin-top: -30px">
+        <form style="margin-right: 455px; margin-top: -30px">
           <div class="value-button" id="decrease" onclick='javascript: subtractQty();' value='-'/>-</div>
           <input type="text" name="qty" id="qty" value="1" />
           <div class="value-button" id="increase" onclick='javascript: document.getElementById("qty").value++;' value='+'/>+</div>
@@ -162,7 +182,8 @@
     </button>
     <button class= "btn btn-border btn-round color-3 material-design" style="font-size: 12px; font-weight: 400; letter-spacing: 0.3px; top: 0px; margin-left: 10px;">VIEW PRODUCT</button>
 
-        </div>
+      </div>
+
       <div class="line-break"></div>
       <div class="product-card">
         <div class="product-image">
@@ -170,14 +191,14 @@
         </div>
         <div class="product-box" style="top: 20px"></div>
         <div class="product-info">
-          <br><h7 id ="product-price" style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 1199.99</h7>
+          <br><h7 class="price" id ="product-price" style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 1199.99</h7>
           <br><h8 id ="product-name"style="color: white; font-weight: 500; font-size: 16px ">Apple iPhone 11</h8>
           <br><h9 id="product-detail" style="color: white; font-weight: 400; font-size: 15px;">64GB (White)</h9>
         </div> 
 
         <!-- Quantity btn -->
 
-        <form style="margin-right: 480px; margin-top: -30px">
+        <form style="margin-right: 455px; margin-top: -30px">
           <div class="value-button" id="decrease" onclick='javascript: subtractQty();' value='-'/>-</div>
           <input type="text" name="qty" id="qty" value="1" />
           <div class="value-button" id="increase" onclick='javascript: document.getElementById("qty").value++;' value='+'/>+</div>
@@ -198,13 +219,14 @@
         data-item-description="product-detail">ADD TO CART
       </button>
       <button class= "btn btn-border btn-round color-3 material-design" style="font-size: 12px; font-weight: 400; letter-spacing: 0.3px; top: 0px; margin-left: 10px;">VIEW PRODUCT</button>
-  
-      </div>
     </section>
 
+
+
     <!-- LAPTOPS -->
-    <section class="laptops" style="margin-top: -250px" id="laptop_link">
-        <p style="padding-top: -150px; margin-left:333px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">LAPTOPS</p>
+
+    <section class="laptops" style="margin-top: 68px" id="laptop_link">
+        <p class="name" style="padding-top: -150px; margin-left: 285px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">LAPTOPS</p>
         <p style="top: -70px; margin-left: 1060px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 16px; color: white; letter-spacing: 0px; cursor: pointer">SHOP ALL<i class="arrow right"></i></p>
         <div class="background-box"></div>
         <div class="product-card">
@@ -213,14 +235,14 @@
           </div>
           <div class="product-box"></div>
           <div class="product-info">
-            <h7 style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 2100.00</h7>
+            <h7 class="price" style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 2100.00</h7>
             <br><h8 id = "product-name"style="color: white; font-weight: 500; font-size: 16px">Apple MacBook Pro</h8>
             <br><h9 id="product-detail" style="color: white; font-weight: 400; font-size: 15px;">13-inch with Touch Bar 256GB (Space Grey) </h9>
           </div>
 
           <!-- Quantity btn -->
 
-        <form style="margin-right: 480px; margin-top: -30px">
+        <form style="margin-right: 455px; margin-top: -30px">
           <div class="value-button" id="decrease" onclick='javascript: subtractQty();' value='-'/>-</div>
           <input type="text" name="qty" id="qty" value="1" />
           <div class="value-button" id="increase" onclick='javascript: document.getElementById("qty").value++;' value='+'/>+</div>
@@ -250,14 +272,14 @@
           </div>
           <div class="product-box" style="top: 20px"></div>
           <div class="product-info">
-            <br><h7 id = "product-price" style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 2500.99</h7>
+            <br><h7 class="price" id = "product-price" style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 2500.99</h7>
             <br><h8 id = "product-name"style="color: white; font-weight: 500; font-size: 16px ">Apple Macbook Pro </h8>
             <br><h9 id="product-detail" style="color: white; font-weight: 400; font-size: 15px;">15-inch with Touch Bar 256GB (Space Grey)</h9>
           </div>
           
           <!-- Quantity btn -->
 
-        <form style="margin-right: 480px; margin-top: -30px">
+        <form style="margin-right: 455px; margin-top: -30px">
           <div class="value-button" id="decrease" onclick='javascript: subtractQty();' value='-'/>-</div>
           <input type="text" name="qty" id="qty" value="1" />
           <div class="value-button" id="increase" onclick='javascript: document.getElementById("qty").value++;' value='+'/>+</div>
@@ -278,12 +300,15 @@
       data-item-description="product-detail">ADD TO CART
     </button>
     <button class= "btn btn-border btn-round color-3 material-design" style="font-size: 12px; font-weight: 400; letter-spacing: 0.3px; top: 0px; margin-left: 10px;">VIEW PRODUCT</button>
+  </div>
   </section>
 
 
+
+
       <!-- DESKTOPS -->
-      <section class="desktops" style="margin-left: 10px; margin-top:-230px" id="desktop_link">
-          <p style="padding-top: -150px; margin-left: 333px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">DESKTOPS</p>
+      <section class="desktops" id="desktop_link" style="margin-top: 68px;">
+          <p class="name" style="padding-top: -150px; margin-left: 285px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">DESKTOPS</p>
           <p style="top: -70px; margin-left: 1060px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 16px; color: white; letter-spacing: 0px; cursor: pointer">SHOP ALL<i class="arrow right"></i></p>
           <div class="background-box"></div>
           <div class="product-card">
@@ -292,7 +317,7 @@
             </div>
             <div class="product-box"></div>
             <div class="product-info" style="margin-top: -242px">
-              <h7 style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 7299.00</h7>
+              <h7 class="price" style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 7299.00</h7>
               <br><h8 id = "product-name"style="color: white; font-weight: 500; font-size: 18px;">Apple iMac Pro</h8>
               <br><h9 id="product-detail" style= "color: white; font-weight: 400; font-size: 15px;">27-inch Retina 5K display, 3.2GHz 8-core Intel Xeon W, 32GB RAM, 1TB SSD 
                   <br>(Space Gray)</h9>
@@ -300,7 +325,7 @@
 
             <!-- Quantity btn -->
 
-        <form style="margin-right: 475px; margin-top: -30px">
+        <form style="margin-right: 342px; margin-top: -30px">
           <div class="value-button" id="decrease" onclick='javascript: subtractQty();' value='-'/>-</div>
           <input type="text" name="qty" id="qty" value="1" />
           <div class="value-button" id="increase" onclick='javascript: document.getElementById("qty").value++;' value='+'/>+</div>
@@ -330,7 +355,7 @@
             </div>
             <div class="product-box" style="top: 20px"></div>
             <div class="product-info">
-              <br><h7 id = "product-price" style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 1199.99</h7>
+              <br><h7 class="price" id = "product-price" style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 1199.99</h7>
               <br><h8 id = "product-name"style="color: white; font-weight: 500; font-size: 18px ">Apple iMac</h8>
               <br><h9 id="product-detail" style="color: white; font-weight: 400; font-size: 15px;">25-inch Retine 4K display, 3.0GHz 6-core processor Turbo Boost up to 4.1GHz 
                   <br>1TB storage Retina 4K display (Silver)</h9>
@@ -338,7 +363,7 @@
 
             <!-- Quantity btn -->
 
-        <form style="margin-right: 475px; margin-top: -30px">
+        <form style="margin-right: 342px; margin-top: -30px">
           <div class="value-button" id="decrease" onclick='javascript: subtractQty();' value='-'/>-</div>
           <input type="text" name="qty" id="qty" value="1" />
           <div class="value-button" id="increase" onclick='javascript: document.getElementById("qty").value++;' value='+'/>+</div>
@@ -362,10 +387,14 @@
         
         </div>
         </section>
-        
+
+
+
+
+    
       <!-- TABLETS -->
-      <section class="tablets" style="margin-top: -250px; margin-left: 10px" id="tablet_link">
-          <p style="padding-top: -150px; margin-left: 333px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">TABLETS</p>
+      <section class="tablets" style="margin-top: 68px;" id="tablet_link">
+          <p class="name" style="padding-top: -150px; margin-left: 285px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">TABLETS</p>
           <p style="top: -70px; margin-left: 1060px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 16px; color: white; letter-spacing: 0px; cursor: pointer">SHOP ALL<i class="arrow right"></i></p>
           <div class="background-box"></div>
           <div class="product-card">
@@ -374,14 +403,14 @@
             </div>
             <div class="product-box"></div>
             <div class="product-info">
-              <h7 style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 2100.00</h7>
+              <h7 class="price" style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 2100.00</h7>
               <br><h8 id = "product-name"style="color: white; font-weight: 500; font-size: 16px">Apple iPad Pro </h8>
               <br><h9 id="product-detail" style="color: white; font-weight: 400; font-size: 15px;">11-inch display 256GB (Space Grey)</h9>
             </div>
             
             <!-- Quantity btn -->
 
-        <form style="margin-right: 475px; margin-top: -30px">
+        <form style="margin-right: 342px; margin-top: -30px">
               <div class="value-button" id="decrease" onclick='javascript: subtractQty();' value='-'/>-</div>
           <input type="text" name="qty" id="qty" value="1" />
           <div class="value-button" id="increase" onclick='javascript: document.getElementById("qty").value++;' value='+'/>+</div>
@@ -411,14 +440,14 @@
             </div>
             <div class="product-box" style="top: 20px"></div>
             <div class="product-info">
-              <br><h7 id = "product-price" style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 729.00</h7>
+              <br><h7 class="price" id = "product-price" style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 729.00</h7>
               <br><h8 id = "product-name"style="color: white; font-weight: 500; font-size: 18px ">Apple iPad</h8>
               <br><h9 id="product-detail" style="color: white; font-weight: 400; font-size: 15px;">10.2-inch display 32GB WiFi + Cellular (Gold)</h9>
             </div>
 
             <!-- Quantity btn -->
 
-        <form style="margin-right: 475px; margin-top: -30px">
+        <form style="margin-right: 342px; margin-top: -30px">
           <div class="value-button" id="decrease" onclick='javascript: subtractQty();' value='-'/>-</div>
           <input type="text" name="qty" id="qty" value="1" />
           <div class="value-button" id="increase" onclick='javascript: document.getElementById("qty").value++;' value='+'/>+</div>
@@ -443,9 +472,15 @@
         </div>
         </section>
 
+    
+
+
+
+
+
       <!-- WATCHES -->
-      <section class="watches" style="margin-top: -220px; margin-left: 10px" id="watch_link">
-          <p style="padding-top: -150px; margin-left: 333px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">WATCHES</p>
+      <section class="watches" style="margin-top: 68px;" id="watch_link">
+          <p class="name" style="padding-top: -150px; margin-left: 285px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">WATCHES</p>
           <p style="top: -70px; margin-left: 1060px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 16px; color: white; letter-spacing: 0px; cursor: pointer">SHOP ALL<i class="arrow right"></i></p>
           <div class="background-box"></div>
           <div class="product-card">
@@ -454,14 +489,14 @@
             </div>
             <div class="product-box"></div>
             <div class="product-info">
-              <h7 style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 1049.00</h7>
+              <h7 class="price" style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 1049.00</h7>
               <br><h8 id = "product-name"style="color: white; font-weight: 500; font-size: 18px">Apple Watch Series 4 </h8>
               <br><h9 id="product-detail" style="color: white; font-weight: 400; font-size: 15px;">Gold Stainless Steel Case (Stone Sport Band)</h9>
             </div>
 
             <!-- Quantity btn -->
 
-        <form style="margin-right: 475px; margin-top: -30px">
+        <form style="margin-right: 342px; margin-top: -30px">
           <div class="value-button" id="decrease" onclick='javascript: subtractQty();' value='-'/>-</div>
           <input type="text" name="qty" id="qty" value="1" />
           <div class="value-button" id="increase" onclick='javascript: document.getElementById("qty").value++;' value='+'/>+</div>
@@ -491,14 +526,14 @@
             </div>
             <div class="product-box" style="top: 20px"></div>
             <div class="product-info">
-              <br><h7 id = "product-price" style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 1179.00</h7>
+              <br><h7 class="price" id = "product-price" style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 1179.00</h7>
               <br><h8 id = "product-name"style="color: white; font-weight: 500; font-size: 18px ">Apple Watch Series 5</h8>
               <br><h9 id="product-detail" style="color: white; font-weight: 400; font-size: 15px;">Stainless Steel Case with Milanese Loop (Silver)</h9>
             </div>
 
             <!-- Quantity btn -->
 
-        <form style="margin-right: 475px; margin-top: -30px">
+        <form style="margin-right: 342px; margin-top: -30px">
           <div class="value-button" id="decrease" onclick='javascript: subtractQty();' value='-'/>-</div>
           <input type="text" name="qty" id="qty" value="1" />
           <div class="value-button" id="increase" onclick='javascript: document.getElementById("qty").value++;' value='+'/>+</div>
@@ -523,9 +558,18 @@
         </div>
         </section>
 
+
+
+
+
+
+
+
+
+
       <!-- ACCESSORIES -->
-      <section class="accessories" style="margin-top: -230px; margin-left: 10px" id="accessories_link">
-          <p style="padding-top: -150px; margin-left: 333px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">ACCESSORIES</p>
+      <section class="accessories" style="margin-top: 68px;" id="accessories_link">
+          <p class="name" style="padding-top: -150px; margin-left: 285px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">ACCESSORIES</p>
           <p style="top: -70px; margin-left: 1060px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 16px; color: white; letter-spacing: 0px; cursor: pointer">SHOP ALL<i class="arrow right"></i></p>
           <div class="background-box"></div>
           <div class="product-card">
@@ -534,14 +578,14 @@
             </div>
             <div class="product-box"></div>
             <div class="product-info">
-              <h7 style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 159.00</h7>
+              <h7 class="price" style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 159.00</h7>
               <br><h8 id = "product-name"style="color: white; font-weight: 500; font-size: 16px">Apple Airpods </h8>
               <br><h9 id="product-detail" style="color: white; font-weight: 400; font-size: 15px;">with Charging Case</h9>
             </div>
 
             <!-- Quantity btn -->
 
-        <form style="margin-right: 475px; margin-top: -30px">
+        <form style="margin-right: 342px; margin-top: -30px">
           <div class="value-button" id="decrease" onclick='javascript: subtractQty();' value='-'/>-</div>
           <input type="text" name="qty" id="qty" value="1" />
           <div class="value-button" id="increase" onclick='javascript: document.getElementById("qty").value++;' value='+'/>+</div>
@@ -571,14 +615,14 @@
             </div>
             <div class="product-box" style="top: 20px"></div>
             <div class="product-info">
-              <br><h7 id = "product-price" style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 99.00</h7>
+              <br><h7 class="price" id = "product-price" style="color: #FDA044; font-weight: 500; font-size: 20px;">$ 99.00</h7>
               <br><h8 id = "product-name"style="color: white; font-weight: 500; font-size: 16px ">Magic Mouse 2</h8>
               <br><h9 id="product-detail" style="color: white; font-weight: 400; font-size: 15px;">(Space Grey)</h9>
             </div>
 
             <!-- Quantity btn -->
 
-        <form style="margin-right: 475px; margin-top: -30px">
+        <form style="margin-right: 342px; margin-top: -30px">
           <div class="value-button" id="decrease" onclick='javascript: subtractQty();' value='-'/>-</div>
           <input type="text" name="qty" id="qty" value="1" />
           <div class="value-button" id="increase" onclick='javascript: document.getElementById("qty").value++;' value='+'/>+</div>
@@ -602,33 +646,72 @@
       
         </div>
         </section>
+
+
+
+
+
+
+
+
+  </div>
+
+</div>
+
+
+<script>
+  var options = 
+  {
+  valueNames: [ 'name', 'born', 'price' ]
+};
+
+var userList = new List('users', options);
+</script>
+
+
+
+
+
+
+
+
+
+
+   <!--
+
+    <SECTION>
+      <div class="container" align="center">
+      <a href="#" class="snipcart-checkout" ><button class="btn btn-border btn-round color-2 material-design">Checkout</button></a>
+    </div>
+    </SECTION> 
+
+  -->
     
-		</div>
-	
+    </div>
+  
     <!-- Footer -->
-  <section id ="contact" class="main style2" align="center" style="margin-top: -250px">
+  <section id ="contact" class="main style2" align="center">
     <div id="foot">
       <nav id="nav"> 
         <ul>
           <li><a style="font-size: 15px;" href="index.html">HOME</a></li>
-          <li><a style="font-size: 15px;" href="about.html">ABOUT US</a></li>
-          <li><a style="font-size: 15px;" href="">CONTACT US</a></li>
+          <li><a style="font-size: 15px;" href="contact.html">CONTACT US</a></li>
           <li><a style="font-size: 15px;" href="">HELP</a></li><hr>
         </ul>
         <div class="inner special medium">
           <div class="jumbotron-social">
             <ul class="ul-social" >
               <li class="li-social-links">
-                <a class="social" href="" target="_blank"><img src="images/facebook.png" style="width: 40px; "aria-hidden="true"></img></a>
+                <a class="social" href="" target="_blank"><img src="images/facebook.png" style="width: 40px; "class="fa fa-facebook" aria-hidden="true"></img></a>
               </li>
               <li class="li-social-links">
-                <a class="social" href="" target="_blank"><img src="images/twitter.png" style="width: 40px; "aria-hidden="true"></img></a>
+                <a class="social" href="" target="_blank"><img src="images/twitter.png" style="width: 40px; "class="fa fa-twitter" aria-hidden="true"></img></a>
               </li>
               <li class="li-social-links">
-                <a class="social" href="" target="_blank"><img src="images/email.png" style="width: 40px;"  aria-hidden="true"></i></a>
+                <a class="social" href="" target="_blank"><img src="images/email.png" style="width: 40px;" class="fa fa-envelope-o" aria-hidden="true"></i></a>
               </li>
               <li class="li-social-links">
-                <a class="social" href="" target="_blank"><img src="images/insta.png" style="width: 43px;" aria-hidden="true"></img></a>
+                <a class="social" href="" target="_blank"><img src="images/insta.png" style="width: 43px;"class="fa fa-instagram" aria-hidden="true"></img></a>
               </li>
             </ul>
           </div>
@@ -646,7 +729,6 @@
       <script src="assets/js/breakpoints.min.js"></script>
       <script src="assets/js/util.js"></script>
       <script src="assets/js/main.js"></script>
-       <script src="assets/js/shop.js"></script>
 
       <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-autopop="false" data-api-key=" MDRjZmFkYTYtOGYxYy00YmFkLTliMDUtOTdiY2QyZjZlYjY4NjM3MDA5MjM0NzMwMjczNjc0"></script>
       <link rel="stylesheet" href="assets/css/snipcart-fullscreen.css"/>
@@ -654,6 +736,6 @@
 
 </div>
 </div>
-	</body>
+  </body>
 </html>
 

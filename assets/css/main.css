@@ -4421,6 +4421,7 @@ hr {
 	color: white;
 	text-align: center;
 	justify-content: center;
+	
 
 }
 
@@ -4484,7 +4485,7 @@ button {
 input[type=text], input[type=password] { 
 
 
-  border: 1px solid white; 
+  border: 1px solid #525151; 
   box-sizing: border-box;
   border-color: none;
   background-color: none; 
@@ -4493,6 +4494,7 @@ input[type=text], input[type=password] {
  
 
 } 
+
 
 
 
@@ -4697,9 +4699,9 @@ body {
    .search-bar  {
 	position: relative;
     margin-top: -60px;
-    margin-left: 65%;
+    left: 870px;
 	height: 40px;
-	width: 30%;
+	width: 350px;
 	border-radius: 20px;
 	padding: 10px;
    }
@@ -4752,7 +4754,7 @@ body {
   }
 
   .sort {
-	
+	display: flex;
   }
 
   .collection-sort {
@@ -4799,11 +4801,11 @@ body {
 
   .background-box {
 	position: relative;
-	width: 60%;
+	width: 980px;
 	height: 690px;
 	background: #34343C;
 	box-shadow: 0px 2px 6px 4px rgba(0, 0, 0, 0.2);
-	margin-left: 20%;
+	margin-left: 230px;
 	margin-top: -185px;
 	z-index: 1;
   }
@@ -4826,7 +4828,7 @@ body {
 	padding: 3%;
 	color: #c9c9c9;
 	top: -310px;
-	
+	left: -75px;
 	z-index: 2;
   }
 
