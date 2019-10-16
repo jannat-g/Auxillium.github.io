@@ -4432,7 +4432,7 @@ button {
   margin: 8px 0; 
   border: none; 
   cursor: pointer; 
-  width: 10%; 
+ 
   text-decoration: none;
   outline: none;
   box-shadow: none;
@@ -4859,7 +4859,7 @@ body {
 
   /* Quanity btn */
 
-  form {
+  #qtyfrm {
 	width: 300px;
 	margin: 0 auto;
 	text-align: center;
