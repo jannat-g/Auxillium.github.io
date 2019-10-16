@@ -354,6 +354,7 @@ firebase.initializeApp(firebaseConfig);
     border-radius: 20px 0px 0px 20px;">
         <div class="container3">
           <center>
+              <span style="background-color: orange; color: white; display: block; width: 50px; border-radius: 55px; font-size: 30px; position: relative; bottom:75px; left: -595px; cursor: pointer; " class="close">&times;</span>
               <h3>WANT 15% OFF?</h3>
               <p style="padding-top: 10px">Register to our mailing list and we'll give you</p>
               <p style="margin-top: -45px; color:#eb8634">15% off your first purchase!</p>              
@@ -364,16 +365,22 @@ firebase.initializeApp(firebaseConfig);
               <input onclick="changeText()" type="submit" id="button-2" value="REGISTER" style="width: 140px; font-size: 15px; padding: 5px"></input>
                 <div class="codeDisplay" id="showCode" style="display: none;">APPLY AT CHECKOUT
                   <p style="font-size: 26px; padding-top: 25px; color: #ff971f;">aux15</p>
-                </div>
-              
           </center>
         </div>
   </div>
 </div>
 
+
 <script type="text/javascript">
-  function PopUp(){
-          document.getElementById('modal').style.display="none"; 
+  var span = document.getElementsByClassName("close")[0];
+  function PopUp()
+  {
+    document.getElementById('modal').style.display="none"; 
+  }
+
+  span.onclick = function() 
+  {
+    modal.style.display = "none";
   }
 </script>
 
@@ -388,11 +395,13 @@ function changeText()
     else elem.style.display = "block";
 }
 var elem = document.getElementById('modal')
-window.onclick = function(event) {
+
+/*window.onclick = function(event) {
   if (event.target == elem) {
     elem.style.display = "none";
   }
 }
+*/
 </script>
 
 <style>
