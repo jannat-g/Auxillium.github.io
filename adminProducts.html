@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Auxilium </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="shortcut icon" href="./images/logo copy.png"/>
+         <!-- <link rel="stylesheet" href="assets/css/snipcart-fullscreen.css"/> -->
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet"/> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600,700&display=swap');
+    </style>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>
+    <link rel="stylesheet" type="text/css" href="">
+
+
+  </head>
+  <body class="is-preload" style=" background: #1f1f24; ">
+    <style type="text/css">
+      hr.new5 {
+        border: 0.5px solid white;
+        border-radius: 5px;
+        width: 90%;
+      }
+      .flex-container-icon {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1f1f24;
+  justify-content: center;
+}
+
+
+    </style>
+
+  <!-- Header -->
+  <header id="header" class="alt" >
+    <img class="logo" src="./images/logo.png"></img>
+
+    <header id="header" class="alt" style="justify-content: space-between;">
+      <nav id="nav"> 
+        <ul style="margin-left: 250px;">
+          <li><a style="font-size: 16px;" href="seller.html">Dashboard</a></li>
+          <li class="current"><a style="font-size: 16px;" href="adminProducts.html">Inventory</a></li>
+          <li><a style="font-size: 16px;" href="AdminShopView.html">Shop View</a></li>
+        </ul>
+      </nav>
+      <nav id="nav">
+        <ul>
+          <li class="current"><a style="color: orange; font-size: 16px;" href="">LOGGED IN AS: Sydney Store 1</a></li>
+          <a href="Signup.html" ><button onclick="signout();" id="test123"class="btn btn-border btn-round color-2 material-design" data-color="#f6774f">SIGN OUT</button></a>
+        </ul>
+      </nav>
+    </header>
+  </header>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<h1 style="text-align: center; margin-top: 80px; margin-bottom: 10px; font-size: 40px; ">Product Inventory</h1>
+    <div>
+      <form id="add-cafe-list" style="display: inline-block;">
+        <input type="text" name="name" placeholder="Insert Product Name" align="center" 
+        style="text-align: center; width: 80%; margin-bottom: 15px; margin-left: 20px;">
+                
+        <input type="text" name="price" placeholder="($) Insert Product Price" align="center" 
+        style="text-align: center; width: 80%; margin-bottom: 0px; margin-left: 20px; ">
+
+        <button class="btn btn-border btn-round color-2 material-design" style="font-size: 12px; font-weight: 400; letter-spacing: 0.3px; bottom: 48px; margin-top: 8px; margin-bottom: 10px; margin-left: 290px; width: 80%; font-weight: bold; font-size: 18px; ">ADD PRODUCT</button>
+      </form>
+      <table style="margin-bottom: 15px; background-color: orange; border: 2px solid white; margin-top: -45px; ">
+          <col width="575">
+          <tr>
+            <th style="font-size: 22px; padding: 8px; border: 2px solid white;">Product Name</th>
+            <th style="font-size: 22px;">Product Price</th>
+          </tr>
+      </table>
+      <ul style="color: black" id="cafe-list"></ul>
+    </div>
+
+
+
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyAwrcbALg-Ow4O3pyJMY-7vxNF_X6hZ-GM",
+          authDomain: "auxilium-f6620.firebaseapp.com",
+          databaseURL: "https://auxilium-f6620.firebaseio.com",
+          projectId: "auxilium-f6620",
+          storageBucket: "auxilium-f6620.appspot.com",
+          messagingSenderId: "1031183506590",
+          appId: "1:1031183506590:web:0a2eea869b3f7442"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore(); //creating a reference and storing inside the database
+    </script>
+    <script src="assets/js/App.js"></script>
+
+	</body>
+</html>
+
+
+<style>
+
+ul{
+    list-style-type: none;
+    padding: 5;
+
+}
+
+li{
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    height: 46px;
+}
+
+li span:nth-child(2) /* price section */
+{ 
+    font-size: 16px;  
+    right: 800px;
+    position: absolute;
+    top: 20px;
+}
+
+li div /* 'X' section */
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 33px;
+    text-align: center;
+    padding: 4px 10;
+    font-weight: bold;
+    cursor:  pointer;
+    background-color: red;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-right: 8px;
+}
+
+
+</style>
+

@@ -38,27 +38,21 @@
 
 
 
-    <!-- Header -->
-  <header id="header" class="alt" >
+    <header id="header" class="alt" >
     <img class="logo" src="./images/logo.png"></img>
 
     <header id="header" class="alt" style="justify-content: space-between;">
       <nav id="nav"> 
         <ul style="margin-left: 250px;">
-          <li><a href="index.html">Home</a></li>
-          <li class="current"><a href="shop.html">Shop</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="seller.html">Dashboard</a></li>
+          <li><a href="adminProducts.html">Inventory</a></li>
+          <li class="current"><a href="AdminShopView.html">Shop View</a></li>
         </ul>
       </nav>
       <nav id="nav">
         <ul>
-          <li><a style="color: orange;" href="login.html">LOGIN</a></li>
-          <a href="Signup.html" style="text-decoration: none;" >
-            <button id="test123" class="btn btn-border btn-round color-3 material-design" data-color="#f6774f"style="text-decoration: none;" >SIGN UP</button>
-          </a>
-          <a href="#" class="snipcart-checkout" >
-          <button class="btn btn-border btn-round color-2 material-design" style="text-decoration: none;">Checkout</button>
-          </a>
+          <li class="current"><a style="color: orange;" href="">LOGGED IN AS: Sydney Store 1</a></li>
+          <a href="Signup.html" ><button onclick="signout();" id="test123"class="btn btn-border btn-round color-2 material-design" data-color="#f6774f">SIGN OUT</button></a>
         </ul>
       </nav>
     </header>
@@ -80,23 +74,17 @@
         <h1 style="font-size: 40px; padding-bottom: 20px">Shop Products</h1>
         <hr align="right" class="new5">
         <div class="flex-container-icon" style="padding-top: 30px;">
-            <a href="shop.html#phone_link" style="text-decoration:none;">
-            <img src="images/icon-phone.png" style="width: 30px;  height: 53px;"></a>
+            <img src="images/icon-phone.png" style="width: 30px;  height: 53px;">
             <h5 style="margin-top: 70px; margin-left: -38px;font-size: 12px; font-weight: 400">PHONES</h5>
-            <a href="shop.html#laptop_link" style="text-decoration:none;">
-            <img src="images/icon-laptop.png" style="width: 60px; height: 42px;  margin-top: 12px; margin-left: 70px"></a> 
+            <img src="images/icon-laptop.png" style="width: 60px; height: 42px;  margin-top: 12px; margin-left: 70px"> 
             <h5 style="margin-top: 70px; margin-left: -55px;font-size: 12px; font-weight: 400">LAPTOPS</h5>
-            <a href="shop.html#desktop_link" style="text-decoration:none;">
-            <img src="images/icon-desktop.png" style="width: 53px; height: 55px; margin-top: 2px; margin-left: 80px"></a>
+            <img src="images/icon-desktop.png" style="width: 53px; height: 55px; margin-top: 2px; margin-left: 80px">
             <h5 style="margin-top: 70px; margin-left: -55px;font-size: 12px; font-weight: 400">DESKTOPS</h5>
-            <a href="shop.html#tablet_link" style="text-decoration:none;">
-            <img src="images/icon-tablet.png" style="width: 38px; height: 52px;  margin-top: 4px; margin-left: 80px"></a>
+            <img src="images/icon-tablet.png" style="width: 38px; height: 52px;  margin-top: 4px; margin-left: 80px">
             <h5 style="margin-top: 70px; margin-left: -42px;font-size: 12px; font-weight: 400">TABLETS</h5>
-            <a href="shop.html#watch_link" style="text-decoration:none;">
-            <img src="images/icon-watch.png" style="width: 28px; height: 50px; margin-top: 5px; margin-left: 80px"></a>
+            <img src="images/icon-watch.png" style="width: 28px; height: 50px; margin-top: 5px; margin-left: 80px">
             <h5 style="margin-top: 70px; margin-left: -40px;font-size: 12px; font-weight: 400">WATCHES</h5>
-            <a href="shop.html#accessories_link" style="text-decoration:none;">
-            <img src="images/icon-accessories.png" style="width: 35px; height: 38px; margin-top: 18px; margin-left: 80px"></a> 
+            <img src="images/icon-accessories.png" style="width: 35px; height: 38px; margin-top: 18px; margin-left: 80px"> 
             <h5 style="margin-top: 70px; margin-left: -54px;font-size: 12px; font-weight: 400">ACCESSORIES</h5>
         </div>
         <hr align="right" class="new5">
@@ -117,138 +105,15 @@
 
 <div>
 <!-- class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by. -->
-  <button class="sort tn btn-border btn-round color-2 material-design" data-sort="price" style=" position: relative; left: 400px; top: 49px; font-style: bold; text-decoration: none; font-size: 13px; font-weight: bold">
-    SORT BY PRICE
+  <button class="sort" data-sort="price" style=" position: relative; left: 400px; top: 49px; font-style: bold;">
+    Sort by price
   </button>
 
-    <button class="sort tn btn-border btn-round color-2 material-design" data-sort="name" style="position: relative; left: 240px; bottom: 4px; 
-    font-size: 13px; font-weight: bold;">
-    SORT BY NAME
+    <button class="sort" data-sort="name" style="position: relative; left: 240px; top: 0px;">
+    Sort by name
   </button>
 </div>
   
-
-
-
-
-
-
-
-
-
-
-<!--Start of modal stuff-------------------------------------------------------------------------------------------------------------- -->
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 10; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  height: 85%;
-  border-radius: 30px;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-</style>
-</head>
-<body>
-
-
-
-<!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
-
-</div>
-
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-
-</body>
-</html>
-
-
-<!--end of modal stuff-------------------------------------------------------------------------------------------------------------- -->
-
-
-
-
-
-
-
-
-
 
 
 <!-- Child elements of container with class="list" becomes list items -->
@@ -310,7 +175,6 @@ window.onclick = function(event) {
       data-item-description="product-detail">ADD TO CART
     </button>
     <button class= "btn btn-border btn-round color-3 material-design" style="font-size: 12px; font-weight: 400; letter-spacing: 0.3px; top: 0px; margin-left: 10px;">VIEW PRODUCT</button>
-
 
       </div>
 
@@ -824,9 +688,8 @@ var userList = new List('users', options);
     <div id="foot">
       <nav id="nav"> 
         <ul>
-          <li><a style="font-size: 15px;" href="index.html">HOME</a></li>
-          <li><a style="font-size: 15px;" href="contact.html">CONTACT US</a></li>
-          <li><a style="font-size: 15px;" href="">HELP</a></li><hr>
+          <li><a style="font-size: 15px;" href="seller.html">DASHBOARD</a></li>
+          <li><a style="font-size: 15px;" href="mailto:auxiliumonlinehelp@gmail.com?Subject=Customer%20Support">HELP</a></li><hr>
         </ul>
         <div class="inner special medium">
           <div class="jumbotron-social">

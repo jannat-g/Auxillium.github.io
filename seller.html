@@ -199,16 +199,15 @@ firebase.initializeApp(firebaseConfig);
 		<header id="header" class="alt" style="justify-content: space-between;">
 			<nav id="nav"> 
 				<ul style="margin-left: 250px;">
-					<li ><a href="index.html">Home</a></li>
-					<li><a href="shop.html">Shop</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
+					<li class="current"><a href="seller.html">Dashboard</a></li>
+					<li><a href="adminProducts.html">Inventory</a></li>
+					<li><a href="AdminShopView.html">Shop View</a></li>
 				</ul>
 			</nav>
 			<nav id="nav">
 				<ul>
-					<li class="current"><a style="color: orange;" href="login.html">LOGIN</a></li>
-					<a href="Signup.html" ><button id="test123"class="btn btn-border btn-round color-3 material-design" data-color="#f6774f">SIGN UP</button></a>
+					<li class="current"><a style="color: orange;" href="">LOGGED IN AS: Sydney Store 1</a></li>
+					<a href="Signup.html" ><button onclick="signout();" id="test123"class="btn btn-border btn-round color-2 material-design" data-color="#f6774f">SIGN OUT</button></a>
 				</ul>
 			</nav>
 		</header>
@@ -219,10 +218,6 @@ firebase.initializeApp(firebaseConfig);
 	<!--------------- Main -------------->
 
 
-	<div class="inner" align="center">
-		<button align="center"  onclick="signout();"  value="signout">Sign out</button>
-	</div>
-</section>
 <script>
 	function signout(){
 		firebase.auth().signOut();
@@ -334,34 +329,15 @@ firebase.initializeApp(firebaseConfig);
 	<p></p>
 
 
-	<div class="orderbackground" style="height: 250px">	
-
-		<p style="margin-top: -40px; margin-left: 50px; font-size: 16px; color: whitesmoke">User Stories yet to do:</p>
-		<ul style="margin-top: -40px; margin-left: 50px; font-size: 12px; color: whitesmoke";>
-			<li>uodate inventory</li>
-			<li>add new product</li>
-			<li>delete products</li>
-			<br>
-			<li>total revenue</li>
-			<li>update order status</li>
-			<br>
-			<li>> consider multiple seller logins</li>
-		</ul>  
 
 
-	</div>
-	<div class="inner" align="center">
-		<button align="center"  onclick="signout();"  value="signout">Sign out</button>
-	</div>
 	<!-- Footer -->
 	<section id ="contact" class="main style2" align="center">
 		<div id="foot">
 			<nav id="nav"> 
 				<ul>
-					<li><a style="font-size: 15px;" href="index.html">HOME</a></li>
-					<li><a style="font-size: 15px;" href="about.html">ABOUT US</a></li>
-					<li><a style="font-size: 15px;" href="">CONTACT US</a></li>
-					<li><a style="font-size: 15px;" href="">HELP</a></li><hr>
+					<li><a style="font-size: 15px;" href="seller.html">DASHBOARD</a></li>
+					<li><a style="font-size: 15px;" href="mailto:auxiliumonlinehelp@gmail.com?Subject=Customer%20Support">HELP</a></li><hr>
 				</ul>
 				<div class="inner special medium">
 					<div class="jumbotron-social">

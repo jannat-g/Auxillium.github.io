@@ -26,7 +26,6 @@
         <ul style="margin-left: 250px;">
           <li class="current"><a href="index.html">Home</a></li>
           <li><a href="shop.html">Shop</a></li>
-          <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
@@ -91,7 +90,7 @@
         <img src="images/iphone-pro.png" class="reccomendation_img" >
         <p></p>
         <p style="color: black; font-size: 18px;line-height: 30px; font-weight: bold; text-align: center;">Apple MacBook Pro 13-inch with Touch Bar 256GB <br>(Space Grey)</p>
-        <a href="shop.html#desktop_link" style="text-decoration:none;"><button class="btn btn-border btn-round color-2 material-design reccomendation_btn" style="background-color: white;  padding-top: 10px;">Shop Now</button></a><br>
+        <a href="shop.html#phone_link" style="text-decoration:none;"><button class="btn btn-border btn-round color-2 material-design reccomendation_btn" style="background-color: white;  padding-top: 10px;">Shop Now</button></a><br>
 
       </div>
 
@@ -106,8 +105,8 @@
       <div class="column2">
         <img src="images/ipad_resize.png" class="reccomendation_img" >
         <p></p>
-        <p style="color: black; font-size: 18px;line-height: 30px; font-weight: bold; text-align: center;">Apple iPad Pro 11-inch display 256GB, Cellular + WIFI <br>(Space Grey)</p>
-        <a href="shop.html#desktop_link" style="text-decoration:none;"><button class="btn btn-border btn-round color-2 material-design reccomendation_btn" style="background-color: white;  padding-top: 10px;">Shop Now</button></a><br>
+        <p style="color: black; font-size: 18px;line-height: 30px; font-weight: bold; text-align: center;">Apple iPad Pro 11-inch display 256GB, Cellular + WIFI (Space Grey)</p>
+        <a href="shop.html#tablet_link" style="text-decoration:none;"><button class="btn btn-border btn-round color-2 material-design reccomendation_btn" style="background-color: white;  padding-top: 10px;">Shop Now</button></a><br>
 
       </div>
     </section>	
@@ -180,8 +179,7 @@
         <nav id="nav"> 
           <ul>
             <li><a style="font-size: 15px;" href="index.html">HOME</a></li>
-            <li><a style="font-size: 15px;" href="about.html">ABOUT US</a></li>
-            <li><a style="font-size: 15px;" href="">CONTACT US</a></li>
+            <li><a style="font-size: 15px;" href="contact.html">CONTACT US</a></li>
             <li><a style="font-size: 15px;" href="">HELP</a></li><hr>
           </ul>
           <div class="inner special medium">
@@ -356,6 +354,7 @@ firebase.initializeApp(firebaseConfig);
     border-radius: 20px 0px 0px 20px;">
         <div class="container3">
           <center>
+              <span style="background-color: orange; color: white; display: block; width: 50px; border-radius: 55px; font-size: 30px; position: relative; bottom:75px; right: -195px; cursor: pointer; " class="close">&times;</span>
               <h3>WANT 15% OFF?</h3>
               <p style="padding-top: 10px">Register to our mailing list and we'll give you</p>
               <p style="margin-top: -45px; color:#eb8634">15% off your first purchase!</p>              
@@ -366,16 +365,22 @@ firebase.initializeApp(firebaseConfig);
               <input onclick="changeText()" type="submit" id="button-2" value="REGISTER" style="width: 140px; font-size: 15px; padding: 5px"></input>
                 <div class="codeDisplay" id="showCode" style="display: none;">APPLY AT CHECKOUT
                   <p style="font-size: 26px; padding-top: 25px; color: #ff971f;">aux15</p>
-                </div>
-              
           </center>
         </div>
   </div>
 </div>
 
+
 <script type="text/javascript">
-  function PopUp(){
-          document.getElementById('modal').style.display="none"; 
+  var span = document.getElementsByClassName("close")[0];
+  function PopUp()
+  {
+    document.getElementById('modal').style.display="none"; 
+  }
+
+  span.onclick = function() 
+  {
+    modal.style.display = "none";
   }
 </script>
 
@@ -390,11 +395,13 @@ function changeText()
     else elem.style.display = "block";
 }
 var elem = document.getElementById('modal')
-window.onclick = function(event) {
+
+/*window.onclick = function(event) {
   if (event.target == elem) {
     elem.style.display = "none";
   }
 }
+*/
 </script>
 
 <style>
