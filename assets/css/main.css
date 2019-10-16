@@ -27,7 +27,8 @@ section, summary, time, mark, audio, video {
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+}
 
 body {
 	line-height: 1;
@@ -4486,7 +4487,7 @@ button {
 input[type=text], input[type=password] { 
 
 
-  border: 1px solid #525151; 
+  border: 1px solid white; 
   box-sizing: border-box;
   border-color: none;
   background-color: none; 
@@ -4495,10 +4496,6 @@ input[type=text], input[type=password] {
  
 
 } 
-
-
-
-
 
 
 /*///////////////////////////////////////////////////////// RECCOMENDATION SECTION PT 1//////////////////////////////////////////////////*/
@@ -4700,7 +4697,7 @@ body {
    .search-bar  {
 	position: relative;
     margin-top: -60px;
-    left: 870px;
+ 
 	height: 40px;
 	width: 350px;
 	border-radius: 20px;
@@ -4812,7 +4809,7 @@ body {
   }
 
   .product-box {
-	position: relative;
+
 	padding: 20px;
 	width: 220px;
 	height: 250px;
