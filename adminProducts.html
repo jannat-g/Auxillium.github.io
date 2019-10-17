@@ -68,26 +68,30 @@
 
 
 <div class="orderbackground">
-      <table >
+     
+  <form id="add-cafe-list" style="display: inline-block; margin-top: 0px;">
+    <p style="margin-top: -20px; margin-left: 75px; margin-bottom: 0px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 20px; color: white; letter-spacing: 0px">ADD A PRODUCT</p>
+    <input type="text" name="name" placeholder="Insert Product Name" align="center" 
+    style="text-align: center; display:flex;width: 30%; margin-bottom: 15px; margin-left: 20px;">
+            
+    <input type="text" name="price" placeholder="Insert Product Price" align="center" 
+    style="text-align: center; display:flex; width: 30%; margin-bottom: 0px; margin-left: 20px; ">
+
+    <button align="center"class="btn btn-border btn-round color-2 material-design" style="font-size: 12px; font-weight: 400; letter-spacing: 0.3px; margin-left: 50px; margin-top: 15px; margin-bottom: 10px; width: 200px;  font-size: 15px; ">Add Product</button>
+  </form>
+  
+  
+  <table style='margin-bottom: 0px;'>
           <col width="575">
           <tr>
-            <th style="font-size: 20px; ">Product Name</th>
-            <th style="font-size: 20px; ">Product Price</th>
+            <td style="text-align: left; color: #FFFFFF; font-family: 'Fira Sans', sans-serif; font-weight: 400; font-size: 20px;">PRODUCT NAME</td>
+            <th style="font-family: 'Fira Sans', sans-serif; font-weight: 400; font-size: 20px;">PRODUCT PRICE</th>
           </tr>
       </table>
       <ul class="tablebackground" id="cafe-list"></ul>
 
 
- <form id="add-cafe-list" style="display: inline-block; padding-top:50px;">
-        <p style="margin-top: -20px; margin-left: 50px; margin-bottom: 0px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">ADD A PRODUCT</p>
-        <input type="text" name="name" placeholder="Insert Product Name" align="center" 
-        style="text-align: center; display:flex;width: 30%; margin-bottom: 15px; margin-left: 20px;">
-                
-        <input type="text" name="price" placeholder="($) Insert Product Price" align="center" 
-        style="text-align: center; display:flex; width: 30%; margin-bottom: 0px; margin-left: 20px; ">
-
-        <button align="center"class="btn btn-border btn-round color-2 material-design" style="font-size: 12px; font-weight: 400; letter-spacing: 0.3px; margin-top: 15px; margin-bottom: 10px; width: 200px;  font-size: 15px; ">Add Product</button>
-      </form>
+ 
     </div>
     <!-- Footer -->
   <section id ="contact" class="main style2" align="center">
@@ -273,7 +277,7 @@ li div /* 'X' section */
 
       position: relative;
       width: 980px;
-      height: 790px;
+      height: auto;
       z-index: 1;
 
     }
