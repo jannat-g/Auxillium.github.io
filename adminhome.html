@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="assets/css/main.css"/>
 	<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="assets/js/login.js"></script>
 	<style>
 		@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600,700&display=swap');
 
@@ -25,7 +24,7 @@
 
 			position: relative;
 			width: 475px;
-			height: 570px;
+			height: 700px;
 			z-index: 1;
 
 		}
@@ -66,7 +65,8 @@
 			border: 1px solid #525151; 
 			box-sizing: border-box;
 			border-color: none;
-			margin-left: 20%; 
+			align-content: center;
+			align-items: center;
 			margin-right:25%; 
 			background-color: none; 
 			color: white; 
@@ -92,7 +92,7 @@
 
 			position: relative;
 			width: 475px;
-			height: 850px;
+			height: 700px;
 			z-index: 1;
 
 		}
@@ -139,13 +139,38 @@
 		td {
 			text-align: center;
 			padding: 2px;
+			text-align: left;
 		}
 
 		tr:nth-child(even) {
 			background-color: #dddddd;
 		}
+		#add {
+			position: relative;
+			border-collapse: collapse;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: #DEDEDE;
+			text-align: left;
+		}
 
+		#add td, #add th {
+			
+			border-bottom: 3px solid #F1F1F1;
+			padding: 8px;
+			text-align: left;
+		}
 
+		#add tr:hover {background-color: #BEBEBE;}
+
+		#add th {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: center;
+			background-color: #F1F1F1;
+			color: black;
+		}
 
 		#orders {
 			position: relative;
@@ -238,88 +263,65 @@ firebase.initializeApp(firebaseConfig);
 </script>
 
 
-<p style="margin-top: 75px; margin-left: 525px; margin-bottom: 0px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">Welcome to Admin Dashboards</p>
+<p style="margin-top: 75px; margin-left: 525px; margin-bottom: 50px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">Welcome to Admin Dashboards</p>
 <!-- Add Seller -->
-<div class="productbackground" style="margin-top: 50px">
-
-    <p style="margin-top: -30px; margin-left: 175px; margin-bottom: 0px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">Add Seller</p>
-
-		<!-- Signing  Up form -->
-
-<form style ="">
-<input class="add1" style = "" type="text" id="email" name="First Name" placeholder="Full Name"/>
-<input class="mdl-textfield__input"style = ""type="text" id="email" name="email" placeholder="Email"/>
-<input class="mdl-textfield__input" style = ""type="password" id="password" name="password" placeholder="Password"/>
-<input class="mdl-textfield__input " style = ""type="text" id="email" name="First Name" placeholder="Seller ID"/>
-
-<button class="btn submit" style = " margin-left: 90px;">Submit</button>
-</form>
-
-
-
-<!-- Finish -->
-
-
-
-
-</div>
 
 <!-- Finish -->
 
 <!-- Edit/Delete Seller -->
 
-<div class="insightbackground" style="margin-left: 755px; margin-top: -570px;">
+<!-- <div class="insightbackground" style="margin-left: 755px; margin-top: -570px;">
 	<p style="margin-top: -30px; margin-left: 50px; margin-bottom: 0px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">Edit/Delete Seller</p>
-	
+	 -->
 	<!--<img src="images/insights.png" style="width: 375px; margin-left:50px;">-->
 <!-- Seller A -->
-	<div class="itembackground">
+	<!-- <div class="itembackground"> -->
 
 		<!--<img src="images/iphone-xs.png" style="width: auto; height: 80px; margin-left:30px; margin-top: -50px;"> -->
 		
-    <form style ="float: left; bottom:60px; position: relative; margin-left: -30px;">
+    <!-- <form style ="float: left; bottom:60px; position: relative; margin-left: -30px;">
 	   <label style = "color: black; position: absolute; bottom: 110px; margin-left: 50px; font-size: 26px;">Seller A</label>
 	
 		<input class="mdl-textfield__input" style = "height: 10px; placeholder: black; background-color:#34343C;" type="text" id="email" name="First Name" placeholder="Full Name"/>
-		<input class="mdl-textfield__input"style = "height: 10px; background-color:#34343C;"type="text" id="email" name="email" placeholder="Email"/>
+		<input class="mdl-textfield__input"style = "height: 10px; background-color:#34343C;"type="text" id="email" name="email" placeholder="Email"/> -->
 	<!--	<input class="mdl-textfield__input" style = "height: 10px; background-color:#34343C;"type="password" id="password" name="password" placeholder="Password"/> -->
-		<input class="mdl-textfield__input " style = "height: 10px; background-color:#34343C;"type="text" id="email" name="First Name" placeholder="Seller ID" />
+	<!-- 	<input class="mdl-textfield__input " style = "height: 10px; background-color:#34343C;"type="text" id="email" name="First Name" placeholder="Seller ID" />
 		
     </form>
 <button class="btn submit" style = " margin-left: 300px; top: 500px; z-index: 1;">Delete</button>
 	</div>
-	
+	 -->
 <!-- Seller B -->
-<div class="itembackground" style = "top: 30px;">
+<!-- <div class="itembackground" style = "top: 30px;"> -->
 
 		<!--<img src="images/iphone-xs.png" style="width: auto; height: 80px; margin-left:30px; margin-top: -50px;"> -->
 		
-    <form style ="float: left; bottom:60px; position: relative; margin-left: -30px;">
+  <!--   <form style ="float: left; bottom:60px; position: relative; margin-left: -30px;">
 	   <label style = "color: black; position: absolute; bottom: 110px; margin-left: 50px; font-size: 26px;">Seller B</label>
 	
 		<input class="mdl-textfield__input" style = "height: 10px; placeholder: black; background-color:#34343C;" type="text" id="email" name="First Name" placeholder="Full Name"/>
-		<input class="mdl-textfield__input"style = "height: 10px; background-color:#34343C;"type="text" id="email" name="email" placeholder="Email"/>
+		<input class="mdl-textfield__input"style = "height: 10px; background-color:#34343C;"type="text" id="email" name="email" placeholder="Email"/> -->
 	<!--	<input class="mdl-textfield__input" style = "height: 10px; background-color:#34343C;"type="password" id="password" name="password" placeholder="Password"/> -->
-		<input class="mdl-textfield__input " style = "height: 10px; background-color:#34343C;"type="text" id="email" name="First Name" placeholder="Seller ID"/>
+		<!-- <input class="mdl-textfield__input " style = "height: 10px; background-color:#34343C;"type="text" id="email" name="First Name" placeholder="Seller ID"/>
 
 		
     </form>
 
 	</div>
-	
+	 -->
 	<!--Seller C -->
 	
-<div class="itembackground" style = "top: 60px;">
+<!-- <div class="itembackground" style = "top: 60px;"> -->
 
 		<!--<img src="images/iphone-xs.png" style="width: auto; height: 80px; margin-left:30px; margin-top: -50px;"> -->
 		
-    <form style ="float: left; bottom:60px; position: relative; margin-left: -30px;">
+   <!--  <form style ="float: left; bottom:60px; position: relative; margin-left: -30px;">
 	   <label style = "color: black; position: absolute; bottom: 110px; margin-left: 50px; font-size: 26px;">Seller C</label>
 	
 		<input class="mdl-textfield__input" style = "height: 10px; placeholder: black; background-color:#34343C;" type="text" id="email" name="First Name" placeholder="Full Name"/>
-		<input class="mdl-textfield__input"style = "height: 10px; background-color:#34343C;"type="text" id="email" name="email" placeholder="Email"/>
+		<input class="mdl-textfield__input"style = "height: 10px; background-color:#34343C;"type="text" id="email" name="email" placeholder="Email"/> -->
 	<!--	<input class="mdl-textfield__input" style = "height: 10px; background-color:#34343C;"type="password" id="password" name="password" placeholder="Password"/> -->
-		<input class="mdl-textfield__input " style = "height: 10px; background-color:#34343C;"type="text" id="email" name="First Name" placeholder="Seller ID"/>
+		<!-- <input class="mdl-textfield__input " style = "height: 10px; background-color:#34343C;"type="text" id="email" name="First Name" placeholder="Seller ID"/>
 
 		
     </form>
@@ -328,18 +330,75 @@ firebase.initializeApp(firebaseConfig);
 	</div>
 		<button class="btn submit" style = " margin-left: 350px;  z-index:2;">Delete</button>
 
-</div>
+</div> -->
 
 <!-- Finish -->
 
+<div class="orderbackground" style="margin-top: 30px;">
+	<section class="orders">
+		<p style="margin-top: -20px; margin-left: 50px; margin-bottom: 0px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">ACTIVE SELLERS</p><br>
+		<p style="margin-top: 0px; margin-left: 50px; margin-bottom: 10px; position: relative; z-index: 4; font-family: 'Fira Sans', sans-serif; font-weight: 200; font-size: 15px; color: #F1F1F1; letter-spacing: 0px"></p>
+
+		<div class="tablebackground" style="margin-top: 0px; height: 250px;">
+			<table id="add" style="margin-top: -60px">
+
+				<tr>
+					<td style="padding-top: 20px; color: #34343C; background-color: #F1F1F1; font-weight:500;">SELLER ID</td>
+					<td style="color: #34343C; text-align: left; background-color: #F1F1F1; font-weight:500;">SELLER EMAIL</td> 
+					<td style="color: #34343C; background-color: #F1F1F1; font-weight:500;">LOCATION</td> 
+					<td style="color: #34343C; background-color: #F1F1F1; font-weight:500;">PHONE</td> 
+					
+				</tr>
+
+
+				<tr>
+					<td>000</td>
+					<td >seller@auxilium.com</td> 
+					<td>82 Jones St, Ultimo, NSW, 2007</td>
+					<td>9957 8736</td>
+				
+					
+			
+			
+					<!-- <td style="color: #FC5A43; background-color: #F4E7E6">Pending</td> -->
+				</tr>
+
+				<tr>
+					<td>001</td>
+					<td>seller1@auxilium.com</td>
+					<td>29 Cooper Street, Surry Hills, NSW, 2007</td>
+					<td>9982 7462</td>
+			
+	
+					<!-- <td style="color: #FC5A43">Pending</td> -->
+				</tr>
+
+				<tr>
+					<td>002</td>
+					<td>seller2@auxilium.com</td> 
+					<td>15 Broadway, Broadway, NSW, 2007</td>
+					<td>9901 8854</td>
+			
+					<!-- <td style="color: #1AB22C; background-color: #ECF4DF">Shipped</td> -->
+				</tr>
+
+
+			</table>
+
+			<!-- <a href="transactions.html"><button style="bottom: 50px; margin-left: 650px; width: 200px;margin-bottom: 0px; position: relative; z-index: 2; font-weight: 400; font-size: 14px; " class="btn submit" style = "   z-index:2;">Add a Seller</button></a>
+			 -->
+
+		</div>
+	</div>
+
 
 <!-- Transactions Seller -->
-<div class="orderbackground" style="margin-top: 30px">
+<div class="orderbackground" style="margin-top: 30px;">
 	<section class="orders">
 		<p style="margin-top: -20px; margin-left: 50px; margin-bottom: 0px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">ORDER HISTORY</p>
 		<p style="margin-top: 0px; margin-left: 50px; margin-bottom: 10px; position: relative; z-index: 4; font-family: 'Fira Sans', sans-serif; font-weight: 200; font-size: 15px; color: #F1F1F1; letter-spacing: 0px">Recent Transactions</p>
 
-		<div class="tablebackground" style="margin-top: 0px">
+		<div class="tablebackground" style="margin-top: 0px; height: 305px;">
 			<table id="orders" style="margin-top: -60px">
 
 				<tr>
@@ -347,7 +406,7 @@ firebase.initializeApp(firebaseConfig);
 					<td style="color: #34343C; text-align: left; background-color: #F1F1F1; font-weight:500;"> PRODUCTS</td> 
 					<td style="color: #34343C; background-color: #F1F1F1; font-weight:500;">DATE</td>
 					<td style="color: #34343C; background-color: #F1F1F1; font-weight:500;">EARNINGS</td> 
-					<td style="color: #34343C; background-color: #F1F1F1; font-weight:500;">ORDER STATUS </td>
+					<td style="color: #34343C; background-color: #F1F1F1; font-weight:500;">ORDER STATUS</td>
 				</tr>
 
 
@@ -356,7 +415,7 @@ firebase.initializeApp(firebaseConfig);
 					<td style="text-align: left">Apple iPhone X Max 64 GB (Gold)</td> 
 					<td>11/09/19</td>
 					<td>$1900.00</td> 
-					<td style="color: #FC5A43; background-color: #F4E7E6">Pending</td>
+					<td style="color: #FC5A43">Pending</td>
 				</tr>
 
 				<tr>
@@ -372,7 +431,7 @@ firebase.initializeApp(firebaseConfig);
 					<td style="text-align: left">Apple MacBook Pro 13-inch 256GB (Silver) </td> 
 					<td>02/09/19</td>
 					<td>$2100.00</td> 
-					<td style="color: #1AB22C; background-color: #ECF4DF">Shipped</td>
+					<td style="color: #FC5A43">Pending</td>
 				</tr>
 
 				<tr>
@@ -380,7 +439,7 @@ firebase.initializeApp(firebaseConfig);
 					<td style="text-align: left">Apple Magic Mouse 2 (Silver)</td> 
 					<td>02/09/19</td>
 					<td>$119.00</td> 
-					<td style="color: #1AB22C"> Shipped</td>
+					<td style="color: #FC5A43">Pending</td>
 				</tr>
 
 				<!-- OnClick - change order status from pending to shipped-->
@@ -388,19 +447,75 @@ firebase.initializeApp(firebaseConfig);
 
 			</table>
 
-				<a href="transactions.html"><button style="bottom: 50px; margin-left: 750px; margin-bottom: 0px; position: relative; z-index: 2; font-weight: 400; font-size: 14px; " class="btn submit" style = " margin-left: 350px;  z-index:2;">View All Transactions</button></a>
+			<a href="transactions.html"><button style="bottom: 50px; margin-left: 650px; width: 200px;margin-bottom: 0px; position: relative; z-index: 2; font-weight: 400; font-size: 14px; " class="btn submit" style = "   z-index:2;">All Transactions</button></a><br>
 			
 
 		</div>
-	</div>
-	
+	</div><br><br>
+	<div class="productbackground">
+
+      <div class="inner">
+      <h2 class="mdl-card__title-text">Create a Seller</h2><br>
+       <input class="mdl-textfield__input" align="center"  type="text" id="id" name="password" placeholder="Seller ID"/>
+      <br/><br/>
+      <input class="mdl-textfield__input" type="text" align="center" id="email" name="email" placeholder=" Seller Email"/>
+      <br/><br/>
+      <input class="mdl-textfield__input" align="center"  type="text" id="location" name="location" placeholder="Seller Location"/>
+      <br/><br/>
+      <input class="mdl-textfield__input" align="center"  type="text" id="phone" name="phone" placeholder="Seller Phone"/>
+      <br/><br/>
+      <input class="mdl-textfield__input" align="center"  type="password" id="password" name="password" placeholder="Password"/>
+      <br/><br/>
+      <button align="center" disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin" style="display: none;">Sign In</button>
+      &nbsp;&nbsp;&nbsp;
+       <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup" onclick="handleSignUp();">Create</button>
+          &nbsp;&nbsp;&nbsp;
+      <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email" style="display: none;">Send Email Verification</button><br><br>
+      <div class="quickstart-user-details-container"><br>
+        <span id="quickstart-sign-in-status"></span>
+        <div style="display: none;">Firebase auth <code>currentUser</code> object value:</div>
+        <pre><code style="display:none"id="quickstart-account-details" >null</code></pre>
+
+      </div>
+    </div>
+
+
+<div class="insightbackground" style="margin-left: 500px; margin-top: -735px;">
+
+      <div class="inner">
+      <h2 class="mdl-card__title-text">Remove a Seller</h2><br>
+      <input class="mdl-textfield__input" align="center"  type="text" id="id" name="password" placeholder="Seller ID"/>
+      <br/><br/>
+      <input class="mdl-textfield__input" type="text" align="center" id="email" name="email" placeholder=" Seller Email"/>
+      <br/><br/>
+      <input class="mdl-textfield__input" align="center"  type="text" id="location" name="location" placeholder="Seller Location"/>
+      <br/><br/>
+      <input class="mdl-textfield__input" align="center"  type="text" id="phone" name="phone" placeholder="Seller Phone"/>
+      <br/><br/>
+      <input class="mdl-textfield__input" align="center"  type="password" id="password" name="password" placeholder="Password"/>
+      <br/><br/>
+      <button align="center" disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin" style="display: none;">Sign In</button>
+      &nbsp;&nbsp;&nbsp;
+       <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup" onclick="handleSignUp();">Remove</button>
+          &nbsp;&nbsp;&nbsp;
+      <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email" style="display: none;">Send Email Verification</button><br><br>
+      <div class="quickstart-user-details-container"><br>
+        <span id="quickstart-sign-in-status"></span>
+        <div style="display: none;">Firebase auth <code>currentUser</code> object value:</div>
+        <pre><code style="display:none"id="quickstart-account-details" >null</code></pre>
+
+      </div>
+    </div>
+
+</div>
+
 	<!-- Finish -->
 
-	<div class="inner" align="center">
+<!-- 	<div class="inner" align="center">
 		<button align="center"  onclick="signout();"  value="signout">Sign out</button>
-	</div>
+	</div> -->
 	<!-- Footer -->
-	<section id ="contact" class="main style2" align="center">
+	<section id ="contact" class="main style2" align="center" style="padding-top: 50px; margin-left: 250px;">
 		<div id="foot">
 			<nav id="nav"> 
 				<ul>
@@ -433,3 +548,83 @@ firebase.initializeApp(firebaseConfig);
 	</div>
 
 	<p></p>
+<script type="text/javascript">
+
+
+//sign in
+
+function handleSignUp() {
+  var email = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
+  if (email.length < 4) {
+    alert('Please enter an email address.');
+    return;
+  }
+  if (password.length < 4) {
+    alert('Please enter a password.');
+    return;
+  }
+
+  firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+
+  var errorCode = error.code;
+  var errorMessage = error.message;
+
+  if (errorCode == 'auth/weak-password') {
+    alert('The password is too weak.');
+  } else {
+    alert(errorMessage);
+  }
+  console.log(error);
+
+  });
+
+    var table = document.getElementById("add");
+    
+    var row= document.createElement("tr");
+    console.log(row);
+    var td1 = document.createElement("td");
+    var td2 = document.createElement("td");
+    var td3 = document.createElement("td");    
+    var td4 = document.createElement("td"); 
+ 
+
+    td1.innerHTML = document.getElementById("id").value;
+    td2.innerHTML  = document.getElementById("email").value;
+    td3.innerHTML  = document.getElementById("location").value;
+    td4.innerHTML  = document.getElementById("phone").value;
+
+    row.appendChild(td1);
+    row.appendChild(td2);
+    row.appendChild(td3);
+    row.appendChild(td4);
+    table.children[0].appendChild(row);
+
+}
+
+function remove() {
+	 var table = document.getElementById("add");
+    
+    var row= document.createElement("tr");
+    var td1 = document.createElement("td");
+    var td2 = document.createElement("td");
+    var td3 = document.createElement("td");    
+    var td4 = document.createElement("td"); 
+ 
+
+    td1.innerHTML = document.getElementById("id").value;
+    td2.innerHTML  = document.getElementById("email").value;
+    td3.innerHTML  = document.getElementById("location").value;
+    td4.innerHTML  = document.getElementById("phone").value;
+
+    row.appendChild(td1);
+    row.appendChild(td2);
+    row.appendChild(td3);
+    row.appendChild(td4);
+    table.children[0].appendChild(row);
+
+}
+
+
+</script>
+
