@@ -60,6 +60,28 @@
     <!-- Banner -->
     <div id="banner" style="padding: 4%;"class="wrapper"></div>
 
+    <style>
+        .column-login {
+          float: left;
+          width: 50%;
+        }
+        
+        .row-login:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      .login-box {
+        height: 770px;
+        width: 56%;
+        background-color: #48485233;
+        position: relative;
+        z-index: 1;
+      }
+      
+      </style>
+
   
     <script>
      function signout(){
@@ -73,23 +95,30 @@
     </script>
    
 
-     <section id="one" class="wrapper style1">
-      <div class="inner" align="center" style="margin-top: 50px;">
-      <h2 class="mdl-card__title-text">Sign Up</h2><br>
-      <input class="mdl-textfield__input" align="center" style=" width: 300px;" type="text" id="email" name="email" placeholder="Email"/>
+   <body  style=" background: #1f1f24;">
+   <div class="login-box" style="margin-top: 7px"></div>
+   <section id="row-login" class="wrapper style1" style="margin-top: -100px" >
+     <div class="column-login" align="center" style="position: relative; z-index: 2; margin-top: -600px; margin-left: 40px">
+       <h2 class="mdl-card__title-text"style="padding-bottom: 20px; margin-top: -50px">Sign Up</h2>
+       <hr align="right" class="new5" style="width: 500px">
+       <h5 style="font-weight: 600; font-size: 15px; margin-top: 30px">Want to become a seller with Auxilium? Sign up to start!</h5>
+       <hr align="right" class="new5" style="width: 500px; margin-top: -5px">
+       <img src="images/signup.png" style="float: left; width: 60%; margin-left: 140px; margin-top: -45px" >
+     </div>
+     <div class="column-login" align="left" style="width: 420px; margin-left: 880px; margin-top: -660px">
+        <p style="margin-top: 60px; font-size: 15px">Enter a valid email address and password to create an account. </p>
+      <input class="mdl-textfield__input" align="center" style=" width: 360px;" type="text" id="email" name="email" placeholder="Email"/>
       &nbsp;&nbsp;&nbsp;
-      <input class="mdl-textfield__input" align="center" style=" width: 300px;" type="password" id="password" name="password" placeholder="Password"/>
+      <input class="mdl-textfield__input" align="center" style=" width: 360px;" type="password" id="password" name="password" placeholder="Password"/>
       <br/><br/>
-      <button align="center" disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin" style="display: none;">Sign In</button>
-      &nbsp;&nbsp;&nbsp;
-       <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup" onclick="handleSignUp();">Create Account</button>
+       <button class="button-2" style="width: 140px; margin-top: -20px" id="quickstart-sign-up" name="signup" onclick="handleSignUp();">CREATE ACCOUNT</button>
           &nbsp;&nbsp;&nbsp;
       <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email" style="display: none;">Send Email Verification</button><br><br>
       <div class="quickstart-user-details-container"><br>
         <span id="quickstart-sign-in-status"></span>
         <div style="display: none;">Firebase auth <code>currentUser</code> object value:</div>
         <pre><code style="display:none"id="quickstart-account-details" >null</code></pre>
-
+      </div>
       </div>
     </div>
 
