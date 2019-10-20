@@ -41,6 +41,7 @@ firebase.initializeApp(firebaseConfig);
         <ul style="margin-left: 250px;">
           <li ><a href="index.html">Home</a></li>
           <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
@@ -56,23 +57,16 @@ firebase.initializeApp(firebaseConfig);
 </head>
 
 <body  style=" background: #1f1f24;">
-  <div class="login-box" style="margin-top: 20px"></div>
-  <section id="row-login" class="wrapper style1" style="margin-top: -100px" >
-    <div class="column-login" align="center" style="position: relative; z-index: 2; margin-top: -600px; margin-left: 40px">
-      <h2 class="mdl-card__title-text"style="padding-bottom: 20px; margin-top: -50px">Login</h2>
-      <hr align="right" class="new5" style="width: 500px">
-      <h5 style="font-weight: 600; font-size: 15px; margin-top: 30px">Have a seller account with us? Login to explore your dashboard!</h5>
-      <hr align="right" class="new5" style="width: 500px; margin-top: -5px">
-      <img src="images/login1.png" style="float: left; width: 60%; margin-left: 140px; margin-top: -45px" >
-    </div>
+  <section id="one" class="wrapper style1" >
+    <div class="inner" align="center">
+      <h2 class="mdl-card__title-text">Login</h2>
+      <p>Enter an email and password below and sign in to an existing account</p>
 
-    <div class="column-login" align="left" style="width: 420px; margin-left: 880px; margin-top: -660px"> 
-      <p style="margin-top: 60px; font-size: 15px; font-family: 'Fira sans', sans-serif">Enter an email and password below and sign in to an existing account. </p>
-      <input class="mdl-textfield__input" style=" width: 360px;" type="text" id="email" name="email" placeholder="Email"/>
+      <input class="mdl-textfield__input" style=" width: 400px;" type="text" id="email" name="email" placeholder="Email"/>
       &nbsp;&nbsp;&nbsp;
-      <input class="mdl-textfield__input" style=" width: 360px;" type="password" id="password" name="password" placeholder="Password"/>
+      <input class="mdl-textfield__input" style=" width: 400px;" type="password" id="password" name="password" placeholder="Password"/>
       <br/><br/>
-      <button align="center" class="button-2" style="width: 90px; margin-top: -10px" id="quickstart-sign-in" name="signin">LOGIN</button>
+      <button align="center" disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin">Sign In</button>
       &nbsp;&nbsp;&nbsp;
       <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup" style="display: none;">Sign Up</button>
       <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email" style="display: none;">Send Email Verification</button><br><br>
@@ -86,31 +80,8 @@ firebase.initializeApp(firebaseConfig);
   </section>
 
 </main>
-
-<style>
-  .column-login {
-    float: left;
-    width: 50%;
-  }
-  
-  .row-login:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.login-box {
-  height: 770px;
-  width: 56%;
-  background-color: #48485233;
-  position: relative;
-  z-index: 1;
-}
-
-</style>
-
 <!-- Footer -->
-  <section id ="contact" class="main style2" align="center" style="margin-top: -60px">
+  <section id ="contact" class="main style2" align="center">
     <div id="foot">
       <nav id="nav"> 
         <ul>
