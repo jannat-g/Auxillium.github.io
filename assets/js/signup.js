@@ -9,8 +9,6 @@ function handleSignUp() {
   if (password.length < 4) {
     alert('Please enter a password.');
     return;
-  } else {
-    alert('signup success');
   }
 
   firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
@@ -26,5 +24,4 @@ function handleSignUp() {
   console.log(error);
 
   });
-  
 }
