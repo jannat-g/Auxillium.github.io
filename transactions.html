@@ -1,0 +1,347 @@
+<!DOCTYPE HTML> 
+<html> 
+<head> 
+  <title>Auxilium </title> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/> 
+  <meta name="description" content=""/> 
+  <meta name="keywords" content=""/> 
+  <link rel="shortcut icon" href="./images/logo copy.png"/> 
+  <link rel="stylesheet" href="assets/css/main.css"/> 
+  <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet"/> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  
+  <style> 
+    @import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600,700&display=swap'); 
+    </style> 
+</head> 
+<!-- The core Firebase JS SDK is always required and must be listed first --> 
+<script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-app.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-auth.js"></script> 
+<script type="text/javascript"> 
+    //  Firebase configuration 
+    var firebaseConfig = { 
+      apiKey: "AIzaSyAwrcbALg-Ow4O3pyJMY-7vxNF_X6hZ-GM", 
+      authDomain: "auxilium-f6620.firebaseapp.com", 
+      databaseURL: "https://auxilium-f6620.firebaseio.com", 
+      projectId: "auxilium-f6620", 
+      storageBucket: "", 
+      messagingSenderId: "1031183506590", 
+      appId: "1:1031183506590:web:0a2eea869b3f7442" 
+    }; 
+    // Initialize Firebase 
+    firebase.initializeApp(firebaseConfig); 
+  </script> 
+<!--    <script src="assets/js/main.js"></script> --> 
+   <script src="assets/js/signup.js"></script> 
+  
+  <body class="is-preload"> 
+  
+    <!-- Header --> 
+    <header id="header" class="alt" > 
+      <img class="logo" src="./images/logo.png"></img> 
+  
+      <header id="header" class="alt" style="justify-content: space-between;"> 
+        <nav id="nav">  
+                <ul style="margin-left: 250px;"> 
+                    <li ><a href="index.html">Home</a></li> 
+                    <li><a href="shop.html">Shop</a></li> 
+                    <!--<li><a href="about.html">About Us</a></li> 
+                    <li><a href="contact.html">Contact Us</a></li>--> 
+                    <li><a href="adminhome.html">Admin Dashboard</a></li> 
+                    <li><a href="transactions.html">Transactions</a></li> 
+                </ul> 
+        </nav> 
+        <nav id="nav"> 
+          <ul> 
+            <a href="Signup.html" ><button class="btn btn-border btn-round color-3 material-design" data-color="#f6774f" onclick="change();">SIGN UP</button></a> 
+        <button class="btn btn-border" align="center"  onclick="signout();" value="signout">Sign out</button> 
+          </ul> 
+        </nav> 
+      </header> 
+    </header> 
+  
+   
+    <script> 
+     function signout(){ 
+    firebase.auth().signOut(); 
+    alert('Successfully signed out'); 
+    window.location='index.html'; 
+  }; 
+  var user = firebase.auth().currentUser; 
+    </script> 
+     
+     
+         
+  
+    
+   <!-- Transactions Seller --> 
+<div class="orderbackground" style=""> 
+  
+    <section class="orders"> 
+        <p style="margin-top: -20px; margin-left: 50px; margin-bottom: 0px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px">ORDER HISTORY</p> 
+        <p style="margin-top: 0px; margin-left: 50px; margin-bottom: 10px; position: relative; z-index: 4; font-family: 'Fira Sans', sans-serif; font-weight: 200; font-size: 15px; color: #F1F1F1; letter-spacing: 0px">Recent Transactions</p> 
+<!--Transactions --> 
+  
+    <input type="search" class="light-table-filter"data-table="tablebrackground" placeholder= "Search"  style = "width: 25%; margin-left: 55px; border-radius: 25px; background-color:#F1F1F1; color: black; opacity: 1; placeholder: black;"> 
+  
+    <table class="tablebrackground"> 
+    <thead> 
+                <tr> 
+                    <th style="padding-top: 20px; color: #34343C; background-color: #F1F1F1; font-weight:500;">SELLER ID</th> 
+                    <th style="color: #34343C; text-align: left; background-color: #F1F1F1; font-weight:500;"> ORDER ID</th>  
+                    <th style="color: #34343C; background-color: #F1F1F1; font-weight:500;">PRODUCT</th> 
+                    <th style="color: #34343C; background-color: #F1F1F1; font-weight:500;">DATE</th>  
+                    <th style="color: #34343C; background-color: #F1F1F1; font-weight:500;">EARNINGS</th> 
+					<th style="color: #34343C; background-color: #F1F1F1; font-weight:500;">STATUS</th> 
+                </tr> 
+</thead> 
+<tbody> 
+                <tr> 
+                    <td>ULT</td> 
+                    <td style="text-align: left">1014</td> 
+                    <td style="text-align: left">Apple iPhone X Max 64 GB (Gold)</td>  
+                    <td>3/09/19</td> 
+                    <td>$1900.00</td>  
+					<td style="background-color: #ECF4DF"> Shipped</td>
+                </tr> 
+  
+                <tr> 
+                    <td>BRD</td> 
+                    <td style="text-align: left">1013</td> 
+                    <td style="text-align: left">Apple MacBook Pro 13-inch 256GB (Space Grey) </td>  
+                    <td>03/09/19</td> 
+                    <td>$2100.00</td>  
+					<td style="background-color: #ECF4DF"> Shipped</td>
+                </tr> 
+  
+                <tr> 
+                    <td>BRD</td> 
+                    <td style="text-align: left">1012</td> 
+                    <td style="text-align: left">Apple iPhone 11 Pro 256GB (Gold) </td>  
+                    <td>03/09/19</td> 
+                    <td>$1900.00</td>  
+					<td style="color: #FC5A43; background-color: #F4E7E6" onclick="this.innerHTML ='Shipped'; this.style='#1AB22C'; this.bgColor='#ECF4DF';">Pending</td>
+
+
+                     
+                </tr> 
+  
+                <tr> 
+                    <td>ULT</td> 
+                    <td style="text-align: left">1011</td> 
+                    <td style="text-align: left">Apple iPhone 11 64GB (White)</td>  
+                    <td>20/09/19</td> 
+                    <td>$1199.00</td>  
+                    <td style="background-color: #ECF4DF">Shipped</td>
+
+                </tr> 
+                 
+                <tr> 
+                    <td>SUR</td> 
+                    <td style="text-align: left">1010</td> 
+                    <td style="text-align: left">Apple MacBook Pro 13-inch with Tounch Bar 256GB (Space Grey)</td>  
+                    <td>17/09/19</td> 
+                    <td>$2100.00</td>  
+                    <td style="color: #FC5A43; background-color: #F4E7E6" onclick="this.innerHTML ='Shipped'; this.style='#1AB22C'; this.bgColor='#ECF4DF';">Pending</td>
+
+                </tr> 
+                 
+                <tr> 
+                    <td>SUR</td> 
+                    <td style="text-align: left">1010</td> 
+                    <td style="text-align: left">Apple Macbook Pro 15-inch Bar 256GB (Space Grey)</td>  
+                    <td>17/09/19</td> 
+                    <td>$2500.99</td>  
+                    <td style="background-color: #ECF4DF">Shipped</td>
+
+                </tr> 
+  
+                <tr> 
+                    <td>SUR</td> 
+                    <td style="text-align: left">1008</td> 
+                    <td style="text-align: left">Apple iMac Pro 27-inch Retina 5k dis...</td>  
+                    <td>15/09/19</td> 
+                    <td>$7299.00</td>  
+                    <td style="color: #FC5A43; background-color: #F4E7E6" onclick="this.innerHTML ='Shipped'; this.style='#1AB22C'; this.bgColor='#ECF4DF';">Pending</td>
+
+                </tr> 
+                <tr> 
+                    <td>BRD</td> 
+                    <td style="text-align: left">1007</td> 
+                    <td style="text-align: left">Apple Magic Mouse 2 (Silver)</td>  
+                    <td>15/09/19</td> 
+                    <td>$119.00</td>  
+                    <td style="background-color: #ECF4DF">Shipped</td> 
+                </tr> 
+                <tr> 
+                    <td>ULT</td> 
+                    <td style="text-align: left">1006</td> 
+                    <td style="text-align: left">Apple iPad Pro 11-inch display 256GB(Space Grey)</td>  
+                    <td>15/09/19</td> 
+                    <td>$729.00</td>  
+					<td style="color: #FC5A43; background-color: #F4E7E6" onclick="this.innerHTML ='Shipped'; this.style='#1AB22C'; this.bgColor='#ECF4DF';">Pending</td>
+
+                </tr> 
+                <tr> 
+                    <td>ULT</td> 
+                    <td style="text-align: left">1005</td> 
+                    <td style="text-align: left">Apple Watch Series 4 Golf Stainless Steel Case..</td>  
+                    <td>16/09/19</td> 
+                    <td>$1049.00</td>  
+					<td style="color: #FC5A43; background-color: #F4E7E6" onclick="this.innerHTML ='Shipped'; this.style='#1AB22C'; this.bgColor='#ECF4DF';">Pending</td>
+                     
+                </tr> 
+                 
+                <tr> 
+                    <td>BRD</td> 
+                    <td style="text-align: left">1004</td> 
+                    <td style="text-align: left">Apple Watch Series 5 Stainless Steel Case..</td>  
+                    <td>18/09/19</td> 
+                    <td>$1049.00</td>  
+					<td style="color: #FC5A43; background-color: #F4E7E6" onclick="this.innerHTML ='Shipped'; this.style='#1AB22C'; this.bgColor='#ECF4DF';">Pending</td>
+                     
+                </tr> 
+                <tr> 
+                    <td>BRD</td> 
+                    <td style="text-align: left">1003</td> 
+                    <td style="text-align: left">Apple Magic Mouse 2 (Silver)</td>  
+                    <td>29/09/19</td> 
+                    <td>$119.00</td>  
+					<td style="color: #FC5A43; background-color: #F4E7E6" onclick="this.innerHTML ='Shipped'; this.style='#1AB22C'; this.bgColor='#ECF4DF';">Pending</td>
+                     
+                </tr> 
+                <tr> 
+                    <td>ULT</td> 
+                    <td style="text-align: left">1002</td> 
+                    <td style="text-align: left">Apple Airpods with Charging Case</td>  
+                    <td>02/10/19</td> 
+                    <td>$159.00</td>  
+					<td style="background-color: #ECF4DF">Shipped</td>
+
+                </tr> 
+                <tr> 
+                    <td>SUR</td> 
+                    <td style="text-align: left">1001</td> 
+                    <td style="text-align: left">Apple Magic Mouse 2 (Silver)</td>  
+                    <td>11/10/19</td> 
+                    <td>$119.00</td>  
+					<td style="background-color: #ECF4DF">Shipped</td>
+
+                </tr> 
+                <!-- OnClick - change order status from pending to shipped--> 
+  
+            </table> 
+    </tbody> 
+  
+  
+</section> 
+  
+    <script  src="assets/js/function.js"></script> 
+</body> 
+  
+   <!-- Footer --> 
+  <section id ="contact" class="main style2" align="center"> 
+    <div id="foot"> 
+      <nav id="nav">  
+        <ul> 
+          <li><a style="font-size: 15px;" href="index.html">HOME</a></li> 
+          <li><a style="font-size: 15px;" href="about.html">ABOUT US</a></li> 
+          <li><a style="font-size: 15px;" href="">CONTACT US</a></li> 
+          <li><a style="font-size: 15px;" href="">HELP</a></li><hr> 
+        </ul> 
+        <div class="inner special medium"> 
+          <div class="jumbotron-social"> 
+            <ul class="ul-social" > 
+              <li class="li-social-links"> 
+                <a class="social" href="" target="_blank"><img src="images/facebook.png" style="width: 40px; "class="fa fa-facebook" aria-hidden="true"></img></a> 
+              </li> 
+              <li class="li-social-links"> 
+                <a class="social" href="" target="_blank"><img src="images/twitter.png" style="width: 40px; "class="fa fa-twitter" aria-hidden="true"></img></a> 
+              </li> 
+              <li class="li-social-links"> 
+                <a class="social" href="" target="_blank"><img src="images/email.png" style="width: 40px;" class="fa fa-envelope-o" aria-hidden="true"></i></a> 
+              </li> 
+              <li class="li-social-links"> 
+                <a class="social" href="" target="_blank"><img src="images/insta.png" style="width: 43px;"class="fa fa-instagram" aria-hidden="true"></img></a> 
+              </li> 
+            </ul> 
+          </div> 
+        </div> 
+      </nav> 
+      <p align="center" style="padding-top: 10px; font-size: 15px; margin-left: 15px;">ALL RIGHTS RESERVED | AUXILIUM 2019</p> 
+    </section> 
+     
+    <style> 
+           @import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600,700&display=swap'); 
+  
+  
+        .orderbackground { 
+            background-color: #34343C; 
+            box-shadow: 0px 2px 6px 4px rgba(0, 0, 0, 0.2); 
+            margin-left: 20%; 
+            
+            margin-top: 100px; 
+            padding-top: 60px; 
+             
+  
+            position: relative; 
+            width: 980px; 
+            height: 1000px; 
+            z-index: 1; 
+        } 
+         
+          .sort { 
+            display: flex; 
+            z-index: 2; 
+          } 
+         
+         .collection-sort { 
+            display: flex; 
+            margin-top: 0px; 
+            padding-left: 50px; 
+            flex-direction: column; 
+          } 
+		.tablebackground {
+			background-color: #F1F1F1;
+			box-shadow: 0px 2px 6px 4px rgba(0, 0, 0, 0.2);
+      position: center;
+      margin-left: 49px;
+			padding-top: 60px;
+			width: 90%;
+			height: auto;
+		}
+  
+  
+        table { 
+  
+            margin-left: auto; 
+            margin-right: auto; 
+            margin-top: 25px; 
+            width: 100%;               
+            border-collapse: collapse; 
+            background-color: #DEDEDE;
+            color: black; 
+        } 
+       td:hover {background-color: #BEBEBE;} 
+  
+        th { 
+            color:#dddddd; 
+        } 
+  
+        td { 
+            text-align: center; 
+             padding: 2px; 
+             text-align: center; 
+             border-bottom: 3px solid #F1F1F1; 
+             padding: 8px; 
+        } 
+        
+         
+  
+  
+    </style> 
+     
+     
+</div> 
+</html> 

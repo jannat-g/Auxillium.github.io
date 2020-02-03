@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="assets/css/main.css"/>
   <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <style>
     @import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600,700&display=swap');
     </style>
@@ -18,6 +19,23 @@
 <script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-auth.js"></script>
 <script type="text/javascript">
+<<<<<<< HEAD
+    //  Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAwrcbALg-Ow4O3pyJMY-7vxNF_X6hZ-GM",
+      authDomain: "auxilium-f6620.firebaseapp.com",
+      databaseURL: "https://auxilium-f6620.firebaseio.com",
+      projectId: "auxilium-f6620",
+      storageBucket: "",
+      messagingSenderId: "1031183506590",
+      appId: "1:1031183506590:web:0a2eea869b3f7442"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+<!--    <script src="assets/js/main.js"></script> -->
+   <script src="assets/js/signup.js"></script>
+=======
 //  Firebase configuration
 var firebaseConfig = {
   apiKey: "AIzaSyAwrcbALg-Ow4O3pyJMY-7vxNF_X6hZ-GM",
@@ -33,57 +51,111 @@ firebase.initializeApp(firebaseConfig);
 
 </script>
 <script src="assets/js/signup.js" ></script>
+>>>>>>> master
 
-<body class="is-preload">
+  <body class="is-preload" style=" background: #1f1f24;">
 
-  <!-- Header -->
-  <header id="header" class="alt" >
-    <img class="logo" src="./images/logo.png"></img>
+    <!-- Header -->
+    <header id="header" class="alt" >
+      <img class="logo" src="./images/logo.png"></img>
 
-    <header id="header" class="alt" style="justify-content: space-between;">
-      <nav id="nav"> 
-        <ul style="margin-left: 250px;">
-          <li ><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+      <header id="header" class="alt" style="justify-content: space-between;">
+        <nav id="nav"> 
+          <ul style="margin-left: 250px;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <nav id="nav">
+           <ul>
+          <li><a style="color: orange;" href="login.html">LOGIN</a></li>
+          <a  href="Signup.html" ><button id="test123" class="btn btn-border btn-round color-3 material-design" data-color="#f6774f">SIGN UP</button></a>
         </ul>
-      </nav>
-      <nav id="nav">
-        <ul>
-          <li ><a style="color: orange;" href="login.html">LOGIN</a></li>
-          <a href="Signup.html" ><button class="btn btn-border btn-round color-3 material-design" data-color="#f6774f">SIGN UP</button></a>
-        </ul>
-      </nav>
+        </nav>
+      </header>
     </header>
-  </header>
-  <div id="banner" style="padding: 3.5%;"class="wrapper"></div>
-</head>
+    <!-- Banner -->
+    <div id="banner" style="padding: 4%;"class="wrapper"></div>
 
-<body class="container" style=" background: #1f1f24;">
-  <section id="one" class="wrapper style1">
-    <div class="inner" align="center" style="margin-top: 50px;">
-      <h2 class="mdl-card__title-text"> Sign up</h2><br>
-      <input class="mdl-textfield__input" align="center" style=" width: 300px;" type="text" id="email" name="email" placeholder="Email"/>
+    <style>
+        .column-login {
+          float: left;
+          width: 50%;
+        }
+        
+        .row-login:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      .login-box {
+        height: 770px;
+        width: 56%;
+        background-color: #48485233;
+        position: relative;
+        z-index: 1;
+      }
+      
+      </style>
+
+  
+    <script>
+     function signout(){
+    firebase.auth().signOut();
+    alert('Successfully signed out');
+    window.location='index.html';
+  };
+
+  var user = firebase.auth().currentUser;
+
+    </script>
+   
+
+   <body  style=" background: #1f1f24;">
+   <div class="login-box" style="margin-top: 7px"></div>
+   <section id="row-login" class="wrapper style1" style="margin-top: -100px" >
+     <div class="column-login" align="center" style="position: relative; z-index: 2; margin-top: -600px; margin-left: 40px">
+       <h2 class="mdl-card__title-text"style="padding-bottom: 20px; margin-top: -50px">Sign Up</h2>
+       <hr align="right" class="new5" style="width: 500px">
+       <h5 style="font-weight: 600; font-size: 15px; margin-top: 30px">Want to become a seller with Auxilium? Sign up to start!</h5>
+       <hr align="right" class="new5" style="width: 500px; margin-top: -5px">
+       <img src="images/signup.png" style="float: left; width: 60%; margin-left: 140px; margin-top: -45px" >
+     </div>
+     <div class="column-login" align="left" style="width: 420px; margin-left: 880px; margin-top: -660px">
+        <p style="margin-top: 60px; font-size: 15px">Enter a valid email address and password to create an account. </p>
+      <input class="mdl-textfield__input" align="center" style=" width: 360px;" type="text" id="email" name="email" placeholder="Email"/>
       &nbsp;&nbsp;&nbsp;
-      <input class="mdl-textfield__input" align="center" style=" width: 300px;" type="password" id="password" name="password" placeholder="Password"/>
+      <input class="mdl-textfield__input" align="center" style=" width: 360px;" type="password" id="password" name="password" placeholder="Password"/>
       <br/><br/>
+<<<<<<< HEAD
+       <button class="button-2" style="width: 140px; margin-top: -20px" id="quickstart-sign-up" name="signup" onclick="handleSignUp();">CREATE ACCOUNT</button>
+=======
       <button align="center" disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in" name="signin" style="display: none;">Sign In</button>
       &nbsp;&nbsp;&nbsp;
        <button class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-up" name="signup" onclick="handleSignUp();">Sign Up</button>
+>>>>>>> master
           &nbsp;&nbsp;&nbsp;
       <button class="mdl-button mdl-js-button mdl-button--raised" disabled id="quickstart-verify-email" name="verify-email" style="display: none;">Send Email Verification</button><br><br>
       <div class="quickstart-user-details-container"><br>
         <span id="quickstart-sign-in-status"></span>
+<<<<<<< HEAD
+        <div style="display: none;">Firebase auth <code>currentUser</code> object value:</div>
+        <pre><code style="display:none"id="quickstart-account-details" >null</code></pre>
+      </div>
+=======
         <div>Firebase auth <code>currentUser</code> object value:</div>
         <pre><code id="quickstart-account-details" >null</code></pre>
 
+>>>>>>> master
       </div>
     </div>
+
+
   </section>
 
-</main>
-<!-- Footer -->
+   <!-- Footer -->
   <section id ="contact" class="main style2" align="center">
     <div id="foot">
       <nav id="nav"> 
@@ -114,5 +186,4 @@ firebase.initializeApp(firebaseConfig);
       </nav>
       <p align="center" style="padding-top: 10px; font-size: 15px; margin-left: 15px;">ALL RIGHTS RESERVED | AUXILIUM 2019</p>
     </section>
-</body>
-</html>
+ </div>

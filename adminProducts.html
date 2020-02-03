@@ -1,0 +1,346 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Auxilium </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+  <link rel="shortcut icon" href="./images/logo copy.png"/>
+  <!-- <link rel="stylesheet" href="assets/css/snipcart-fullscreen.css"/> -->
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js">
+  <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet"/> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600,700&display=swap');
+    </style>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>
+    <link rel="stylesheet" type="text/css" href="">
+
+
+  </head>
+  <body class="is-preload" style=" background: #1f1f24; ">
+    <style type="text/css">
+      hr.new5 {
+        border: 0.5px solid white;
+        border-radius: 5px;
+        width: 90%;
+      }
+      .flex-container-icon {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1f1f24;
+  justify-content: center;
+}
+
+
+    </style>
+
+  <!-- Header -->
+  <header id="header" class="alt" >
+    <img class="logo" src="./images/logo.png"></img>
+
+    <header id="header" class="alt" style="justify-content: space-between;">
+      <nav id="nav"> 
+        <ul style="margin-left: 250px;">
+          <li><a style="font-size: 16px;" href="seller.html">Dashboard</a></li>
+          <li class="current"><a style="font-size: 16px;" href="adminProducts.html">Inventory</a></li>
+          <!-- <li><a style="font-size: 16px;" href="AdminShopView.html">Shop View</a></li> -->
+        </ul>
+      </nav>
+      <nav id="nav">
+        <ul>
+          <li class="current"><a style="color: orange; font-size: 16px;" href="">LOGGED IN AS: Sydney Store 1</a></li>
+          <a href="index.html" ><button onclick="signout();" id="test123"class="btn btn-border btn-round color-2 material-design" data-color="#f6774f">SIGN OUT</button></a>
+        </ul>
+      </nav>
+    </header>
+  </header>
+
+
+
+
+<p style="margin-top: 75px; margin-left: 250px; margin-bottom: 0px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 24px; color: white; letter-spacing: 0px; padding-bottom: 30px;">PRODUCT INVENTORY</p>
+
+
+<div class="orderbackground">
+     
+  <form id="add-cafe-list" style="display: inline-block; margin-top: 0px;">
+    <p style="margin-top: -20px; margin-left: 75px; margin-bottom: 0px; position: relative; z-index: 2; font-family: 'Fira Sans', sans-serif; font-weight: 500; font-size: 20px; color: white; letter-spacing: 0px">ADD A PRODUCT</p>
+    <input type="text" name="name" placeholder="Insert Product Name" align="center" 
+    style="text-align: center; display:flex;width: 30%; margin-bottom: 15px; margin-left: 20px;">
+            
+    <input type="text" name="price" placeholder="Insert Product Price" align="center" 
+    style="text-align: center; display:flex; width: 30%; margin-bottom: 0px; margin-left: 20px; ">
+
+    <button align="center"class="btn btn-border btn-round color-2 material-design" style="font-size: 12px; font-weight: 400; letter-spacing: 0.3px; margin-left: 50px; margin-top: 15px; margin-bottom: 10px; width: 200px;  font-size: 15px; ">Add Product</button>
+  </form>
+  
+  
+  <table style='margin-bottom: 0px;'>
+          <col width="575">
+          <tr>
+            <td style="text-align: left; color: #FFFFFF; font-family: 'Fira Sans', sans-serif; font-weight: 400; font-size: 20px;">PRODUCT NAME</td>
+            <th style="font-family: 'Fira Sans', sans-serif; font-weight: 400; font-size: 20px;">PRODUCT PRICE</th>
+          </tr>
+      </table>
+      <ul class="tablebackground" id="cafe-list"></ul>
+
+
+ 
+    </div>
+    <!-- Footer -->
+  <section id ="contact" class="main style2" align="center">
+    <div id="foot">
+      <nav id="nav"> 
+        <ul>
+          <li><a style="font-size: 15px;" href="index.html">HOME</a></li>
+          <li><a style="font-size: 15px;" href="about.html">ABOUT US</a></li>
+          <li><a style="font-size: 15px;" href="">CONTACT US</a></li>
+          <li><a style="font-size: 15px;" href="">HELP</a></li><hr>
+        </ul>
+        <div class="inner special medium">
+          <div class="jumbotron-social">
+            <ul class="ul-social" >
+              <li class="li-social-links">
+                <a class="social" href="" target="_blank"><img src="images/facebook.png" style="width: 40px; "class="fa fa-facebook" aria-hidden="true"></img></a>
+              </li>
+              <li class="li-social-links">
+                <a class="social" href="" target="_blank"><img src="images/twitter.png" style="width: 40px; "class="fa fa-twitter" aria-hidden="true"></img></a>
+              </li>
+              <li class="li-social-links">
+                <a class="social" href="" target="_blank"><img src="images/email.png" style="width: 40px;" class="fa fa-envelope-o" aria-hidden="true"></i></a>
+              </li>
+              <li class="li-social-links">
+                <a class="social" href="" target="_blank"><img src="images/insta.png" style="width: 43px;"class="fa fa-instagram" aria-hidden="true"></img></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <p align="center" style="padding-top: 10px; font-size: 15px; margin-left: 15px;">ALL RIGHTS RESERVED | AUXILIUM 2019</p>
+    </section>
+ </div>
+
+
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyAwrcbALg-Ow4O3pyJMY-7vxNF_X6hZ-GM",
+          authDomain: "auxilium-f6620.firebaseapp.com",
+          databaseURL: "https://auxilium-f6620.firebaseio.com",
+          projectId: "auxilium-f6620",
+          storageBucket: "auxilium-f6620.appspot.com",
+          messagingSenderId: "1031183506590",
+          appId: "1:1031183506590:web:0a2eea869b3f7442"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore(); //creating a reference and storing inside the database
+    </script>
+    <script src="assets/js/App.js"></script>
+
+	</body>
+</html>
+
+
+<style>
+
+ul{
+    list-style-type: none;
+    padding: 20px;
+    color: black;
+}
+
+li{
+
+    font-size: 18px;
+    color: black;
+    position: relative;
+    height: 46px;
+
+}
+
+li span:nth-child(2) /* price section */
+{ 
+    font-size: 16px;  
+    right: 200px;
+    position: absolute;
+   
+}
+
+li div /* 'X' section */
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 33px;
+    text-align: center;
+    padding: 4px 10;
+    font-weight: bold;
+    cursor:  pointer;
+    background-color: orange;
+    border-radius: 20px;
+   
+    margin-right: 8px;
+    color: white;
+}
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600,700&display=swap');
+
+
+    .productbackground {
+
+      background-color: #34343C;
+      box-shadow: 0px 2px 6px 4px rgba(0, 0, 0, 0.2);
+      margin-left: 250px;
+      margin-right: 250px;
+      padding-top: 60px;
+
+      position: relative;
+      width: 475px;
+      height: 570px;
+      z-index: 1;
+
+    }
+
+    .itembackground {
+
+      background-color: #DEDEDE;
+      box-shadow: 0px 2px 6px 4px rgba(0, 0, 0, 0.2);
+      border-radius: 1px; 
+      margin-left: 50px;
+      padding-top: 60px;
+      position: relative;
+      width: 375px;
+      height: 100px;
+    }
+
+    .itembackground:hover {background-color: #BEBEBE;}
+
+
+    inventoryform { 
+      border: 10px none #525151; 
+      display: inline-block; /* reduces the width of the form to only what is necessary */ 
+      width: 100px; 
+      margin-left: 25%; 
+      margin-right:25%; 
+      border-radius: 5px;
+      background-color: #DEDEDE;
+    } 
+
+    input[type=text], input[type=password] { 
+      width: 50px; 
+      padding: 12px 20px; 
+      margin: 8px 0; 
+      display: inline-block; 
+      border: 1px solid #525151; 
+      box-sizing: border-box;
+      border-color: none;
+      margin-left: 25%; 
+      margin-right:25%; 
+      background-color: none; 
+      color: White; 
+      border-radius: 5px;
+    } 
+
+    placeholder{ 
+      color: Black; 
+    } 
+
+    .insightbackground {
+
+      background-color: #34343C;
+      box-shadow: 0px 2px 6px 4px rgba(0, 0, 0, 0.2);
+      margin-left: 250px;
+      margin-right: 250px;
+      padding-top: 60px;
+
+      position: relative;
+      width: 475px;
+      height: 570px;
+      z-index: 1;
+
+    }
+
+    .orderbackground {
+      background-color: #34343C;
+      box-shadow: 0px 2px 6px 4px rgba(0, 0, 0, 0.2);
+      margin-left: 250px;
+      margin-right: 250px;
+      padding: 60px;
+
+      position: relative;
+      width: 980px;
+      height: auto;
+      z-index: 1;
+
+    }
+
+    .tablebackground {
+      background-color: #F1F1F1;
+      box-shadow: 0px 2px 6px 4px rgba(0, 0, 0, 0.2);
+      border-radius: 8px; 
+    }
+
+
+    table {
+
+    
+           
+      border-collapse: collapse;
+
+      color: black;
+    }
+
+    th {
+      color:#1f1f24;
+    }
+
+    td {
+      text-align: center;
+      padding: 2px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+
+
+
+    #orders {
+      position: relative;
+      border-collapse: collapse;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #DEDEDE;
+    }
+
+    #orders td, #orders th {
+      text-align: center;
+      border-bottom: 3px solid #F1F1F1;
+      padding: 8px;
+    }
+
+    #orders tr:hover {background-color: #BEBEBE;}
+
+    #orders th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: center;
+      background-color: #F1F1F1;
+      color: black;
+    }
+
+
+
+
+
+</style>
+

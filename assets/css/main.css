@@ -27,7 +27,8 @@ section, summary, time, mark, audio, video {
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+}
 
 body {
 	line-height: 1;
@@ -2353,7 +2354,7 @@ input, select, textarea {
 	input[type="radio"] + label:before {
 		border-radius: 100%;
 	}
-
+/*
 	::-webkit-input-placeholder {
 		color: rgba(255, 255, 255, 0.5) !important;
 		opacity: 1.0;
@@ -2373,6 +2374,7 @@ input, select, textarea {
 		color: rgba(255, 255, 255, 0.5) !important;
 		opacity: 1.0;
 	}
+	*/
 
 /* Icon */
 
@@ -4432,7 +4434,7 @@ button {
   margin: 8px 0; 
   border: none; 
   cursor: pointer; 
-  width: 10%; 
+ 
   text-decoration: none;
   outline: none;
   box-shadow: none;
@@ -4485,7 +4487,7 @@ button {
 input[type=text], input[type=password] { 
 
 
-  border: 1px solid #525151; 
+  border: 1px solid white; 
   box-sizing: border-box;
   border-color: none;
   background-color: none; 
@@ -4495,10 +4497,13 @@ input[type=text], input[type=password] {
 
 } 
 
+<<<<<<< HEAD
+=======
 
 
 
 
+>>>>>>> master
 
 /*///////////////////////////////////////////////////////// RECCOMENDATION SECTION PT 1//////////////////////////////////////////////////*/
 
@@ -4699,7 +4704,7 @@ body {
    .search-bar  {
 	position: relative;
     margin-top: -60px;
-    left: 870px;
+ 
 	height: 40px;
 	width: 350px;
 	border-radius: 20px;
@@ -4735,11 +4740,11 @@ body {
     width: 0px;
     font-weight: 300;
    }  
-
+/*
    ::-webkit-input-placeholder {
 	color: rgb(138, 138, 138);
    }
-
+*/
    /*---------- SHOP - products ----------*/
 
    /*--- product filter ---*/
@@ -4811,7 +4816,7 @@ body {
   }
 
   .product-box {
-	position: relative;
+
 	padding: 20px;
 	width: 220px;
 	height: 250px;
@@ -4859,7 +4864,7 @@ body {
 
   /* Quanity btn */
 
-  form {
+  #qtyfrm {
 	width: 300px;
 	margin: 0 auto;
 	text-align: center;
