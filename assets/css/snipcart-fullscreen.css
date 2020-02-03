@@ -1,0 +1,176 @@
+/* Hide the website with a full color */
+.snipcart-overwrite #snipcart-header,
+.snipcart-overwrite #snipcart-footer,
+.snipcart-overwrite #snipcart-overlay,
+.snipcart-overwrite #snipcart-overlay  {
+    background: black;
+}
+
+/* Remove the padding from the container to expend the cart */
+.snipcart-overwrite .snipcart-checkout-container {
+    padding: 0;
+}
+
+/* Make the cart take full width */
+.snipcart-overwrite #snipcart-main-container {
+    max-width: none;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Remove the image of the close button and hide the label */
+.snipcart-overwrite #snipcart-close {
+    background: none;
+    text-indent: 0;
+    width: auto;
+    color: #000;
+    right: -13px;
+    display: block;
+}
+
+/* Add a new label and arrow to the close button */
+.snipcart-overwrite #snipcart-close:after {
+    content: "Return to site \279C";
+    color: #87db57;
+    position: relative;
+    left: -33px;
+}
+ #snipcart-footer #snipcart-powered{
+    display: none;
+}
+
+#snipcart-header .snipcart-header {
+    margin-top: : 200px;
+}
+
+#snipcart-modal {
+    padding-top: 200px;
+}
+
+.snip-layout .snip-layout__main-container {
+    background: #363535;
+    margin-top: 5%;
+}
+
+.snip-layout .snip-footer {
+    display: none;
+}
+
+.snip-layout {
+    background-color: black;
+}
+
+.snip-layout .snip-btn--highlight {
+    background: orange;
+    color: white;
+    border-radius: 10em;
+}
+
+.snip-layout .snip-btn--highlight {
+    background: orange;
+    color: white;
+    border-radius: 10em;
+   
+}
+
+.snip-layout .snip-btn--highlight:hover{
+    background: orange !important;
+    color: white;
+    border-radius: 10em;
+}
+
+
+
+.snip-layout .snip-actions::after {
+    background-color: orange !important;
+     pointer-events: none !important;
+    }
+
+#snipcart-global-notices {
+    display: none;
+}
+
+.snip-form__error {
+    background-color: orange !important;
+    
+}
+
+.snip-layout .snip-steps {
+    display: none !important;
+
+}
+
+.snip-layout .snip-active button {
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+}
+.snip-layout .snip-active button:hover {
+    /*background: orange !important;*/
+    color: white;
+    border-radius: 10px;
+     pointer-events: none !important;
+}
+
+.snip-layout .snip-active table {
+    color: white;
+}
+
+ .snip-layout .snip-product__empty {
+    font-size: 20px;
+    padding: 1em 2em;
+     text-align: left; 
+    text-transform: none; 
+}
+
+#snipcart-sub-content h2, td, tr, tbody, span, table{
+    color: white !important;
+}
+
+#snipcart-sub-content button:hover {
+
+     pointer-events: none !important;
+}
+
+#snipcart-discounts-list {
+    display: none;
+}
+
+.snip-table__cell--right .snip-table__cell--highlight {
+    color: white !important;
+}
+
+.snipcart-step {
+    color: white;
+}
+
+#snipcart-items {
+    color: white !important;
+}
+
+.snip-table__cell--right .snip-table__cell--highlight .snip-table__small-col {
+    color: white;
+}
+
+.snip-quantity-trigger__text {
+    color: white;
+}
+#snipcart-fees{ 
+    display: none;
+}
+
+#snipcart-cart-content table{
+    color: white !important;
+}
+
+#snipcart-total {
+    color: white !important;
+}
+
+#snipcart-flash-messages {
+    display: none;
+}
+
+section {
+    height: 700px;
+}
